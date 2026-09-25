@@ -1,16 +1,15 @@
 # Event catalog
 
-`events.json` is the MVP database. It is version-controlled with the application and bundled as read-only data at build time. Every pull request that changes an event therefore creates a reviewable audit trail.
+`la-tech-week-events.json` is the MVP database. It currently contains 807 LA listings and is version-controlled with the application, then bundled as read-only data at build time. Every pull request that changes an event creates a reviewable audit trail.
 
 ## Editing the catalog
 
-1. Add or update an event in `events.json`.
-2. Use a unique sequential `event-###` ID.
-3. Keep categories, audiences, goals, formats, and neighborhoods consistent with the values already used by the planner.
-4. Record the original listing in `source.url` and update `source.verifiedAt` whenever the schedule, access, or registration status is checked.
-5. Run `npm run build`. The build fails when an event violates the runtime schema in `lib/events.ts`.
+1. Download the maintained `techlist.cleaned.json` snapshot described in `SOURCE.md`.
+2. Run `npm run data:import -- /path/to/techlist.cleaned.json data/la-tech-week-events.json`.
+3. Review the catalog diff, especially additions, removals, and registration-status changes.
+4. Run the production build. It fails when the catalog violates the runtime schema in `lib/events.ts`.
 
-The seed records are deliberately labeled `Prototype seed` and use example URLs. Replace them with verified event records before calling the catalog production-ready.
+The import preserves official listing data and links. Audience, goal, networking-strength, and summary fields are deterministic classifications used for recommendations; their provenance is declared on every record.
 
 ## How ranking works
 

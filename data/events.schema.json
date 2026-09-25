@@ -1,34 +1,30 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://product.ai/schemas/tech-week-events.json",
-  "title": "Product.ai LA Tech Week Event Catalog",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "additionalProperties": false,
-    "required": ["id","name","organizer","shortDescription","description","date","startTime","endTime","location","venue","address","categories","eventType","audience","companies","goals","roomSize","access","status","rsvpType","rsvpUrl","featured","productAIEvent","source"],
-    "properties": {
-      "id": { "type": "string", "pattern": "^event-[0-9]{3}$" },
-      "name": { "type": "string", "minLength": 3 },
-      "organizer": { "type": "string", "minLength": 2 },
-      "shortDescription": { "type": "string", "minLength": 10 },
-      "description": { "type": "string", "minLength": 20 },
-      "date": { "type": "string", "format": "date" },
-      "startTime": { "type": "string", "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$" },
-      "endTime": { "type": "string", "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$" },
-      "location": { "enum": ["Santa Monica","Venice","West LA","Culver City","Hollywood","DTLA"] },
-      "venue": { "type": "string" }, "address": { "type": "string" },
-      "categories": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
-      "eventType": { "enum": ["Small gatherings","Networking","Panels","Workshops","Hackathons","Demos","Parties","Founder dinners"] },
-      "audience": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
-      "companies": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
-      "goals": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
-      "roomSize": { "enum": ["Small","Medium","Large"] },
-      "access": { "enum": ["Open","Approval","Invite only"] },
-      "status": { "enum": ["Open","Waitlist","Closed"] },
-      "rsvpType": { "type": "string" }, "rsvpUrl": { "type": "string", "format": "uri" },
-      "featured": { "type": "boolean" }, "productAIEvent": { "type": "boolean" },
-      "source": { "type": "object", "additionalProperties": false, "required": ["name","url","verifiedAt"], "properties": { "name": {"type":"string"}, "url": {"type":"string","format":"uri"}, "verifiedAt": {"type":"string","format":"date-time"} } }
-    }
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://product.ai/schemas/la-tech-week-catalog.json",
+  "title":"Product.ai LA Tech Week Event Catalog",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["schemaVersion","city","timezone","week","generatedAt","sourceSnapshotGeneratedAt","sourceUrl","officialCalendarUrl","eventCount","inWeekEventCount","notes","events"],
+  "properties":{
+    "schemaVersion":{"type":"string"},"city":{"const":"Los Angeles"},"timezone":{"const":"America/Los_Angeles"},
+    "week":{"type":"object","additionalProperties":false,"required":["startsOn","endsOn"],"properties":{"startsOn":{"type":"string","format":"date"},"endsOn":{"type":"string","format":"date"}}},
+    "generatedAt":{"type":"string","format":"date-time"},"sourceSnapshotGeneratedAt":{"type":"string","format":"date-time"},
+    "sourceUrl":{"type":"string","format":"uri"},"officialCalendarUrl":{"type":"string","format":"uri"},
+    "eventCount":{"type":"integer","minimum":800},"inWeekEventCount":{"type":"integer","minimum":800},"notes":{"type":"string"},
+    "events":{"type":"array","minItems":800,"items":{"$ref":"#/$defs/event"}}
+  },
+  "$defs":{
+    "event":{"type":"object","additionalProperties":false,"required":["id","name","city","date","dateLabel","startTime","startTimeDisplay","timezone","neighborhood","venueName","address","isVirtual","organizers","hostDisplay","topics","formats","audiences","goals","networkingStrength","summary","descriptionSource","access","rsvpUrl","featured","inOfficialWeek","source"],"properties":{
+      "id":{"type":"string","pattern":"^latw-[a-f0-9]{16}$"},"name":{"type":"string","minLength":3},"city":{"const":"Los Angeles"},
+      "date":{"type":"string","format":"date"},"dateLabel":{"type":"string"},"startTime":{"type":"string","pattern":"^([01][0-9]|2[0-3]):[0-5][0-9]$"},"startTimeDisplay":{"type":"string"},"timezone":{"const":"America/Los_Angeles"},
+      "neighborhood":{"type":"string","minLength":1},"venueName":{"type":["string","null"]},"address":{"type":["string","null"]},"isVirtual":{"type":"boolean"},
+      "organizers":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"hostDisplay":{"type":"string","minLength":1},
+      "topics":{"type":"array","uniqueItems":true,"items":{"type":"string"}},"formats":{"type":"array","uniqueItems":true,"items":{"type":"string"}},
+      "audiences":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},"goals":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string"}},
+      "networkingStrength":{"type":"integer","minimum":1,"maximum":5},"summary":{"type":"string","minLength":20},"descriptionSource":{"type":"string"},
+      "access":{"type":"object","additionalProperties":false,"required":["status","method","requiresApproval"],"properties":{"status":{"enum":["Open","Waitlist","Closed"]},"method":{"type":"string"},"requiresApproval":{"type":["boolean","null"]}}},
+      "rsvpUrl":{"type":"string","pattern":"^https://www\\.tech-week\\.com/go/event/"},"featured":{"type":"boolean"},"inOfficialWeek":{"type":"boolean"},
+      "source":{"type":"object","additionalProperties":false,"required":["provider","cityCalendar","sourceRow","snapshotGeneratedAt"],"properties":{"provider":{"type":"string"},"cityCalendar":{"type":"string","format":"uri"},"sourceRow":{"type":"integer","minimum":1},"snapshotGeneratedAt":{"type":"string","format":"date-time"}}}
+    }}
   }
 }
