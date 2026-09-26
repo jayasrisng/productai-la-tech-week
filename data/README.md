@@ -1,11 +1,11 @@
 # Event catalog
 
-`la-tech-week-events.json` is the MVP database. It currently contains 807 LA listings and is version-controlled with the application, then bundled as read-only data at build time. Every pull request that changes an event creates a reviewable audit trail.
+`la-tech-week-events.json` and `sf-tech-week-events.json` are the MVP databases. They contain 807 LA listings and 1,711 SF listings, are version-controlled with the application, and are bundled as read-only data at build time. Every pull request that changes an event creates a reviewable audit trail.
 
 ## Editing the catalog
 
 1. Download the maintained `techlist.cleaned.json` snapshot described in `SOURCE.md`.
-2. Run `npm run data:import -- /path/to/techlist.cleaned.json data/la-tech-week-events.json`.
+2. Save the snapshot to `/tmp/techlist.cleaned.json` and run `npm run data:import`.
 3. Review the catalog diff, especially additions, removals, and registration-status changes.
 4. Run the production build. It fails when the catalog violates the runtime schema in `lib/events.ts`.
 

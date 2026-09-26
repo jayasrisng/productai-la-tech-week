@@ -1,8 +1,9 @@
-# LA Tech Week catalog source
+# SF and LA Tech Week catalog source
 
-The committed catalog is derived from the public LA calendar published by Tech Week by a16z. The import snapshot comes from the open-source `abishakkodi/tech-week-mcp` project, which refreshes its bundled Tech Week calendar snapshot twice daily and preserves the official Tech Week RSVP redirect links.
+The committed catalogs are derived from the public SF and LA calendars published by Tech Week by a16z. The import snapshot comes from the open-source `abishakkodi/tech-week-mcp` project, which refreshes its bundled Tech Week calendar snapshot twice daily and preserves the official Tech Week RSVP redirect links.
 
-- Official calendar: https://www.tech-week.com/calendar/la
+- Official SF calendar: https://www.tech-week.com/calendar/sf
+- Official LA calendar: https://www.tech-week.com/calendar/la
 - Snapshot project: https://github.com/abishakkodi/tech-week-mcp
 - Snapshot file: https://github.com/abishakkodi/tech-week-mcp/blob/main/techlist.cleaned.json
 

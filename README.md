@@ -1,11 +1,11 @@
-# Product.ai × LA Tech Week
+# Product.ai × Tech Week
 
-A mobile-first LA Tech Week planner that ranks 807 official calendar listings against a visitor’s goals, interests, role, preferred event formats, exclusions, and neighborhoods. Every recommendation exposes the signals behind its score.
+A mobile-first SF and LA Tech Week planner that ranks 2,518 official calendar listings against a visitor’s goals, interests, role, preferred event formats, exclusions, and neighborhoods. Every recommendation exposes the signals behind its score.
 
 ## What works
 
 - Progressive onboarding with device-local preferences
-- Complete version-controlled LA Tech Week catalog
+- Complete version-controlled SF and LA Tech Week catalogs
 - Explainable ranking and hard format exclusions
 - Day, neighborhood, topic, and format filters
 - Personal lineup with estimated conflict and travel notes
@@ -36,7 +36,7 @@ The static export is written to `out/` and can be hosted on GitHub Pages, Cloudf
 
 ## Event catalog
 
-The committed database is [`data/la-tech-week-events.json`](data/la-tech-week-events.json). See [`data/README.md`](data/README.md) and [`data/SOURCE.md`](data/SOURCE.md) for its schema, provenance, and refresh workflow.
+The committed databases are [`data/la-tech-week-events.json`](data/la-tech-week-events.json) and [`data/sf-tech-week-events.json`](data/sf-tech-week-events.json). See [`data/README.md`](data/README.md) and [`data/SOURCE.md`](data/SOURCE.md) for their schema, provenance, and refresh workflow.
 
 ## GitHub Pages
 

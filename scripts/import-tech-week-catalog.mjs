@@ -3,7 +3,13 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const sourcePath = resolve(process.argv[2] || "/tmp/techlist.cleaned.json");
-const outputPath = resolve(process.argv[3] || "data/la-tech-week-events.json");
+const cityCode = process.argv[4] || "la";
+const cityConfig = {
+  la: { name:"Los Angeles", prefix:"latw", startsOn:"2026-10-12", endsOn:"2026-10-18" },
+  sf: { name:"San Francisco", prefix:"sftw", startsOn:"2026-10-05", endsOn:"2026-10-11" }
+}[cityCode];
+if (!cityConfig) throw new Error(`Unsupported city code: ${cityCode}`);
+const outputPath = resolve(process.argv[3] || `data/${cityCode}-tech-week-events.json`);
 const source = JSON.parse(readFileSync(sourcePath, "utf8"));
 
 const NETWORKING_TYPES = new Set(["Networking", "Matchmaking", "Happy Hour", "Dinner", "Breakfast, Brunch or Lunch"]);
@@ -66,17 +72,17 @@ function buildSummary(event) {
   return `${event.title} is a ${type.toLowerCase()} hosted by ${event.host}${event.neighborhood ? ` in ${event.neighborhood}` : ""}${focus ? `, focused on ${focus}` : ""}.`;
 }
 
-const events = source.events.filter(event => event.city === "la").map(event => {
+const events = source.events.filter(event => event.city === cityCode).map(event => {
   const date = dateFromLabel(event.date_label);
   const startTime = time24(event.start_time_display);
-  const identity = `${date}|${startTime}|${event.title}|${event.host}|${event.neighborhood}|la`;
+  const identity = `${date}|${startTime}|${event.title}|${event.host}|${event.neighborhood}|${cityCode}`;
   const audiences = inferAudience(event);
   const goals = inferGoals(event, audiences);
   const status = event.labels?.includes("Closed") ? "Closed" : event.labels?.includes("Waitlist") ? "Waitlist" : "Open";
   return {
-    id: `latw-${createHash("sha256").update(identity).digest("hex").slice(0,16)}`,
+    id: `${cityConfig.prefix}-${createHash("sha256").update(identity).digest("hex").slice(0,16)}`,
     name: event.title,
-    city: "Los Angeles",
+    city: cityConfig.name,
     date,
     dateLabel: event.date_label,
     startTime,
@@ -98,20 +104,20 @@ const events = source.events.filter(event => event.city === "la").map(event => {
     access: { status, method: "Apply or RSVP through the official event link", requiresApproval: null },
     rsvpUrl: event.event_url,
     featured: event.labels?.includes("Featured") || false,
-    inOfficialWeek: date >= "2026-10-12" && date <= "2026-10-18",
-    source: { provider:"Tech Week by a16z", cityCalendar:"https://www.tech-week.com/calendar/la", sourceRow:event.source_row, snapshotGeneratedAt:source.snapshot_generated_at }
+    inOfficialWeek: date >= cityConfig.startsOn && date <= cityConfig.endsOn,
+    source: { provider:"Tech Week by a16z", cityCalendar:`https://www.tech-week.com/calendar/${cityCode}`, sourceRow:event.source_row, snapshotGeneratedAt:source.snapshot_generated_at }
   };
 }).sort((a,b) => a.date.localeCompare(b.date) || a.startTime.localeCompare(b.startTime) || a.name.localeCompare(b.name));
 
 const catalog = {
   schemaVersion: "1.0.0",
-  city: "Los Angeles",
+  city: cityConfig.name,
   timezone: "America/Los_Angeles",
-  week: { startsOn:"2026-10-12", endsOn:"2026-10-18" },
+  week: { startsOn:cityConfig.startsOn, endsOn:cityConfig.endsOn },
   generatedAt: new Date().toISOString(),
   sourceSnapshotGeneratedAt: source.snapshot_generated_at,
   sourceUrl: "https://github.com/abishakkodi/tech-week-mcp/blob/main/techlist.cleaned.json",
-  officialCalendarUrl: "https://www.tech-week.com/calendar/la",
+  officialCalendarUrl: `https://www.tech-week.com/calendar/${cityCode}`,
   eventCount: events.length,
   inWeekEventCount: events.filter(event => event.inOfficialWeek).length,
   notes: "Official listing fields are preserved. Audience, goal, networking strength, and summary fields are deterministic classifications derived from listing metadata.",

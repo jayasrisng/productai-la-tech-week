@@ -12,7 +12,7 @@
     "start": "next start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
-    "data:import": "node scripts/import-tech-week-catalog.mjs"
+    "data:import": "node scripts/import-tech-week-catalog.mjs /tmp/techlist.cleaned.json data/la-tech-week-events.json la && node scripts/import-tech-week-catalog.mjs /tmp/techlist.cleaned.json data/sf-tech-week-events.json sf"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

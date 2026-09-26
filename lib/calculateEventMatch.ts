@@ -13,7 +13,7 @@ function excludedFormats(preferences:Preferences){return [...new Set(preferences
 
 export function calculateEventMatch(event:EventItem,p:Preferences):EventMatch {
   const reasons:string[]=[]; const cautions:string[]=[];
-  if(event.access.status==="Closed"||!event.inOfficialWeek) return {score:0,reasons:[],cautions:[event.access.status==="Closed"?"Registration is closed":"Outside the official LA week"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false}};
+  if(event.access.status==="Closed"||!event.inOfficialWeek) return {score:0,reasons:[],cautions:[event.access.status==="Closed"?"Registration is closed":"Outside the official Tech Week dates"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false}};
   if(overlap(event.formats,excludedFormats(p)).length) return {score:0,reasons:[],cautions:["You asked to skip this event format"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false}};
   const goals=overlap(event.goals,p.goals); const interests=overlap(event.topics,p.interests);
   const desiredAudiences=[...new Set(p.identity.flatMap(role=>ROLE_MAP[role]||[role]))]; const audiences=overlap(event.audiences,desiredAudiences);
