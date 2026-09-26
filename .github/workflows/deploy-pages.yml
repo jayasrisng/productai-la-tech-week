@@ -23,7 +23,13 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      # npm ci currently rejects the cross-platform optional dependency entries
+      # generated in this lockfile. npm install still honors the pinned lockfile
+      # while resolving the Linux-only packages needed by the Pages runner.
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
       - name: Build static site
         env:
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
