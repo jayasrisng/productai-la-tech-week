@@ -1,4 +1,4 @@
-# Product.ai × Tech Week
+# Product.ai Tech Week
 
 A mobile-first SF and LA Tech Week planner that ranks 2,518 official calendar listings against a visitor’s goals, interests, role, preferred event formats, exclusions, and neighborhoods. Every recommendation exposes the signals behind its score.
 
@@ -11,7 +11,7 @@ A mobile-first SF and LA Tech Week planner that ranks 2,518 official calendar li
 - Personal lineup with estimated conflict and travel notes
 - Manual RSVP tracking
 - `.ics` calendar export and downloadable lineup image
-- Mock Product.ai Mission HQ sign-in, reservations, activity, and local updates
+- Neighborhood Live map with location-filtered, event-tagged community updates and local image attachments
 
 This is a frontend prototype. Visitor data stays in `localStorage`; there is no authentication or production booking backend.
 
