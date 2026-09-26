@@ -8,6 +8,6 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [prefs]=useLocalStorage<Preferences>("techWeekPreferences",empty);
   const city=(prefs.city||"la").toUpperCase();
-  const nav = [["/events", "Explore"], ["/lineup", "My lineup"], ["/mission-hq", "Neighborhood Live"]];
-  return <header className="site-header"><Link href="/" className="wordmark"><span className="mark">◆</span><strong>product.ai tech week</strong><em>{city}</em></Link><nav>{nav.map(([href,label]) => <Link className={pathname === href ? "active" : ""} href={href} key={href}>{label}</Link>)}</nav><Link href="/plan" className="header-cta">Tune my plan</Link></header>;
+  const nav = [["/events", "01 Matches"], ["/lineup", "02 Lineup"], ["/mission-hq", "03 Mission HQ"]];
+  return <header className="site-header"><Link href="/" className="wordmark"><span className="mark">◆</span><strong>product.ai tech week</strong><em>{city}</em></Link><nav aria-label="Planning journey">{nav.map(([href,label]) => <Link className={pathname === href ? "active" : ""} href={href} key={href}>{label}</Link>)}</nav><Link href="/plan" className="header-cta">Edit preferences</Link></header>;
 }
