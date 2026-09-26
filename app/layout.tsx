@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Product.ai × LA Tech Week",
-  description: "Find the LA Tech Week events actually worth your time.",
+  title: "Product.ai × Tech Week",
+  description: "Find the San Francisco and Los Angeles Tech Week events actually worth your time.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 

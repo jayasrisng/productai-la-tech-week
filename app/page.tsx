@@ -1,15 +1,29 @@
-import Link from "next/link";
-import { SiteHeader } from "@/components/SiteHeader";
+"use client";
+import { FormEvent, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useLocalStorage } from "@/lib/storage";
+import type { Preferences, TechWeekCity } from "@/types/event";
 
-export default function Home() {
-  return <main><SiteHeader />
-    <section className="hero wrap">
-      <div className="hero-kicker"><span className="diamond" /> PRODUCT.AI × LA TECH WEEK <span>OCT 12—18 · LOS ANGELES</span></div>
-      <div className="hero-grid"><div><h1>Make Tech Week<br />worth your time.</h1><p className="hero-copy">Hundreds of events. One week. We help you find the rooms actually worth showing up for.</p><div className="hero-actions"><Link className="button primary" href="/plan">Build my week</Link><Link className="text-link" href="/events">Explore all events →</Link></div></div>
-        <div className="week-index" aria-label="Sample week overview"><p className="mono-label">WEEK / 42</p>{["MON 12", "TUE 13", "WED 14", "THU 15", "FRI 16"].map((day, index) => <div className={index === 1 ? "active" : ""} key={day}><span>{day}</span><b>{[4,7,9,6,8][index]} rooms</b></div>)}<p className="index-note">Signal, not noise. Ranked around what you came to LA to do.</p></div>
-      </div>
-    </section>
-    <section className="how wrap"><div><span>01</span><h2>Tell us who you are.</h2></div><div><span>02</span><h2>Tell us what you want.</h2></div><div><span>03</span><h2>We rank the week around your goals.</h2></div></section>
-    <footer className="wrap site-footer"><span>PRODUCT.AI / LA</span><p>A calmer way through a very busy week.</p></footer>
+const empty:Preferences={name:"",city:"la",identity:[],goals:[],interests:[],formats:[],excludedFormats:[],locations:[]};
+const cities:{id:TechWeekCity;name:string;dates:string;events:string;image:string;logo:string}[]=[
+  {id:"sf",name:"San Francisco",dates:"OCT 05—11",events:"1,711 EVENTS",image:"sf-tech-week.jpg",logo:"techweek-sf-black.svg"},
+  {id:"la",name:"Los Angeles",dates:"OCT 12—18",events:"807 EVENTS",image:"la-tech-week.jpg",logo:"techweek-la-black.svg"}
+];
+
+export default function Home(){
+  const router=useRouter();
+  const [prefs,setPrefs,ready]=useLocalStorage<Preferences>("techWeekPreferences",empty);
+  const [draft,setDraft]=useState("");
+  const [asked,setAsked]=useState(false);
+  const basePath=process.env.NEXT_PUBLIC_BASE_PATH||"";
+  useEffect(()=>{if(ready)setDraft(prefs.name||"")},[ready,prefs.name]);
+  const showCities=asked||Boolean(prefs.name?.trim());
+  const submit=(event:FormEvent)=>{event.preventDefault();if(!draft.trim())return;setPrefs({...prefs,name:draft.trim(),city:prefs.city||"la"});setAsked(true)};
+  const choose=(city:TechWeekCity)=>{setPrefs({...prefs,name:(draft||prefs.name).trim(),city,locations:prefs.city===city?prefs.locations:[]});router.push("/plan")};
+  if(!ready)return <main className="welcome-shell"/>;
+  return <main className="welcome-shell">
+    <header className="welcome-top"><span className="product-mark">◆ product.ai</span><span>TECH WEEK / 2026</span></header>
+    {!showCities?<section className="hello-screen wrap"><p className="hello-index">HELLO / 001</p><h1>Hello—<br/><span>oh, wait.</span></h1><p>I didn’t ask your name.</p><form onSubmit={submit}><label htmlFor="welcome-name">What should I call you?</label><div><input id="welcome-name" autoFocus autoComplete="given-name" value={draft} onChange={e=>setDraft(e.target.value)} placeholder="Enter your first name"/><button type="submit" disabled={!draft.trim()} aria-label="Continue">→</button></div></form></section>:
+    <section className="city-screen wrap"><div className="city-intro"><p className="hello-index">NICE TO MEET YOU / {String((draft||prefs.name).length).padStart(3,"0")}</p><h1>Okay, {(draft||prefs.name).trim()}.<br/><span>Where are we going?</span></h1><p>Choose your Tech Week. We’ll rank the entire city calendar around what you want from the week.</p></div><div className="city-grid">{cities.map(city=><button className="city-card" onClick={()=>choose(city.id)} key={city.id}><img className="city-photo" src={`${basePath}/brand/${city.image}`} alt={`${city.name} Tech Week artwork`}/><span className="city-overlay"/><img className="city-logo" src={`${basePath}/brand/${city.logo}`} alt={`${city.name} Tech Week`}/><span className="city-meta"><b>{city.dates}</b><em>{city.events}</em></span><span className="city-enter">PLAN {city.id.toUpperCase()} <b>↗</b></span></button>)}</div><button className="change-name" onClick={()=>{setPrefs({...prefs,name:""});setAsked(false)}}>Not {(draft||prefs.name).trim()}? Change name</button></section>}
   </main>;
 }
