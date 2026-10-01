@@ -8,31 +8,53 @@ const FORMAT_FAMILIES: Record<string,string[]> = {
 const ROLE_MAP:Record<string,string[]>={Student:["Students","Job seekers"],Founder:["Founders"],Engineer:["Engineers"],Designer:["Designers"],Investor:["Investors"],Creator:["Creators"],Product:["Product leaders"],Recruiter:["Recruiters"],Operator:["Operators"]};
 
 function overlap(a:string[],b:string[]){return a.filter(value=>b.includes(value));}
-function preferredFormats(preferences:Preferences){return [...new Set(preferences.formats.flatMap(format=>FORMAT_FAMILIES[format]||[format]))];}
 function excludedFormats(preferences:Preferences){return [...new Set(preferences.excludedFormats.flatMap(format=>FORMAT_FAMILIES[format]||[format]))];}
+const GOAL_EVIDENCE:Record<string,RegExp>={
+  "Find a job":/\b(job|jobs|career\w*|hiring|recruit\w*|intern\w*|talent)\b/i,
+  "Meet recruiters":/\b(recruit\w*|hiring|talent acquisition|job fair)\b/i,
+  "Meet founders":/\b(founder\w*|startup\w*|entrepreneur\w*|cofounder\w*)\b/i,
+  "Meet investors":/\b(investor\w*|venture|vc\w*|angel\w*|capital|fundrais\w*)\b/i,
+  "Raise capital":/\b(fundrais\w*|pitch\w*|investor\w*|venture|capital)\b/i,
+  "Find collaborators":/\b(cofounder\w*|collaborat\w*|hackathon|buildathon|matchmaking|builders)\b/i,
+  "Learn":/\b(workshop|panel|fireside|learn\w*|roundtable|lab|clinic|summit|talk)\b/i,
+  "Explore new technology":/\b(ai|tech\w*|demo\w*|hardware|robot\w*|infra\w*|engineer\w*|software|agent\w*|build\w*|biotech|science)\b/i,
+  "Have fun":/\b(party|social|happy hour|dinner|brunch|run|games?|music|drinks)\b/i,
+  "Build relationships":/\b(network\w*|mixer|meetup|social|happy hour|dinner|connect|coffee)\b/i
+};
+const ROLE_EVIDENCE:Record<string,RegExp>={Student:/\b(student\w*|university|college|campus)\b/i,Founder:/\b(founder\w*|startup\w*|entrepreneur\w*)\b/i,Engineer:/\b(engineer\w*|developer\w*|infra\w*|hackathon|software|technical)\b/i,Designer:/\b(design\w*|creative)\b/i,Investor:/\b(investor\w*|venture|vc\w*|angel\w*)\b/i,Creator:/\b(creator\w*|creative|filmmak\w*)\b/i,Product:/\b(product)\b/i,Recruiter:/\b(recruit\w*|hiring|talent)\b/i,Operator:/\b(operator\w*|operations|gtm)\b/i};
+export const MATCH_WEIGHTS={goals:40,formats:25,interests:18,role:12,location:5};
+const average=(values:number[])=>values.length?values.reduce((sum,n)=>sum+n,0)/values.length:0;
 
 export function calculateEventMatch(event:EventItem,p:Preferences):EventMatch {
-  const reasons:string[]=[]; const cautions:string[]=[];
-  const none={goals:0,formats:0,interests:0,role:0,location:0};
-  if(event.access.status==="Closed"||!event.inOfficialWeek) return {score:0,reasons:[],cautions:[event.access.status==="Closed"?"Registration is closed":"Outside the official Tech Week dates"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false},coverage:none};
-  if(overlap(event.formats,excludedFormats(p)).length) return {score:0,reasons:[],cautions:["You asked to skip this event format"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false},coverage:none};
-  const goals=overlap(event.goals,p.goals); const interests=overlap(event.topics,p.interests);
-  const desiredAudiences=[...new Set(p.identity.flatMap(role=>ROLE_MAP[role]||[role]))]; const audiences=overlap(event.audiences,desiredAudiences);
-  const formats=overlap(event.formats,preferredFormats(p)); const location=p.locations.includes(event.neighborhood)||p.locations.includes("Anywhere if it’s worth it");
-  // Coverage prevents an event with one matching tag from tying an event that answers more of a visitor's brief.
-  const coverage={goals:p.goals.length?goals.length/p.goals.length:0,formats:p.formats.length?formats.length/p.formats.length:0,interests:p.interests.length?interests.length/p.interests.length:0,role:p.identity.length?audiences.length/p.identity.length:0,location:location?1:0};
-  let score=coverage.goals*40+coverage.formats*25+coverage.interests*18+coverage.role*12+coverage.location*5;
-  if(goals.length) reasons.push(`Catalog goal: ${goals.slice(0,2).join(" · ")}`);
-  if(formats.length) reasons.push(`Catalog format: ${formats.slice(0,2).join(" · ")}`);
-  if(interests.length) reasons.push(`Catalog topics: ${interests.slice(0,2).join(" · ")}`);
-  if(audiences.length) reasons.push(`Listed audience: ${audiences.slice(0,2).join(" · ")}`);
-  if(location) reasons.push(`In your ${event.neighborhood} plan`); else if(p.locations.length&&!p.locations.includes("Anywhere if it’s worth it")){score-=6;cautions.push("Outside your preferred neighborhoods");}
-  if(event.access.status==="Waitlist"){score-=10;cautions.push("Catalog status: waitlist");}
-  return {score:Math.max(0,Math.round(score)),reasons:reasons.slice(0,4),cautions,matched:{goals,interests,audiences,formats,location},coverage};
+  const reasons:string[]=[],cautions:string[]=[];
+  const coverage={goals:0,formats:0,interests:0,role:0,location:0};
+  const matched:EventMatch["matched"]={goals:[],interests:[],audiences:[],formats:[],location:false};
+  const reject=(reason:string):EventMatch=>({score:0,rawScore:0,eligible:false,evidenceStrength:0,reasons:[],cautions:[reason],matched,coverage,breakdown:[]});
+  if(event.access.status==="Closed"||!event.inOfficialWeek)return reject(event.access.status==="Closed"?"Registration is closed":"Outside official Tech Week dates");
+  if(overlap(event.formats,excludedFormats(p)).length)return reject("You asked to skip this event format");
+  let evidenceStrength=0;
+  const goals=[...new Set(p.goals)],formats=[...new Set(p.formats)],interests=[...new Set(p.interests)],roles=[...new Set(p.identity)];
+  // Title relevance is evidence of the subject, never proof of attendees or outcomes.
+  coverage.goals=average(goals.map(goal=>{if(GOAL_EVIDENCE[goal]?.test(event.name)){matched.goals.push(goal);evidenceStrength++;reasons.push(`For “${goal}”: title evidence in “${event.name}”. Relevance does not guarantee an outcome.`);return 1}if(goal==="Find a job"||goal==="Meet recruiters")return 0;if(event.goals.includes(goal)){matched.goals.push(goal);reasons.push(`Possible ${goal.toLowerCase()} fit, inferred from catalog metadata.`);return .35}return 0}));
+  coverage.formats=average(formats.map(format=>{const values=overlap(event.formats,FORMAT_FAMILIES[format]||[format]);if(!values.length)return 0;matched.formats.push(...values);evidenceStrength++;reasons.push(`Your ${format} choice matches ${values.join(" · ")}: ${values.length} of ${event.formats.length} listed formats. A focused format fits more strongly than a mixed-format event.`);const directness=format==="Networking"&&!values.some(value=>["Networking","Matchmaking"].includes(value))?.7:1;return directness*(.65+.35*values.length/event.formats.length)}));
+  coverage.interests=average(interests.map(interest=>{if(!event.topics.includes(interest))return 0;matched.interests.push(interest);const direct=event.name.toLowerCase().includes(interest.toLowerCase());if(direct)evidenceStrength++;reasons.push(`Listed topic: ${interest}${direct?"; also named in the title":`; one of ${event.topics.length} listed topics`}.`);return direct?1:.8*(.75+.25/event.topics.length)}));
+  coverage.role=average(roles.map(role=>{if(ROLE_EVIDENCE[role]?.test(event.name)){matched.audiences.push(role);evidenceStrength++;reasons.push(`The title mentions your ${role.toLowerCase()} role; attendance is unverified.`);return 1}if(overlap(event.audiences,ROLE_MAP[role]||[role]).length){matched.audiences.push(role);reasons.push(`Possible ${role.toLowerCase()} relevance, inferred by the catalog importer.`);return .3}return 0}));
+  matched.formats=[...new Set(matched.formats)];
+  const flexible=p.locations.includes("Anywhere if it’s worth it");matched.location=p.locations.includes(event.neighborhood);coverage.location=matched.location?1:0;
+  if(matched.location)reasons.push(`Listed neighborhood: ${event.neighborhood}, one of your choices.`);else if(p.locations.length&&!flexible)cautions.push(`Outside your preferred neighborhoods: ${event.neighborhood}.`);
+  if(goals.includes("Meet recruiters"))cautions.push("Recruiter attendance is not verified.");
+  if(event.access.status==="Waitlist")cautions.push("Catalog status: waitlist. Check the official RSVP page.");
+  const active={goals:goals.length>0,formats:formats.length>0,interests:interests.length>0,role:roles.length>0,location:p.locations.length>0&&!flexible};
+  const keys=Object.keys(MATCH_WEIGHTS) as (keyof typeof coverage)[];
+  const totalWeight=keys.reduce((sum,key)=>sum+(active[key]?MATCH_WEIGHTS[key]:0),0);
+  const breakdown=keys.filter(key=>active[key]).map(key=>({key,weight:MATCH_WEIGHTS[key]/totalWeight*100,coverage:coverage[key],points:coverage[key]*MATCH_WEIGHTS[key]/totalWeight*100}));
+  const rawScore=breakdown.reduce((sum,item)=>sum+item.points,0);
+  const eligible=coverage.goals>0||coverage.formats>0||coverage.interests>0||coverage.role===1;
+  return {score:Math.round(rawScore),rawScore,eligible,evidenceStrength,reasons,cautions,matched,coverage,breakdown};
 }
 
 export function rankEvents(allEvents:EventItem[],preferences:Preferences){
-  return allEvents.map(event=>({event,match:calculateEventMatch(event,preferences)})).filter(result=>result.match.score>0).sort((a,b)=>
-    b.match.score-a.match.score || b.match.coverage.goals-a.match.coverage.goals || b.match.coverage.formats-a.match.coverage.formats || b.match.coverage.interests-a.match.coverage.interests || b.match.coverage.role-a.match.coverage.role ||
-    (b.event.networkingStrength-a.event.networkingStrength) || (a.event.access.status==="Open"?0:1)-(b.event.access.status==="Open"?0:1) || a.event.date.localeCompare(b.event.date) || a.event.startTime.localeCompare(b.event.startTime) || a.event.id.localeCompare(b.event.id));
+  return allEvents.map(event=>({event,match:calculateEventMatch(event,preferences)})).filter(result=>result.match.eligible).sort((a,b)=>
+    b.match.rawScore-a.match.rawScore || b.match.coverage.goals-a.match.coverage.goals || b.match.coverage.formats-a.match.coverage.formats || b.match.coverage.interests-a.match.coverage.interests || b.match.evidenceStrength-a.match.evidenceStrength ||
+    Number(a.event.access.status==="Waitlist")-Number(b.event.access.status==="Waitlist") || a.event.date.localeCompare(b.event.date) || a.event.startTime.localeCompare(b.event.startTime) || a.event.id.localeCompare(b.event.id));
 }

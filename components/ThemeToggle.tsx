@@ -1,28 +1,26 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
 
-const darkRoutes = new Set(["/", "/plan"]);
+const subscribe=(callback:()=>void)=>{window.addEventListener("storage",callback);window.addEventListener("techweek-theme",callback);return()=>{window.removeEventListener("storage",callback);window.removeEventListener("techweek-theme",callback)}};
+const readOverride=()=>{const saved=localStorage.getItem("techWeekThemeOverride");return saved==="dark"||saved==="light"?saved:null};
+export function useTheme(){const path=usePathname().replace(/\/+$/,"")||"/";const override=useSyncExternalStore(subscribe,readOverride,()=>null);return override||(path==="/"||path.endsWith("/plan")?"dark":"light")}
 
 export function usePageTheme() {
-  const pathname = usePathname();
+  const theme = useTheme();
   useEffect(() => {
-    const override = localStorage.getItem("techWeekThemeOverride");
-    document.documentElement.dataset.theme = override || (darkRoutes.has(pathname) ? "dark" : "light");
-  }, [pathname]);
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+  }, [theme]);
 }
 
 export function ThemeToggle() {
-  const pathname = usePathname();
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window === "undefined") return darkRoutes.has(pathname) ? "dark" : "light";
-    const saved = localStorage.getItem("techWeekThemeOverride");
-    return (saved === "dark" || saved === "light") ? saved : (darkRoutes.has(pathname) ? "dark" : "light");
-  });
+  const theme = useTheme();
+  const override=useSyncExternalStore(subscribe,readOverride,()=>null);
   const toggle = () => {
     const next = theme === "dark" ? "light" : "dark";
-    setTheme(next); localStorage.setItem("techWeekThemeOverride", next); document.documentElement.dataset.theme = next;
+    localStorage.setItem("techWeekThemeOverride", next);window.dispatchEvent(new Event("techweek-theme"));
   };
-  return <button className="theme-toggle" onClick={toggle} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`} title="Toggle color theme">{theme === "dark" ? "☼" : "◐"}</button>;
+  return <><button className="theme-toggle" onClick={toggle} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`} title="Toggle color theme">{theme === "dark" ? "☼" : "◐"}</button>{override&&<button className="theme-toggle" onClick={()=>{localStorage.removeItem("techWeekThemeOverride");window.dispatchEvent(new Event("techweek-theme"))}} aria-label="Use page theme defaults" title="Use page theme defaults">Auto</button>}</>;
 }
