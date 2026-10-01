@@ -1,0 +1,3 @@
+-- Reconciles installations that previously used schema.sql; no demo seed.
+CREATE TABLE IF NOT EXISTS visit_slots (id TEXT PRIMARY KEY, starts_at TEXT NOT NULL, capacity INTEGER NOT NULL CHECK(capacity > 0), active INTEGER NOT NULL DEFAULT 1);
+CREATE TABLE IF NOT EXISTS reservations (id TEXT PRIMARY KEY, slot_id TEXT NOT NULL REFERENCES visit_slots(id), member_name TEXT NOT NULL, member_email TEXT NOT NULL, guest_name TEXT, attendee_count INTEGER NOT NULL CHECK(attendee_count IN (1,2)), status TEXT NOT NULL DEFAULT 'confirmed' CHECK(status IN ('confirmed','cancelled')), idempotency_key TEXT NOT NULL UNIQUE, created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP, cancelled_at TEXT);
