@@ -1,0 +1,14 @@
+export interface Env { RESERVATIONS: D1Database; ALLOWED_ORIGIN: string; }
+const json=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{"content-type":"application/json","access-control-allow-origin":"*"}});
+const id=()=>crypto.randomUUID();
+
+export default { async fetch(request:Request,env:Env){
+  if(request.method==="OPTIONS") return new Response(null,{headers:{"access-control-allow-origin":env.ALLOWED_ORIGIN||"*","access-control-allow-methods":"GET,POST,DELETE,OPTIONS","access-control-allow-headers":"content-type,idempotency-key"}});
+  const url=new URL(request.url); const db=env.RESERVATIONS;
+  if(request.method==="GET"&&url.pathname==="/slots") { const {results}=await db.prepare("SELECT id, starts_at as startsAt, capacity, capacity - (SELECT COALESCE(SUM(attendee_count),0) FROM reservations WHERE slot_id=visit_slots.id AND status='confirmed') AS remaining FROM visit_slots WHERE active=1 ORDER BY starts_at").all(); return json({slots:results}); }
+  if(request.method==="POST"&&url.pathname==="/reservations") { const body=await request.json() as {slotId:string;attendeeCount:1|2;memberName:string;memberEmail:string;guestName?:string}; const key=request.headers.get("Idempotency-Key"); if(!key||!body.slotId||![1,2].includes(body.attendeeCount)||!body.memberName?.trim()||!body.memberEmail?.trim()) return json({error:"Invalid reservation"},400); const existing=await db.prepare("SELECT id, slot_id as slotId, attendee_count as attendeeCount, status FROM reservations WHERE idempotency_key=?").bind(key).first(); if(existing)return json({reservation:existing}); const reservationId=id();
+    // D1 batches run in a single transaction. The conditional INSERT is the capacity gate, including a plus-one.
+    const result=await db.batch([db.prepare("INSERT INTO reservations (id,slot_id,member_name,member_email,guest_name,attendee_count,status,idempotency_key) SELECT ?,?,?,?,?,?,'confirmed',? WHERE EXISTS (SELECT 1 FROM visit_slots s WHERE s.id=? AND s.active=1 AND s.capacity >= ? + (SELECT COALESCE(SUM(attendee_count),0) FROM reservations WHERE slot_id=s.id AND status='confirmed'))").bind(reservationId,body.slotId,body.memberName.trim(),body.memberEmail.trim(),body.guestName?.trim()||null,body.attendeeCount,key,body.slotId,body.attendeeCount)]); if(result[0].meta.changes!==1)return json({error:"That slot no longer has enough space."},409); return json({reservation:{id:reservationId,slotId:body.slotId,attendeeCount:body.attendeeCount,status:"confirmed"}},201); }
+  const match=url.pathname.match(/^\/reservations\/([\w-]+)$/); if(request.method==="DELETE"&&match){const result=await db.prepare("UPDATE reservations SET status='cancelled', cancelled_at=CURRENT_TIMESTAMP WHERE id=? AND status='confirmed'").bind(match[1]).run();return result.meta.changes?json({ok:true}):json({error:"Reservation not found"},404)}
+  return json({error:"Not found"},404);
+} } satisfies ExportedHandler<Env>;

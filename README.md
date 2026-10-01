@@ -13,7 +13,9 @@ A mobile-first SF and LA Tech Week planner that ranks 2,518 official calendar li
 - `.ics` calendar export and downloadable lineup image
 - Neighborhood Live map with location-filtered, event-tagged community updates and local image attachments
 
-This is a frontend prototype. Visitor data stays in `localStorage`; there is no authentication or production booking backend.
+This is a static frontend planner. Visitor preferences, saved lineups, RSVP tracking, and map demo posts stay in `localStorage`. Office visits are different: the UI only sends a booking when `NEXT_PUBLIC_RESERVATIONS_API` points at the separately deployed Worker + D1 backend in [`workers/reservations`](workers/reservations/). Without that setting, it deliberately shows labeled demo slots and cannot create a reservation.
+
+Mission HQ is a public mockup and is not connected to an internal calendar or team data.
 
 ## Run locally
 
