@@ -108,7 +108,7 @@ export default function MissionHQPage() {
   return <main>
     <SiteHeader />
     <section className="live-head wrap">
-      <div><p className="mono-label">MISSION HQ / {city.toUpperCase()} / LIVE DEMO</p><h1>Your week,<br />on the map.</h1><p>Choose a neighborhood to see nearby events, active people, and live reports.</p></div>
+      <div><p className="mono-label">MISSION HQ MOCKUP / {city.toUpperCase()} / DEMO DATA</p><h1>Your week,<br />on the map.</h1><p>Concept only: demo people and reports are not connected to internal calendars or team data.</p></div>
       <div className="live-count"><strong>{cityAreas.reduce((sum, area) => sum + area.people, 0)}</strong><span>PEOPLE<br />ACTIVE NOW</span></div>
     </section>
 

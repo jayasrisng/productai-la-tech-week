@@ -13,22 +13,26 @@ function excludedFormats(preferences:Preferences){return [...new Set(preferences
 
 export function calculateEventMatch(event:EventItem,p:Preferences):EventMatch {
   const reasons:string[]=[]; const cautions:string[]=[];
-  if(event.access.status==="Closed"||!event.inOfficialWeek) return {score:0,reasons:[],cautions:[event.access.status==="Closed"?"Registration is closed":"Outside the official Tech Week dates"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false}};
-  if(overlap(event.formats,excludedFormats(p)).length) return {score:0,reasons:[],cautions:["You asked to skip this event format"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false}};
+  const none={goals:0,formats:0,interests:0,role:0,location:0};
+  if(event.access.status==="Closed"||!event.inOfficialWeek) return {score:0,reasons:[],cautions:[event.access.status==="Closed"?"Registration is closed":"Outside the official Tech Week dates"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false},coverage:none};
+  if(overlap(event.formats,excludedFormats(p)).length) return {score:0,reasons:[],cautions:["You asked to skip this event format"],matched:{goals:[],interests:[],audiences:[],formats:[],location:false},coverage:none};
   const goals=overlap(event.goals,p.goals); const interests=overlap(event.topics,p.interests);
   const desiredAudiences=[...new Set(p.identity.flatMap(role=>ROLE_MAP[role]||[role]))]; const audiences=overlap(event.audiences,desiredAudiences);
   const formats=overlap(event.formats,preferredFormats(p)); const location=p.locations.includes(event.neighborhood)||p.locations.includes("Anywhere if it’s worth it");
-  let score=5;
-  if(goals.length){score+=Math.min(30,12+goals.length*6);reasons.push(`${goals[0]} is a strong outcome match`);}
-  if(interests.length){score+=Math.min(20,8+interests.length*5);reasons.push(`Focused on ${interests.slice(0,2).join(" + ")}`);}
-  if(audiences.length){score+=15;reasons.push(`Built for ${audiences.slice(0,2).join(" and ").toLowerCase()}`);}
-  if(formats.length){score+=14;reasons.push(`${formats[0]} matches the kind of room you want`);}
-  if(location){score+=8;reasons.push(`Inside your ${event.neighborhood} plan`);} else if(p.locations.length){score-=7;cautions.push("Outside your preferred neighborhoods");}
-  if((p.goals.includes("Find a job")||p.goals.includes("Meet recruiters")||p.goals.includes("Build relationships"))&&event.networkingStrength>=4){score+=8;reasons.push("High opportunity for person-to-person networking");}
-  if(event.access.status==="Waitlist"){score-=8;cautions.push("Currently marked waitlist");}
-  return {score:Math.max(0,Math.min(99,score)),reasons:reasons.slice(0,4),cautions,matched:{goals,interests,audiences,formats,location}};
+  // Coverage prevents an event with one matching tag from tying an event that answers more of a visitor's brief.
+  const coverage={goals:p.goals.length?goals.length/p.goals.length:0,formats:p.formats.length?formats.length/p.formats.length:0,interests:p.interests.length?interests.length/p.interests.length:0,role:p.identity.length?audiences.length/p.identity.length:0,location:location?1:0};
+  let score=coverage.goals*40+coverage.formats*25+coverage.interests*18+coverage.role*12+coverage.location*5;
+  if(goals.length) reasons.push(`Catalog goal: ${goals.slice(0,2).join(" · ")}`);
+  if(formats.length) reasons.push(`Catalog format: ${formats.slice(0,2).join(" · ")}`);
+  if(interests.length) reasons.push(`Catalog topics: ${interests.slice(0,2).join(" · ")}`);
+  if(audiences.length) reasons.push(`Listed audience: ${audiences.slice(0,2).join(" · ")}`);
+  if(location) reasons.push(`In your ${event.neighborhood} plan`); else if(p.locations.length&&!p.locations.includes("Anywhere if it’s worth it")){score-=6;cautions.push("Outside your preferred neighborhoods");}
+  if(event.access.status==="Waitlist"){score-=10;cautions.push("Catalog status: waitlist");}
+  return {score:Math.max(0,Math.round(score)),reasons:reasons.slice(0,4),cautions,matched:{goals,interests,audiences,formats,location},coverage};
 }
 
 export function rankEvents(allEvents:EventItem[],preferences:Preferences){
-  return allEvents.map(event=>({event,match:calculateEventMatch(event,preferences)})).filter(result=>result.match.score>0).sort((a,b)=>b.match.score-a.match.score||a.event.date.localeCompare(b.event.date)||a.event.startTime.localeCompare(b.event.startTime));
+  return allEvents.map(event=>({event,match:calculateEventMatch(event,preferences)})).filter(result=>result.match.score>0).sort((a,b)=>
+    b.match.score-a.match.score || b.match.coverage.goals-a.match.coverage.goals || b.match.coverage.formats-a.match.coverage.formats || b.match.coverage.interests-a.match.coverage.interests || b.match.coverage.role-a.match.coverage.role ||
+    (b.event.networkingStrength-a.event.networkingStrength) || (a.event.access.status==="Open"?0:1)-(b.event.access.status==="Open"?0:1) || a.event.date.localeCompare(b.event.date) || a.event.startTime.localeCompare(b.event.startTime) || a.event.id.localeCompare(b.event.id));
 }
