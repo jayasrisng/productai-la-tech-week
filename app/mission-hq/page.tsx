@@ -22,18 +22,10 @@ const areas: Record<TechWeekCity, Area[]> = {
     { name: "West Hollywood", x: 55, y: 34, people: 36, avatars: ["👩🏻‍💼", "🧑🏿‍💻", "👩🏼‍🚀"] },
     { name: "Downtown", x: 82, y: 53, people: 54, avatars: ["🧑🏽‍🚀", "👨🏻‍💼", "👩🏿‍🔬"] },
   ],
-  sf: [
-    { name: "Marina", x: 32, y: 19, people: 29, avatars: ["👩🏼‍💻", "🧑🏾‍🎨", "👨🏻‍💼"] },
-    { name: "FiDi", x: 76, y: 33, people: 61, avatars: ["🧑🏻‍💻", "👩🏽‍💼", "🧔🏿"] },
-    { name: "SOMA", x: 66, y: 62, people: 73, avatars: ["👩🏾‍🔬", "🧑🏼‍🚀", "👨🏽‍💻"] },
-    { name: "Mission", x: 42, y: 77, people: 48, avatars: ["👩🏻‍🎨", "🧑🏿‍💻", "👩🏽‍🚀"] },
-    { name: "Dogpatch", x: 82, y: 79, people: 22, avatars: ["🧔🏼", "👩🏿‍💻", "🧑🏽‍🔬"] },
-  ],
 };
 
 const mapTiles: Record<TechWeekCity, string[]> = {
   la: ["349-816", "350-816", "351-816", "352-816", "349-817", "350-817", "351-817", "352-817", "349-818", "350-818", "351-818", "352-818"],
-  sf: ["653-1582", "654-1582", "655-1582", "656-1582", "653-1583", "654-1583", "655-1583", "656-1583", "653-1584", "654-1584", "655-1584", "656-1584"],
 };
 
 const sampleUpdates: Record<TechWeekCity, Update[]> = {
@@ -44,21 +36,14 @@ const sampleUpdates: Record<TechWeekCity, Update[]> = {
     { id: "la-4", name: "Noah", avatar: "🧔🏾", area: "West Hollywood", eventName: "Future of Media Dinner", note: "The room is mostly founders and creative operators. Valet is faster than street parking.", time: "16m" },
     { id: "la-5", name: "Lena", avatar: "👩🏿‍🔬", area: "Downtown", eventName: "Deep Tech Demo Night", note: "Demos have started. The hardware area on the east side is busiest.", time: "21m" },
   ],
-  sf: [
-    { id: "sf-1", name: "Arjun", avatar: "🧑🏽‍💻", area: "SOMA", eventName: "AI Infrastructure Founders", note: "Strong technical crowd. Entry is moving quickly.", time: "3m" },
-    { id: "sf-2", name: "Tess", avatar: "👩🏼‍💻", area: "FiDi", eventName: "Fintech Operator Exchange", note: "The second floor is quieter and better for conversations.", time: "7m", image: assetUrl("/brand/sf-tech-week.jpg") },
-    { id: "sf-3", name: "Iris", avatar: "👩🏻‍🎨", area: "Mission", eventName: "Creative AI After Hours", note: "The courtyard is open. More creators than investors are here.", time: "11m" },
-    { id: "sf-4", name: "Leo", avatar: "🧔🏼", area: "Marina", eventName: "Founder Breakfast Club", note: "Small tables are turning into useful introductions.", time: "18m" },
-    { id: "sf-5", name: "Sam", avatar: "🧑🏽‍🔬", area: "Dogpatch", eventName: "Hardware & Robotics Night", note: "Live demos are at the back. Transit is easier than rideshare.", time: "24m" },
-  ],
 };
 
 export default function MissionHQPage() {
   const [prefs] = useLocalStorage<Preferences>("techWeekPreferences", emptyPrefs);
   const [lineupIds] = useLocalStorage<string[]>("techWeekLineup", []);
   const [updates, setUpdates] = useLocalStorage<Update[]>("neighborhoodUpdatesV2", []);
-  const city = prefs.city || "la";
-  const cityName = city === "sf" ? "San Francisco" : "Los Angeles";
+  const city = "la" as const;
+  const cityName = "Los Angeles";
   const cityAreas = areas[city];
   const cityEvents = eventsByCity[city];
   const [selectedArea, setSelectedArea] = useState(cityAreas[0].name);

@@ -1,5 +1,5 @@
 export type EventAccess = { status:"Open"|"Waitlist"|"Closed"; method:string; requiresApproval:boolean|null };
-export type TechWeekCity = "la"|"sf";
+export type TechWeekCity = "la";
 export type EventItem = {
   id:string; name:string; city:"Los Angeles"|"San Francisco"; date:string; dateLabel:string; startTime:string; startTimeDisplay:string;
   timezone:"America/Los_Angeles"; neighborhood:string; venueName:string|null; address:string|null; isVirtual:boolean;

@@ -15,13 +15,13 @@ const baseSteps:Step[] = [
   { key:"formats", title:"Which event formats fit you?", note:"Select the settings where you connect best.", options:["Networking","Founder dinners","Small gatherings","Panels","Workshops","Hackathons","Demos","Parties"] },
   { key:"excludedFormats", title:"What should we skip?", note:"We’ll remove these formats.", optional:true, options:["Workshops","Panels","Hackathons","Demos","Parties","Founder dinners"] }
 ];
-const cityLocations={la:["Santa Monica","Venice","Downtown","Culver City","Beverly Hills","El Segundo","West Hollywood","Playa Vista","Anywhere if it’s worth it"],sf:["SOMA","FiDi","Downtown","Mission","Embarcadero","Union Square","Palo Alto","Dogpatch","Marina","Anywhere if it’s worth it"]};
+const cityLocations={la:["Santa Monica","Venice","Downtown","Culver City","Beverly Hills","El Segundo","West Hollywood","Playa Vista","Anywhere if it’s worth it"]};
 const empty:Preferences={name:"",city:"la",identity:[],goals:[],interests:[],formats:[],excludedFormats:[],locations:[]};
 
 export default function PlanPage(){
   usePageTheme();
   const router=useRouter(); const [step,setStep]=useState(0); const [prefs,setPrefs]=useLocalStorage<Preferences>("techWeekPreferences",empty);
-  const city=prefs.city||"la"; const cityName=city==="sf"?"San Francisco":"Los Angeles"; const total=city==="sf"?1711:807;
+  const city="la" as const; const cityName="Los Angeles"; const total=807;
   const steps:Step[]=[...baseSteps,{key:"locations",title:"Where do you want to go?",note:"Choose neighborhoods or select the flexible option.",options:cityLocations[city]}];
   const current=steps[step]; const selected=prefs[current.key];
   const toggle=(option:string)=>setPrefs({...prefs,[current.key]:selected.includes(option)?selected.filter(x=>x!==option):[...selected,option]});

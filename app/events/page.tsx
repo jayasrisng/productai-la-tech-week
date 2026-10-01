@@ -11,7 +11,7 @@ import type { Preferences } from "@/types/event";
 const empty:Preferences={name:"",city:"la",identity:[],goals:[],interests:[],formats:[],excludedFormats:[],locations:[]};
 export default function EventsPage(){
   const [prefs]=useLocalStorage<Preferences>("techWeekPreferences",empty); const [lineup,setLineup]=useLocalStorage<string[]>("techWeekLineup",[]); const [pending,setPending]=useLocalStorage<Record<string,boolean>>("techWeekRegistrationPending",{});
-  const city=prefs.city||"la"; const catalog=catalogs[city]; const events=eventsByCity[city];
+  const city="la" as const; const catalog=catalogs[city]; const events=eventsByCity[city];
   const [mode,setMode]=useState<"recommended"|"all">("recommended"); const [day,setDay]=useState("All days"); const [area,setArea]=useState("All areas"); const [topic,setTopic]=useState("All topics"); const [format,setFormat]=useState("All formats");
   const ranked=useMemo(()=>rankEvents(events,prefs),[events,prefs]);
   const results=useMemo(()=>ranked.filter(({event})=>(day==="All days"||event.date===day)&&(area==="All areas"||event.neighborhood===area)&&(topic==="All topics"||event.topics.includes(topic))&&(format==="All formats"||event.formats.includes(format))).sort((a,b)=>mode==="recommended"?0:a.event.date.localeCompare(b.event.date)||a.event.startTime.localeCompare(b.event.startTime)),[ranked,mode,day,area,topic,format]);

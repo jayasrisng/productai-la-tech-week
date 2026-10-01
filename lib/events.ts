@@ -1,6 +1,5 @@
 import { z } from "zod";
 import rawLaCatalog from "@/data/la-tech-week-events.json";
-import rawSfCatalog from "@/data/sf-tech-week-events.json";
 
 const eventSchema = z.object({
   id:z.string().regex(/^(latw|sftw)-[a-f0-9]{16}$/), name:z.string().min(3), city:z.enum(["Los Angeles","San Francisco"]),
@@ -24,9 +23,8 @@ const catalogSchema = z.object({
 });
 
 export const catalogs = {
-  la: catalogSchema.parse(rawLaCatalog),
-  sf: catalogSchema.parse(rawSfCatalog)
+  la: catalogSchema.parse(rawLaCatalog)
 };
 export const catalog = catalogs.la;
 export const events = catalogs.la.events;
-export const eventsByCity = { la:catalogs.la.events, sf:catalogs.sf.events };
+export const eventsByCity = { la:catalogs.la.events };

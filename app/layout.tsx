@@ -3,9 +3,9 @@ import { assetUrl } from "@/lib/assets";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Product.ai Tech Week",
-  description: "Find and plan the San Francisco and Los Angeles Tech Week events that fit your goals.",
-  icons: { icon: assetUrl("/favicon.svg"), shortcut: assetUrl("/favicon.svg") },
+  title: "LA Tech Week Lineup · by Product.ai",
+  description: "Build your LA Tech Week calendar with Product.ai. Find Los Angeles events that fit your goals, October 12–18, 2026.",
+  icons: { icon: assetUrl("/favicon.svg?v=productai"), shortcut: assetUrl("/favicon.svg?v=productai") },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
