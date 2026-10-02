@@ -34,9 +34,11 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
         run: npm run build
+      - name: Verify static export
+        run: test -f .next-build/index.html && test -f .next-build/office-visit/index.html
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: out
+          path: .next-build
 
   deploy:
     environment:

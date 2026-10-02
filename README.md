@@ -36,7 +36,7 @@ Open `http://localhost:3000`.
 npm run build
 ```
 
-The static export is written to `out/` and can be hosted on GitHub Pages, Cloudflare Pages, Vercel, Netlify, or any static host.
+The static export is written to `.next-build/` and can be hosted on GitHub Pages, Cloudflare Pages, Vercel, Netlify, or any static host. The Pages workflow checks this folder before uploading it.
 
 ## Event catalog
 
