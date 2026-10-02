@@ -77,6 +77,12 @@
 .visit-form select{width:100%;padding:12px;border:1px solid var(--line-strong);background:var(--surface);color:var(--ink)}.visit-form input[type="checkbox"],.booking-hours input{width:18px;height:18px;accent-color:#8b5cf6}.visit-form input:disabled,.slot-option:has(input:disabled){opacity:.55}.visit-day{margin-top:26px}.visit-day h3{font-size:18px;color:var(--ink)}.visit-form .slot-option{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:14px}.visit-form .slot-option em{grid-column:2}.attendee-fields{padding-top:18px!important;border-top:1px solid var(--line-strong)!important}.registration-disclosure,.cancel-confirm{padding:18px;margin-bottom:24px;border:1px solid var(--line-strong);background:var(--soft);font-size:13px;line-height:1.65}.registration-disclosure h3{margin-top:0}.visit-management h2{font-size:30px}.visit-management p,.visit-form fieldset>p{color:var(--sub);line-height:1.65}.booking-hours{padding:0;list-style:none}.booking-hours li{padding:16px 0;border-bottom:1px solid var(--line)}.booking-hours label{display:flex;align-items:center;gap:12px;line-height:1.6}.booking-hours small{display:block;color:var(--violet-dark);font:11px var(--font-mono);margin-top:7px}.booking-actions{display:flex;flex-wrap:wrap;gap:10px}.cancel-confirm{margin-top:24px}.cancel-confirm .button{margin:5px}.management-link{border-top:1px solid var(--line-strong);margin-top:20px;padding-top:12px}.management-link a{display:block;color:var(--violet-dark);text-decoration:underline;margin:12px 0}.visit-status{padding:20px;margin-bottom:80px;border:1px solid var(--line-strong);background:var(--violet-soft);line-height:1.6}.availability-error{padding:15px;border:1px solid var(--line-strong);background:var(--soft)}
 
 /* Quiet controls: neutral borders, one accent for the current selection. */
+.city-intro h1,.lineup-head h1,.live-head h1,.planner-grid h1{min-width:0;max-width:none;line-height:1.1;overflow-wrap:break-word}
+.booking-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.booking-actions .button{min-width:0;min-height:48px;padding:12px 16px;line-height:1.4;white-space:normal;text-align:center;overflow-wrap:break-word}
+.booking-actions .button:disabled{opacity:.5}
+.visit-management h2,.visit-summary h2{line-height:1.2;overflow-wrap:break-word}
+@media(max-width:480px){.booking-actions{grid-template-columns:1fr}}
 .theme-toggle{display:grid;place-items:center;border-radius:10px}
 .events-head{padding-top:42px;padding-bottom:30px}.events-head h1{font-size:clamp(42px,5vw,64px);line-height:1.05}.events-head>div>p:last-child{font-size:15px;line-height:1.6;margin-top:16px}.event-count strong{font-size:48px}
 .events-toolbar{display:grid;gap:22px;padding:24px 0;border-top:0;border-bottom:1px solid var(--line)}
@@ -93,10 +99,10 @@
 .match-details summary{padding:12px 14px;border-radius:10px;background:var(--soft);color:var(--ink);font-weight:600}
 .match-details summary span{float:right;color:var(--violet-dark);font-size:12px}
 .match-analysis-content{padding:6px 14px 14px;line-height:1.6}.match-analysis-content h3{font-size:13px;margin:24px 0 10px}.match-analysis-content p{color:var(--sub);font-size:13px}.fit-breakdown small{display:block;color:var(--muted);font-size:10px;text-transform:none}
-.visit-head{padding:56px 0 30px;border-color:var(--line)}.visit-head h1{font-size:clamp(42px,5.5vw,68px);line-height:1.04;max-width:800px}
+.visit-head{padding:56px 0 30px;border-color:var(--line)}.visit-head h1{font-size:clamp(42px,5.5vw,68px);line-height:1.12;max-width:none;overflow-wrap:break-word}
 .visit-head>p:not(.mono-label){margin-top:15px;font-size:15px;max-width:760px}
 .visit-grid{gap:36px;padding-top:36px;align-items:start}
-.visit-form,.visit-management{padding:30px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}
+.visit-form,.visit-management{min-width:0;padding:30px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}
 .visit-form legend{color:var(--ink);font:600 16px var(--font-sans);letter-spacing:0;margin-bottom:16px}
 .visit-form fieldset{margin-bottom:30px}.visit-form fieldset>label{font-size:14px;gap:8px}
 .visit-form input:not([type="checkbox"]),.visit-form select{min-width:0;border:1px solid var(--line-strong);border-radius:10px;background:var(--bg);height:46px;box-shadow:none}
