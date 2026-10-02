@@ -20,6 +20,11 @@ for (const city of ["la", "sf"]) {
   for (const [label, preferences] of Object.entries(profiles)) {
     const ranked = rankEvents(events, preferences);
     assert(ranked.length > 0);
+    assert(ranked.every(({match})=>Number.isFinite(match.percentile)&&match.percentile>=0&&match.percentile<=99.9&&match.comparisonCount===ranked.length));
+    for(let i=1;i<ranked.length;i++){
+      assert(ranked[i-1].match.percentile>=ranked[i].match.percentile);
+      if(ranked[i-1].match.rawScore===ranked[i].match.rawScore)assert.equal(ranked[i-1].match.percentile,ranked[i].match.percentile);
+    }
     for (const { event, match } of ranked) {
       assert(event.inOfficialWeek && event.access.status !== "Closed");
       assert(match.score >= 0 && match.score <= 100);
@@ -42,4 +47,7 @@ for (const city of ["la", "sf"]) {
   const clearer = calculateEventMatch({ ...sample, name: "Student Hiring & Recruiter Networking Night" }, profiles.student);
   assert(clearer.rawScore > calculateEventMatch(sample, profiles.student).rawScore);
 }
-console.log("PASS: score bounds, evidence rules, exclusions, deterministic ordering, and profile sensitivity.");
+const tied=rankEvents([1,2,3].map(n=>({...currentLaEvents[0],id:`tie-${n}`,name:"AI Workshop",inOfficialWeek:true,access:{status:"Open"},formats:["Roundtable / Workshop"],topics:["AI"]})),{...base,formats:["Workshops"]});
+assert(tied.every(({match})=>match.percentile===50));
+assert.equal(rankEvents([tied[0].event],{...base,formats:["Workshops"]})[0].match.percentile,50);
+console.log("PASS: score bounds, evidence rules, exclusions, deterministic ordering, profile sensitivity, user-relative percentiles and tied/single-event pools.");

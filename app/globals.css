@@ -133,3 +133,19 @@
 @supports not (backdrop-filter:blur(1px)){:root[data-theme] .site-header,.mode-toggle,.visit-form,.visit-management,.visit-summary,.area-panel,.location-composer,.location-updates article{background:var(--surface)}.site-header nav{background:var(--surface)!important}}
 @media(prefers-reduced-transparency:reduce){:root[data-theme] .site-header,.mode-toggle,.visit-form,.visit-management,.visit-summary,.area-panel,.location-composer,.location-updates article{background:var(--surface);backdrop-filter:none;-webkit-backdrop-filter:none}.site-header nav{background:var(--surface)!important;backdrop-filter:none;-webkit-backdrop-filter:none}}
 @media(prefers-reduced-motion:reduce){.button,.header-cta,.theme-toggle{transition:none}}
+
+/* Quiet, aligned fields; reserve a small focus cue for keyboard navigation. */
+.filters label,.visit-form fieldset>label,.location-composer label:not(.image-action){display:flex;flex-direction:column;align-items:stretch;gap:8px}
+select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 19px) 50%,calc(100% - 14px) 50%;background-size:5px 5px;background-repeat:no-repeat;padding-right:40px!important;cursor:pointer}
+.filters select,.visit-form select,.location-composer select{background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 19px) 50%,calc(100% - 14px) 50%;background-size:5px 5px;background-repeat:no-repeat}
+button:focus:not(:focus-visible),input:focus:not(:focus-visible),select:focus:not(:focus-visible),textarea:focus:not(:focus-visible){outline:none;box-shadow:none}
+:focus-visible,.visit-form input:focus-visible,.visit-form select:focus-visible{outline:1px solid var(--muted);outline-offset:3px}
+.linkedin-input:focus-within{outline:none}.linkedin-input:has(input:focus-visible){outline:1px solid var(--muted);outline-offset:3px}
+.button:hover:not(:disabled),.header-cta:hover,.theme-toggle:hover{border-color:var(--line-strong);background:color-mix(in srgb,var(--surface) 94%,var(--ink) 6%)}
+.button.primary:hover:not(:disabled){border-color:var(--action-bg);background:color-mix(in srgb,var(--action-bg) 96%,#000 4%)}
+.button.added:hover{background:var(--selection-bg);color:var(--selection-ink)}
+.mode-toggle button:not(.active):hover,.party-toggle button:not(.selected):hover,.visit-day-tabs button[aria-pressed="false"]:hover,.area-strip button:hover:not(.active),.nearby-events button:hover{background:color-mix(in srgb,var(--surface) 96%,var(--ink) 4%)}
+.choice-grid button:hover{background:color-mix(in srgb,var(--surface) 96%,var(--ink) 4%)}
+.more-matches{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px;padding-top:32px}.more-matches>span{color:var(--muted);font-size:12px}
+.fit-breakdown>div{grid-template-columns:80px minmax(25px,1fr) 110px}
+@media(max-width:760px){.fit-breakdown>div{grid-template-columns:65px minmax(25px,1fr) 105px;gap:6px}}

@@ -54,7 +54,21 @@ export function calculateEventMatch(event:EventItem,p:Preferences):EventMatch {
 }
 
 export function rankEvents(allEvents:EventItem[],preferences:Preferences){
-  return allEvents.map(event=>({event,match:calculateEventMatch(event,preferences)})).filter(result=>result.match.eligible).sort((a,b)=>
+  const ranked=allEvents.map(event=>({event,match:calculateEventMatch(event,preferences)})).filter(result=>result.match.eligible).sort((a,b)=>
     b.match.rawScore-a.match.rawScore || b.match.coverage.goals-a.match.coverage.goals || b.match.coverage.formats-a.match.coverage.formats || b.match.coverage.interests-a.match.coverage.interests || b.match.evidenceStrength-a.match.evidenceStrength ||
     Number(a.event.access.status==="Waitlist")-Number(b.event.access.status==="Waitlist") || a.event.date.localeCompare(b.event.date) || a.event.startTime.localeCompare(b.event.startTime) || a.event.id.localeCompare(b.event.id));
+  // Midrank percentile: ties share a value, independent of date/id tie-breakers.
+  // The comparison pool is the full eligible catalog for this user, before UI filters.
+  for(let start=0;start<ranked.length;){
+    let end=start+1;
+    while(end<ranked.length&&ranked[end].match.rawScore===ranked[start].match.rawScore)end++;
+    const lower=ranked.length-end, tied=end-start;
+    const percentile=Math.floor(1000*(lower+tied/2)/ranked.length)/10;
+    for(let i=start;i<end;i++){
+      ranked[i].match.percentile=percentile;
+      ranked[i].match.comparisonCount=ranked.length;
+    }
+    start=end;
+  }
+  return ranked;
 }

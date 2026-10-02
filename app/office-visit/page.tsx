@@ -3,7 +3,7 @@
 import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { assetUrl } from "@/lib/assets";
-import { EMPTY_ATTENDEE, PRIVACY_NOTICE, PRIVACY_VERSION, REFERRAL_OPTIONS, SPACE_NOTICE, formatVisitSlot, validateBooking, type Attendee, type BookingSummary, type VisitSlot } from "@/lib/visit-booking";
+import { EMPTY_ATTENDEE, PRIVACY_VERSION, REFERRAL_OPTIONS, SPACE_NOTICE, formatVisitSlot, validateBooking, type Attendee, type BookingSummary, type VisitSlot } from "@/lib/visit-booking";
 import { bookingRequest, fetchAvailability, submissionKey } from "@/lib/visit-client";
 
 const api = process.env.NEXT_PUBLIC_RESERVATIONS_API?.replace(/\/$/, "");
@@ -110,7 +110,6 @@ export default function OfficeVisitPage() {
         <fieldset disabled={loading}><legend>2 / Your attendee group</legend><div className="party-toggle"><button type="button" aria-pressed={!plusOne} className={!plusOne ? "selected" : ""} onClick={() => setPlusOne(false)}>Just me</button><button type="button" aria-pressed={plusOne} className={plusOne ? "selected" : ""} onClick={() => setPlusOne(true)}>Me + one</button></div></fieldset>
         <AttendeeFields title="Main attendee" value={main} onChange={setMain} disabled={loading} />{plusOne && <AttendeeFields title="Guest" value={guest} onChange={setGuest} disabled={loading} />}
         <fieldset disabled={loading}><legend>3 / Registration</legend><label>How did you hear about this?<select value={referral} onChange={e => setReferral(e.target.value)} required><option value="">Select one</option>{REFERRAL_OPTIONS.map(option => <option key={option}>{option}</option>)}</select></label><label>Registration code<input type="password" value={code} onChange={e => setCode(e.target.value)} autoComplete="off" spellCheck={false} maxLength={128} required /><small>Case-sensitive. Enter without spaces.</small></label></fieldset>
-        <details className="privacy-note"><summary>Privacy notice</summary><p>{PRIVACY_NOTICE}</p></details>
         <button className="button primary" disabled={loading || fetching || !!availabilityError || !selected.length}>{loading ? "Saving all hours…" : "Confirm selected hours"}</button>
       </form>}
       <aside className="visit-summary"><p>YOUR VISIT</p><h2>{reservation ? active.length ? "Confirmed" : "Cancelled" : "Not reserved yet"}</h2><dl><div><dt>Attendees per hour</dt><dd>{reservation ? reservation.attendeeCount : party}</dd></div><div><dt>Hours</dt><dd>{reservation ? `${active.length} confirmed` : `${selected.length} selected`}</dd></div><div><dt>Timezone</dt><dd>America/Los_Angeles · PDT</dd></div></dl>{!reservation && selected.map(id => { const slot = slots.find(s => s.id === id); return slot ? <p key={id}>{formatVisitSlot(slot)}</p> : null; })}{managementLink && <div className="management-link"><h3>Keep your private link</h3><a href={managementLink} referrerPolicy="no-referrer">Open saved booking</a><button className="button small" onClick={async () => { try { await navigator.clipboard.writeText(managementLink); setMessage("Private management link copied."); } catch { setMessage("Copy the private link from your browser address bar."); } }}>Copy private link</button><small>Anyone with this link can cancel hours. Do not share it publicly.</small></div>}</aside>
