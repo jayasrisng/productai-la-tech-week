@@ -194,3 +194,62 @@ button:focus:not(:focus-visible),input:focus:not(:focus-visible),select:focus:no
   .site-header nav{position:fixed;inset:auto 0 0;width:100%;justify-content:space-around;gap:0}
   .site-header nav a{flex:1;min-width:0;width:auto;min-height:52px;padding:16px 3px 14px}
 }
+
+/* Office visits: quiet form sections and a compact, frosted booking summary. */
+.visit-page .wrap{width:min(1080px,calc(100% - 40px))}
+.visit-page .visit-head{padding-top:44px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.visit-page .visit-head .mono-label{margin:0 0 18px;color:var(--muted);font-size:10px}
+.visit-page .visit-head h1{font-size:clamp(34px,4vw,48px);letter-spacing:-.045em;line-height:1.15}
+.visit-page .visit-head>p:not(.mono-label){font-size:14px;margin-top:14px;max-width:none}
+.visit-guidance{margin-top:16px;max-width:700px;font-size:13px;color:var(--muted);line-height:1.6}
+.visit-guidance summary{width:fit-content;cursor:pointer;color:var(--sub)}
+.visit-guidance p{margin:10px 0 0}
+.visit-page .visit-grid{grid-template-columns:minmax(0,1fr) 290px;gap:56px;padding-top:32px;padding-bottom:48px}
+:root[data-theme] .visit-page .visit-form{border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.visit-page .visit-form fieldset{min-width:0;margin-bottom:28px;padding:0 0 28px;border:0;border-bottom:1px solid var(--line)}
+.visit-page .visit-form legend{margin-bottom:12px;padding:0;font-size:17px;line-height:1.4;font-weight:600}
+.visit-page .visit-form fieldset>p{font-size:13px;margin:0 0 14px;line-height:1.6}
+.visit-page .visit-form .attendee-fields{padding-top:0!important;border-top:0!important;gap:0 16px}
+.visit-page .visit-form fieldset>label{font-size:12px;color:var(--sub);margin-top:12px}
+.visit-page .visit-form input:not([type="checkbox"]),.visit-page .visit-form select{background:var(--surface);border-color:var(--line);border-radius:8px;font-size:14px}
+.visit-page .visit-form .linkedin-input{border-color:var(--line);border-radius:8px;background:var(--surface)}
+.visit-page .visit-form .linkedin-input input{border:0}
+.visit-page .visit-day-tabs{gap:6px;margin-top:18px}
+.visit-page .visit-day-tabs button{min-height:48px;border-radius:8px;background:transparent;font-size:12px;padding:10px 6px}
+.visit-page .visit-day-tabs button[aria-pressed="true"],.visit-page .party-toggle button.selected{background:var(--soft);color:var(--ink);border-color:var(--line-strong)!important}
+.visit-page .visit-day{margin-top:20px}
+.visit-page .visit-day h3{font-size:13px;font-weight:500;margin:0 0 12px;color:var(--muted)}
+.visit-page .visit-form .slot-option{grid-template-columns:18px minmax(0,1fr) auto;gap:12px;min-height:52px;padding:12px 14px;margin:6px 0;border:1px solid var(--line);border-radius:8px;background:transparent;font-size:14px}
+.visit-page .visit-form .slot-option.selected{background:var(--soft);border-color:var(--line-strong)}
+.visit-page .visit-form .slot-option em{grid-column:auto;font:11px var(--font-sans);text-align:right}
+.visit-page .slot-option input{margin:0;padding:0}
+.visit-page .party-toggle button{font-size:13px;padding:11px 20px;border-radius:8px;background:transparent}
+.visit-page .visit-summary{padding:24px;border-radius:14px}
+.visit-page .visit-summary>.mono-label{margin:0 0 14px;font-size:10px}
+.visit-page .visit-summary h2{font-size:23px;line-height:1.25;letter-spacing:-.03em;margin:0 0 16px}
+.visit-page .visit-summary .visit-summary-note{font:12px/1.6 var(--font-sans);letter-spacing:0;color:var(--muted);margin:0 0 20px}
+.visit-page .visit-summary dl div{display:flex;justify-content:space-between;gap:12px;padding:12px 0}
+.visit-page .visit-summary dt{font:12px var(--font-sans);letter-spacing:0}
+.visit-page .visit-summary dd{font-size:12px;margin:0;text-align:right}
+.visit-page .visit-summary>p:not(.mono-label):not(.visit-summary-note){font-size:12px;line-height:1.6;color:var(--sub)}
+.visit-page .management-link h3{font-size:14px;margin:4px 0 12px}
+.visit-page .management-link a{font-size:13px;margin:12px 0}
+.visit-page .management-link .button{min-width:132px}
+.visit-page .visit-management{padding:28px;border-radius:14px}
+.visit-page .visit-management h2{font-size:26px;margin:12px 0}
+.visit-page .visit-management p{font-size:13px}
+.visit-page .booking-hours label{font-size:14px;align-items:start}
+.visit-page .booking-hours input{flex-shrink:0;margin-top:3px}
+.visit-page .booking-hours small{color:var(--muted);font-size:10px}
+.visit-page .booking-actions .button{font-size:13px}
+.visit-page .visit-status{background:var(--surface);border-radius:10px;font-size:13px;padding:16px 20px;margin-bottom:88px}
+@media(max-width:900px){.visit-page .visit-grid{grid-template-columns:minmax(0,1fr) 260px;gap:28px}}
+@media(max-width:760px){
+  .visit-page .wrap{width:calc(100% - 32px)}
+  .visit-page .visit-head{padding-top:28px;padding-bottom:24px}
+  .visit-page .visit-grid{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:24px;padding-bottom:72px}
+  .visit-page .visit-summary{grid-row:auto;position:static;padding:20px}
+  .visit-page .visit-form .slot-option{grid-template-columns:18px minmax(0,1fr) auto;gap:10px;font-size:13px}
+  .visit-page .visit-form .slot-option em{font-size:10px;max-width:110px}
+  .visit-page .visit-management{padding:20px}
+}
