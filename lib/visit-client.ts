@@ -1,11 +1,11 @@
 import { type BookingInput, type BookingSummary, type VisitSlot } from "./visit-booking";
 
 export async function fetchAvailability(api: string | undefined): Promise<VisitSlot[]> {
-  if (!api) throw new Error("Booking service is not connected. No hours are bookable until live availability is available.");
+  if (!api) throw new Error("Reservations are not open yet. Please check back soon.");
   let response: Response;
   try { response = await fetch(`${api}/slots`, { cache: "no-store", signal: AbortSignal.timeout(15000) }); }
-  catch { throw new Error("Live availability is unavailable. Please try again; no hours can be booked while the API is offline."); }
-  if (!response.ok) throw new Error("Live availability is unavailable. Please try again; no demo hours can be booked.");
+  catch { throw new Error("We can’t load available hours. Please refresh or try again later."); }
+  if (!response.ok) throw new Error("We can’t load available hours. Please refresh or try again later.");
   const data = await response.json() as { slots?: VisitSlot[] };
   if (!Array.isArray(data.slots) || data.slots.length !== 25 || data.slots.some(s => !s.id || !s.startsAt || !s.endsAt || s.capacity !== 20 || !Number.isInteger(s.remaining) || s.remaining < 0 || s.remaining > 20)) throw new Error("Availability could not be verified. Please try again.");
   return data.slots;

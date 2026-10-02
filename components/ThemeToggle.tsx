@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useSyncExternalStore } from "react";
-import { usePathname } from "next/navigation";
+import { Moon, Sun } from "lucide-react";
 
 const subscribe=(callback:()=>void)=>{window.addEventListener("storage",callback);window.addEventListener("techweek-theme",callback);return()=>{window.removeEventListener("storage",callback);window.removeEventListener("techweek-theme",callback)}};
 const readOverride=()=>{const saved=localStorage.getItem("techWeekThemeOverride");return saved==="dark"||saved==="light"?saved:null};
-export function useTheme(){const path=usePathname().replace(/\/+$/,"")||"/";const override=useSyncExternalStore(subscribe,readOverride,()=>null);return override||(path==="/"||path.endsWith("/plan")?"dark":"light")}
+export function useTheme(){const override=useSyncExternalStore(subscribe,readOverride,()=>null);return override||"dark"}
 
 export function usePageTheme() {
   const theme = useTheme();
@@ -17,10 +17,9 @@ export function usePageTheme() {
 
 export function ThemeToggle() {
   const theme = useTheme();
-  const override=useSyncExternalStore(subscribe,readOverride,()=>null);
   const toggle = () => {
     const next = theme === "dark" ? "light" : "dark";
     localStorage.setItem("techWeekThemeOverride", next);window.dispatchEvent(new Event("techweek-theme"));
   };
-  return <><button className="theme-toggle" onClick={toggle} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`} title="Toggle color theme">{theme === "dark" ? "☼" : "◐"}</button>{override&&<button className="theme-toggle" onClick={()=>{localStorage.removeItem("techWeekThemeOverride");window.dispatchEvent(new Event("techweek-theme"))}} aria-label="Use page theme defaults" title="Use page theme defaults">Auto</button>}</>;
+  return <button className="theme-toggle" onClick={toggle} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`} title={`${theme === "dark" ? "Dark" : "Light"} mode`}>{theme === "dark" ? <Moon size={18} aria-hidden="true"/> : <Sun size={18} aria-hidden="true"/>}</button>;
 }

@@ -30,10 +30,10 @@ const mapTiles: Record<TechWeekCity, string[]> = {
 
 const sampleUpdates: Record<TechWeekCity, Update[]> = {
   la: [
-    { id: "la-1", name: "Maya", avatar: "👩🏽‍💻", area: "Culver City", eventName: "AI Founders & Operators Mixer", note: "Patio conversations are strong. Recruiters and early-stage founders are easy to meet.", time: "4m" },
+    { id: "la-1", name: "Maya", avatar: "👩🏽‍💻", area: "Culver City", eventName: "AI Founders & Operators Mixer", note: "Example update: the patio has space for small-group conversations.", time: "4m" },
     { id: "la-2", name: "Dev", avatar: "🧑🏻‍🚀", area: "Venice", eventName: "Consumer Tech Sunset Social", note: "The door line is 15 minutes. The courtyard has space.", time: "8m" },
     { id: "la-3", name: "Sara", avatar: "👩🏻‍🎨", area: "Santa Monica", eventName: "Women Building AI Breakfast", note: "Small-group conversations are happening near the back tables. Coffee is quick.", time: "12m", image: assetUrl("/brand/la-tech-week.jpg") },
-    { id: "la-4", name: "Noah", avatar: "🧔🏾", area: "West Hollywood", eventName: "Future of Media Dinner", note: "The room is mostly founders and creative operators. Valet is faster than street parking.", time: "16m" },
+    { id: "la-4", name: "Noah", avatar: "🧔🏾", area: "West Hollywood", eventName: "Future of Media Dinner", note: "Example update: parking is available near the entrance.", time: "16m" },
     { id: "la-5", name: "Lena", avatar: "👩🏿‍🔬", area: "Downtown", eventName: "Deep Tech Demo Night", note: "Demos have started. The hardware area on the east side is busiest.", time: "21m" },
   ],
 };
@@ -94,12 +94,12 @@ export default function MissionHQPage() {
     <SiteHeader />
     <section className="live-head wrap">
       <div><p className="mono-label">MISSION HQ MOCKUP / {city.toUpperCase()} / DEMO DATA</p><h1>Your week,<br />on the map.</h1><p>Concept only: demo people and reports are not connected to internal calendars or team data.</p></div>
-      <div className="live-count"><strong>{cityAreas.reduce((sum, area) => sum + area.people, 0)}</strong><span>PEOPLE<br />ACTIVE NOW</span></div>
+      <div className="live-count"><strong>{cityAreas.reduce((sum, area) => sum + area.people, 0)}</strong><span>PEOPLE<br />IN THIS MOCKUP</span></div>
     </section>
 
     <section className="live-dashboard wrap">
       <div className="city-map">
-        <div className="map-topline"><span>{cityName.toUpperCase()} / MISSION MAP</span><b>● LIVE DEMO</b></div>
+        <div className="map-topline"><span>{cityName.toUpperCase()} / MISSION MAP</span><b>● MOCKUP</b></div>
         <div className="map-surface real-map">
           <div className="map-tiles" aria-label={`${cityName} street map`}>{mapTiles[city].map((tile) => <Image src={assetUrl(`/maps/${city}/${tile}.png`)} alt="" width={256} height={256} unoptimized key={tile} />)}</div>
           <div className="map-tint" />
@@ -122,7 +122,7 @@ export default function MissionHQPage() {
     </section>
 
     <section className="neighborhood-feed wrap">
-      <div className="feed-heading"><div><p className="mono-label">{activeArea.toUpperCase()} / LIVE REPORTS</p><h2>What’s happening now.</h2></div><span>{visibleUpdates.length} REPORTS</span></div>
+      <div className="feed-heading"><div><p className="mono-label">{activeArea.toUpperCase()} / SAMPLE UPDATES</p><h2>Example community updates.</h2></div><span>{visibleUpdates.length} REPORTS</span></div>
       <div className="feed-layout">
         <div className="update-composer location-composer">
           <div className="composer-route"><b>{prefs.name || "YOU"}</b><span>posting in</span><strong>{activeArea}</strong></div>
