@@ -39,7 +39,7 @@ const call = async (route, method = "GET", body, headers = {}) => {
 };
 const slot = (day, hour) => `la-2026-10-${day}-${hour}`;
 let sequence = 0;
-const attendee = (id) => ({ name: `Test Visitor ${id}`, email: `test-visitor-${id}@example.net`, phone: "(213) 555-0100", linkedin: `https://www.linkedin.com/in/test-visitor-${id}` });
+const attendee = (id) => ({ name: `Test Visitor ${id}`, email: `test-visitor-${id}@example.net`, linkedin: `https://www.linkedin.com/in/test-visitor-${id}` });
 const body = (slots, count = 1) => ({ slotIds: slots, attendees: Array.from({ length: count }, () => attendee(++sequence)), referral: "I’m part of Alpha team", registrationCode: code, disclosureVersion: PRIVACY_VERSION });
 const post = (value, key = crypto.randomUUID()) => call("/reservations", "POST", value, { "Idempotency-Key": key });
 const tokenOf = response => new URL(response.data.managementUrl).hash.slice("#manage=".length);
@@ -71,7 +71,7 @@ try {
   assert.notEqual(stored.management_hash,tokenOf(created));
   assert(!JSON.stringify(stored).includes(key));
   const people = (await db.prepare("SELECT * FROM booking_attendees WHERE booking_id=?").bind(created.data.reservation.id).all()).results;
-  assert.equal(people.length,2); assert(people.every(p=>p.phone==="+12135550100"));
+  assert.equal(people.length,2); assert(people.every(p=>p.phone===""));
   const replay = await post(request,key); assert.equal(replay.status,200); assert.equal(replay.data.managementUrl,created.data.managementUrl);
   assert.equal(await count("bookings"),1);
   assert.equal((await post({...request,slotIds:[slot(12,13)]},key)).status,409);
@@ -108,11 +108,15 @@ try {
   for (const edit of [
     b=>b.registrationCode=code.toLowerCase(), b=>b.registrationCode=` ${code}`, b=>b.registrationCode="incorrect",
     b=>b.attendees[0].email="bad@email", b=>b.attendees[0].linkedin="https://linkedin.com/company/product-ai",
-    b=>b.attendees[0].linkedin="https://linkedin.com.evil.test/in/name", b=>b.attendees[0].phone="abc123",
+    b=>b.attendees[0].linkedin="https://linkedin.com.evil.test/in/name",
     b=>b.slotIds=["demo-oct-7-1600"], b=>b.slotIds=[slot(12,11),slot(12,11)],
-    b=>b.referral="invented", b=>b.disclosureVersion="old", b=>b.attendees[1].phone="",
+    b=>b.referral="invented", b=>b.disclosureVersion="old", b=>b.attendees[1].email="",
   ]) { const invalid=body([slot(15,12)],2); edit(invalid); const result=await post(invalid); assert([400,403].includes(result.status)); }
   assert(validateBooking(body([slot(15,12)])).booking);
+  const legacyInput = body([slot(15,12)], 2);
+  legacyInput.attendees.forEach(a => { a.phone = "ignored legacy input"; });
+  const normalizedLegacy = validateBooking(legacyInput).booking;
+  assert(normalizedLegacy && normalizedLegacy.attendees.every(a => !("phone" in a)));
   assert.equal((await call("/reservations","POST",body([slot(15,12)]))).status,400);
   assert.equal((await call("/slots","GET",undefined,{Origin:"https://unapproved.test"})).status,403);
   assert.equal((await call(`/reservations/${created.data.reservation.id}`,"DELETE",{})).status,404);

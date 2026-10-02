@@ -5,20 +5,11 @@ export const PRIVACY_VERSION = "office-visits-2026-10-v1-draft";
 export const SPACE_NOTICE = "Shared lounge access. Five phone booths are first come, first served. Your reservation does not reserve a phone booth.";
 export const PRIVACY_NOTICE = "Product.ai will use both attendees’ submitted details for building access/check-in and Product.ai promotional communications. Personal booking data will be deleted from the active booking database 30 days after collection, including cancelled bookings. Provider emails and database backups may retain copies under their own retention policies. No email ownership, profile existence, membership, or identity verification is performed. Privacy wording and the legal basis for promotional use require Product.ai approval before production launch.";
 
-export type Attendee = { name: string; email: string; phone: string; linkedin: string };
+export type Attendee = { name: string; email: string; linkedin: string };
 export type BookingInput = { slotIds: string[]; attendees: Attendee[]; referral: string; registrationCode: string; disclosureVersion: string };
 export type VisitSlot = { id: string; startsAt: string; endsAt: string; capacity: number; remaining: number };
 export type BookingSummary = { id: string; createdAt: number; expiresAt: number; attendeeCount: number; emailStatus: "pending" | "unconfigured" | "sent"; slots: (Omit<VisitSlot, "remaining"> & { status: "confirmed" | "cancelled" })[] };
-export const EMPTY_ATTENDEE: Attendee = { name: "", email: "", phone: "", linkedin: "" };
-
-export function normalizePhone(value: string): string | null {
-  if (!/^[+\d().\s-]+$/.test(value)) return null;
-  const digits = value.replace(/\D/g, "");
-  if (value.trim().startsWith("+")) return /^[1-9]\d{7,14}$/.test(digits) ? `+${digits}` : null;
-  if (digits.length === 10) return `+1${digits}`;
-  if (digits.length === 11 && digits.startsWith("1")) return `+${digits}`;
-  return null;
-}
+export const EMPTY_ATTENDEE: Attendee = { name: "", email: "", linkedin: "" };
 
 export function normalizeLinkedIn(value: string): string | null {
   try {
@@ -43,13 +34,11 @@ export function validateBooking(value: unknown): { booking?: BookingInput; error
     if (!a || typeof a !== "object") { errors.push(`${label}: complete every field.`); return; }
     const name = typeof a.name === "string" ? a.name.trim() : "";
     const email = typeof a.email === "string" ? a.email.trim().toLowerCase() : "";
-    const phone = typeof a.phone === "string" && a.phone.length <= 80 ? normalizePhone(a.phone) : null;
     const linkedin = typeof a.linkedin === "string" && a.linkedin.length <= 200 ? normalizeLinkedIn(a.linkedin) : null;
     if (name.length < 2 || name.length > 120 || /[\x00-\x1f\x7f]/.test(name)) errors.push(`${label}: enter a name (2–120 characters).`);
     if (email.length > 254 || !/^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)+$/i.test(email) || email.split("@")[0].length > 64 || email.includes("..") || email.startsWith(".") || email.split("@")[0].endsWith(".")) errors.push(`${label}: enter a valid email address (any domain).`);
-    if (!phone) errors.push(`${label}: use a 10-digit US phone or international format with +country code (8–15 digits).`);
     if (!linkedin) errors.push(`${label}: use an HTTPS LinkedIn personal profile URL, such as https://www.linkedin.com/in/your-name (no query or fragment).`);
-    normalized.push({ name, email, phone: phone || "", linkedin: linkedin || "" });
+    normalized.push({ name, email, linkedin: linkedin || "" });
   });
   if (normalized.length === 2 && normalized[0].email === normalized[1].email) errors.push("Main attendee and guest must use different email addresses.");
   if (!REFERRAL_OPTIONS.includes(b.referral as typeof REFERRAL_OPTIONS[number])) errors.push("Select how you heard about this.");

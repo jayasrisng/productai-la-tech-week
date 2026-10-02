@@ -128,7 +128,8 @@ export default {
         const id = crypto.randomUUID();
         const token = await managementToken(env, id);
         const statements = [env.RESERVATIONS.prepare("INSERT INTO bookings(id,attendee_count,referral,disclosure_version,idempotency_hash,request_hash,management_hash) VALUES(?,?,?,?,?,?,?)").bind(id, booking.attendees.length, booking.referral, booking.disclosureVersion, keyHash, requestHash, await hash(token))];
-        booking.attendees.forEach((a, index) => statements.push(env.RESERVATIONS.prepare("INSERT INTO booking_attendees(booking_id,ordinal,name,email,phone,linkedin) VALUES(?,?,?,?,?,?)").bind(id, index, a.name, a.email, a.phone, a.linkedin)));
+        // Keep the legacy NOT NULL column compatible; phone numbers are no longer collected.
+        booking.attendees.forEach((a, index) => statements.push(env.RESERVATIONS.prepare("INSERT INTO booking_attendees(booking_id,ordinal,name,email,phone,linkedin) VALUES(?,?,?,?,?,?)").bind(id, index, a.name, a.email, "", a.linkedin)));
         booking.slotIds.forEach(slot => statements.push(env.RESERVATIONS.prepare("INSERT INTO booking_hours(booking_id,slot_id) VALUES(?,?)").bind(id, slot)));
         try { await env.RESERVATIONS.batch(statements); }
         catch (error) {

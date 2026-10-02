@@ -13,7 +13,6 @@ function AttendeeFields({ title, value, onChange, disabled }: { title: string; v
   return <fieldset className="attendee-fields" disabled={disabled}><legend>{title}</legend>
     <label>{title} name<input value={value.name} onChange={e => onChange({ ...value, name: e.target.value })} autoComplete="name" maxLength={120} required /></label>
     <label>{title} email<input value={value.email} onChange={e => onChange({ ...value, email: e.target.value })} type="email" autoComplete="email" maxLength={254} required /></label>
-    <label>{title} phone<input value={value.phone} onChange={e => onChange({ ...value, phone: e.target.value })} type="tel" autoComplete="tel" maxLength={80} placeholder="US number or +country code" required /></label>
     <label>{title} LinkedIn profile<span className="linkedin-input"><span aria-hidden="true">https://linkedin.com/in/</span><input aria-label={`${title} LinkedIn username`} value={value.linkedin.replace(/^https:\/\/(?:www\.)?linkedin\.com\/in\//i, "")} onChange={e => { const typed = e.target.value; onChange({ ...value, linkedin: typed ? (/^https:\/\//i.test(typed) ? typed : `https://linkedin.com/in/${typed}`) : "" }); }} autoComplete="off" spellCheck={false} maxLength={200} placeholder="Enter LinkedIn username" required /></span></label>
   </fieldset>;
 }
