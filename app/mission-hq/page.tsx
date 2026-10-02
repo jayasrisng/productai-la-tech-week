@@ -93,44 +93,43 @@ export default function MissionHQPage() {
   return <main>
     <SiteHeader />
     <section className="live-head wrap">
-      <div><p className="mono-label">MISSION HQ MOCKUP / {city.toUpperCase()} / DEMO DATA</p><h1>Your week,<br />on the map.</h1><p>Concept only: demo people and reports are not connected to internal calendars or team data.</p></div>
-      <div className="live-count"><strong>{cityAreas.reduce((sum, area) => sum + area.people, 0)}</strong><span>PEOPLE<br />IN THIS MOCKUP</span></div>
+      <div><p className="mono-label">TECH WEEK PULSE / {city.toUpperCase()} / SAMPLE FEED</p><h1>Around<br />Tech Week.</h1><p>Updates by neighborhood. You’re viewing sample posts; live sources aren’t connected yet.</p></div>
     </section>
 
     <section className="live-dashboard wrap">
       <div className="city-map">
-        <div className="map-topline"><span>{cityName.toUpperCase()} / MISSION MAP</span><b>● MOCKUP</b></div>
+        <div className="map-topline"><span>{cityName.toUpperCase()} / NEIGHBORHOODS</span><b>SAMPLE FEED</b></div>
         <div className="map-surface real-map">
           <div className="map-tiles" aria-label={`${cityName} street map`}>{mapTiles[city].map((tile) => <Image src={assetUrl(`/maps/${city}/${tile}.png`)} alt="" width={256} height={256} unoptimized key={tile} />)}</div>
           <div className="map-tint" />
           {cityAreas.map((area) => <button className={`neighborhood-pin avatar-pin ${activeArea === area.name ? "selected" : ""}`} style={{ left: `${area.x}%`, top: `${area.y}%` }} onClick={() => chooseArea(area.name)} key={area.name}>
             <span className="map-avatar-stack">{area.avatars.map((avatar, index) => <i key={`${avatar}-${index}`}>{avatar}</i>)}</span>
-            <b>{area.name}<small>{area.people} here</small></b>
+            <b>{area.name}<small>Explore updates</small></b>
           </button>)}
           <div className="map-credit">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> · <a href="https://www.hotosm.org" target="_blank" rel="noreferrer">HOT style</a></div>
         </div>
-        <div className="area-strip">{cityAreas.map((area) => <button className={activeArea === area.name ? "active" : ""} onClick={() => chooseArea(area.name)} key={area.name}><span>{area.name}</span><b>{area.people}</b></button>)}</div>
+        <div className="area-strip">{cityAreas.map((area) => <button className={activeArea === area.name ? "active" : ""} onClick={() => chooseArea(area.name)} key={area.name}><span>{area.name}</span></button>)}</div>
       </div>
 
       <aside className="area-panel">
-        <p className="panel-title">SELECTED AREA / NOW</p>
+        <p className="panel-title">SELECTED NEIGHBORHOOD</p>
         <h2>{activeArea}</h2>
-        <div className="people-stack emoji-stack">{selected.avatars.map((avatar, index) => <span key={`${avatar}-${index}`}>{avatar}</span>)}<span>+{Math.max(0, selected.people - 3)}</span></div>
-        <p>{selected.people} people across {Math.max(1, eventOptions.length)} nearby events.</p>
+        <div className="people-stack emoji-stack" aria-label="Illustrative avatars">{selected.avatars.map((avatar, index) => <span key={`${avatar}-${index}`}>{avatar}</span>)}</div>
+        <p>Browse nearby events and sample updates.</p>
         <div className="nearby-events"><span>EVENTS NEARBY</span>{eventOptions.slice(0, 4).map((event) => <button onClick={() => setEventName(event.name)} key={event.id}>{event.name}<small>{event.startTimeDisplay}</small></button>)}</div>
       </aside>
     </section>
 
     <section className="neighborhood-feed wrap">
-      <div className="feed-heading"><div><p className="mono-label">{activeArea.toUpperCase()} / SAMPLE UPDATES</p><h2>Example community updates.</h2></div><span>{visibleUpdates.length} REPORTS</span></div>
+      <div className="feed-heading"><div><p className="mono-label">{activeArea.toUpperCase()} / SAMPLE FEED</p><h2>Neighborhood updates.</h2></div><span>{visibleUpdates.length} POSTS</span></div>
       <div className="feed-layout">
         <div className="update-composer location-composer">
-          <div className="composer-route"><b>{prefs.name || "YOU"}</b><span>posting in</span><strong>{activeArea}</strong></div>
+          <div className="composer-route"><b>{prefs.name || "YOU"}</b><span>previewing in</span><strong>{activeArea}</strong></div>
           <label>Event<select value={currentEventName} onChange={(event) => setEventName(event.target.value)}><option>Neighborhood update</option>{eventOptions.map((event) => <option value={event.name} key={event.id}>{event.name}</option>)}</select></label>
           <textarea value={note} onChange={(event) => setNote(event.target.value)} placeholder={`Share an update from ${activeArea}`} />
           {imageData && <div className="upload-preview"><Image src={imageData} alt="Update attachment preview" width={160} height={100} unoptimized /><button onClick={() => setImageData(undefined)}>Remove</button></div>}
-          <div className="composer-actions"><label className="image-action" htmlFor="update-image">＋ Add image<input id="update-image" type="file" accept="image/*" onChange={chooseImage} /></label><button className="button primary small" disabled={!note.trim()} onClick={post}>Post update</button></div>
-          <small>Demo posts are stored on this device.</small>
+          <div className="composer-actions"><label className="image-action" htmlFor="update-image">＋ Add image<input id="update-image" type="file" accept="image/*" onChange={chooseImage} /></label><button className="button primary small" disabled={!note.trim()} onClick={post}>Preview update</button></div>
+          <small>Saved on this device only. Not published.</small>
         </div>
 
         <div className="location-updates">{visibleUpdates.length ? visibleUpdates.map((update) => <article key={update.id}>
