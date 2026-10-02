@@ -1,6 +1,8 @@
   import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Keep verification builds from rewriting the live preview's manifests.
+  distDir: process.env.NODE_ENV === "production" ? ".next-build" : ".next",
   turbopack: { root: process.cwd() },
   output: "export",
   trailingSlash: true,
