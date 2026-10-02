@@ -147,5 +147,8 @@ button:focus:not(:focus-visible),input:focus:not(:focus-visible),select:focus:no
 .mode-toggle button:not(.active):hover,.party-toggle button:not(.selected):hover,.visit-day-tabs button[aria-pressed="false"]:hover,.area-strip button:hover:not(.active),.nearby-events button:hover{background:color-mix(in srgb,var(--surface) 96%,var(--ink) 4%)}
 .choice-grid button:hover{background:color-mix(in srgb,var(--surface) 96%,var(--ink) 4%)}
 .more-matches{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px;padding-top:32px}.more-matches>span{color:var(--muted);font-size:12px}
+.build-week{gap:8px;white-space:normal;text-align:center}.build-week>span{font-size:12px;font-weight:500}.build-week svg{flex-shrink:0}
+.console-poster>header{display:block}.console-poster>header h2{font-size:clamp(36px,5vw,64px);line-height:1.05;margin-bottom:18px}.console-poster>header span{color:#a1a1aa;text-transform:none;letter-spacing:0}
+.console-day-label b,.console-day-label span{color:#f4f4f5}.console-event-stack article:nth-child(odd) h3{color:#c4b5fd}.console-event-stack article:nth-child(even) h3{color:#fff}
 .fit-breakdown>div{grid-template-columns:80px minmax(25px,1fr) 110px}
 @media(max-width:760px){.fit-breakdown>div{grid-template-columns:65px minmax(25px,1fr) 105px;gap:6px}}

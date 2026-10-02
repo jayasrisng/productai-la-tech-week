@@ -1,6 +1,6 @@
 # Frontend review — October 1, 2026
 
-Poster downloads use a fixed 1080 × 1350 portrait frame. Event-name typography and spacing scale together after measured-width wrapping, retaining every selected event and date group. Dense lineups can produce small text. Both calendar and poster export actions share the same primary button style.
+Poster downloads use a fixed 1080 × 1350 portrait frame. Within each date, full event names flow together with muted bar separators, alternating lavender and white. White date headings stay distinct. Typography scales after measured-width wrapping, retaining every selected event. The header is MY LA TECH WEEK LINEUP, with designed by product.ai and the event count; duplicate labels/footer removed. Dense lineups can produce small text. Both calendar and poster export actions share the same primary button style. A calendar-icon Build my Tech Week link with the selection count appears beside Show more and remains at the end of the results when there are no further matches.
 
 ## Implemented
 

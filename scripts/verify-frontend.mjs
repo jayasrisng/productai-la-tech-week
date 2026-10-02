@@ -49,8 +49,11 @@ for(const count of [1,2,10,30,100,events.length]){
   assert(layout.fontSize<=previousFont+1e-6);previousFont=layout.fontSize;
   assert.equal(layout.groups.flatMap(g=>g.lines).length,count);
   for(const group of layout.groups)for(let i=0;i<group.names.length;i++){
+    assert.equal(group.runs.filter(run=>run.eventIndex===i).map(run=>run.text).join('').replace(/\s/g,''),group.names[i].replace(/\s/g,''));
+    assert.equal(group.runs.filter(run=>run.eventIndex===null).length,group.names.length-1);
     assert.equal(group.lines[i].join('').replace(/\s/g,''),group.names[i].replace(/\s/g,''));
     assert(group.lines[i].every(line=>measure(line,layout.fontSize)<=POSTER_SIZE.width-POSTER_SIZE.margin*2+1e-6));
   }
+  for(const group of layout.groups)for(const run of group.runs)assert(run.x+measure(run.text,layout.fontSize)<=POSTER_SIZE.width-POSTER_SIZE.margin*2+1e-6);
 }
 console.log('PASS: fixed 1080 × 1350 poster, adaptive typography, date groups and all full names fit for 1, 2, 10, 30, 100 and full-catalog selections.');
