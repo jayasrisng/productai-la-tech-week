@@ -114,3 +114,22 @@
 @media(max-width:760px){.visit-grid .visit-summary{grid-row:auto}.visit-head>p:not(.mono-label){font-size:14px}}
 @media(max-width:900px){.visit-grid{grid-template-columns:minmax(0,1fr) 260px;gap:22px}.visit-form,.visit-management{padding:22px}.filters{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.events-toolbar{padding:20px 0}.mode-toggle{width:100%}.mode-toggle button{flex:1;padding:12px 10px}.filters{gap:14px 10px}.filters select{font-size:13px}.event-actions{flex-wrap:wrap}.event-actions .button{padding:11px 14px}.match-details summary span{float:none;display:block;margin-left:16px;margin-top:3px}.visit-grid{grid-template-columns:1fr}.visit-summary{position:static;grid-row:1}.visit-form,.visit-management{padding:20px;border-radius:16px}.visit-form .attendee-fields{grid-template-columns:1fr;gap:0}.visit-form .attendee-fields>label:last-child{grid-column:auto}.visit-day-tabs{gap:6px}.visit-day-tabs button{min-width:48px;padding:12px 4px}.linkedin-input>span{font-size:11px;padding-left:10px}.visit-form .linkedin-input input{font-size:12px}.visit-form .slot-option{padding:12px}.visit-head{padding-top:36px}}
+/* Shared action palette and restrained frosted surfaces. Inputs stay opaque. */
+:root{--glass-bg:rgba(255,255,255,.78);--glass-border:rgba(24,24,27,.12);--glass-shadow:0 8px 28px rgba(24,24,27,.04),inset 0 1px rgba(255,255,255,.7);--action-bg:#7c3aed;--action-hover:#6d28d9;--selection-bg:#ede9fe;--selection-ink:#5b21b6}
+:root[data-theme="dark"]{--glass-bg:rgba(24,24,27,.78);--glass-border:rgba(255,255,255,.12);--glass-shadow:0 8px 28px rgba(0,0,0,.14),inset 0 1px rgba(255,255,255,.04);--selection-bg:#332347;--selection-ink:#ede9fe}
+:root[data-theme] .site-header,.mode-toggle,.visit-form,.visit-management,.visit-summary,.area-panel,.location-composer,.location-updates article{background:var(--glass-bg);border-color:var(--glass-border);box-shadow:var(--glass-shadow);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.location-composer,.location-updates article{border:1px solid var(--glass-border);border-radius:16px}.area-panel{color:var(--ink)}
+.button,.header-cta,.theme-toggle{border-radius:10px;border-color:var(--line-strong);background:var(--surface);color:var(--ink);transition:background-color .15s,border-color .15s,color .15s}
+.button:hover:not(:disabled),.header-cta:hover,.theme-toggle:hover{background:var(--soft);border-color:var(--muted)}
+.button.primary{background:var(--action-bg);border-color:var(--action-bg);color:#fff}
+.button.primary:hover:not(:disabled){background:var(--action-hover);border-color:var(--action-hover);color:#fff}
+.button.ghost{background:transparent}.button:disabled{cursor:not-allowed}
+:root[data-theme] .mode-toggle button.active,.party-toggle button.selected,.visit-day-tabs button[aria-pressed="true"],.button.added{background:var(--selection-bg);color:var(--selection-ink);border-color:var(--line)!important;box-shadow:none}
+.mode-toggle button:not(.active):hover,.party-toggle button:not(.selected):hover,.visit-day-tabs button[aria-pressed="false"]:hover{background:var(--soft);color:var(--ink)}
+.area-strip button{background:var(--surface);color:var(--sub);border-color:var(--line)}.area-strip button.active{background:var(--selection-bg);color:var(--selection-ink);box-shadow:none}.area-strip button:hover:not(.active){background:var(--soft);color:var(--ink)}
+.nearby-events button{color:var(--ink)}.nearby-events button:hover{background:var(--soft)}
+.location-composer select,.location-composer textarea{background:var(--bg);color:var(--ink);border:1px solid var(--line-strong);border-radius:10px}
+@media(max-width:760px){.site-header nav{background:var(--glass-bg)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}}
+@supports not (backdrop-filter:blur(1px)){:root[data-theme] .site-header,.mode-toggle,.visit-form,.visit-management,.visit-summary,.area-panel,.location-composer,.location-updates article{background:var(--surface)}.site-header nav{background:var(--surface)!important}}
+@media(prefers-reduced-transparency:reduce){:root[data-theme] .site-header,.mode-toggle,.visit-form,.visit-management,.visit-summary,.area-panel,.location-composer,.location-updates article{background:var(--surface);backdrop-filter:none;-webkit-backdrop-filter:none}.site-header nav{background:var(--surface)!important;backdrop-filter:none;-webkit-backdrop-filter:none}}
+@media(prefers-reduced-motion:reduce){.button,.header-cta,.theme-toggle{transition:none}}
