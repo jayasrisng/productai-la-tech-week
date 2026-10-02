@@ -9,9 +9,11 @@ export function demoVisitSlots(): VisitSlot[] {
   });
 }
 
-export function demoReservation(slots: VisitSlot[], ids: string[], attendeeCount: number): BookingSummary {
+export function demoReservation(slots: VisitSlot[], ids: string[], attendeeCount: number, code: string): BookingSummary {
+  // Preview gate only; live access must be enforced by the Worker's secret.
+  if (code !== "GoldenHour08") throw new Error("The registration code is incorrect.");
   const chosen = slots.filter(slot => ids.includes(slot.id));
-  if (!chosen.length || chosen.length !== ids.length || chosen.some(slot => slot.remaining < attendeeCount)) throw new Error("Select available demo hours.");
+  if (!chosen.length || chosen.length !== ids.length || chosen.some(slot => slot.remaining < attendeeCount)) throw new Error("Select available hours.");
   const createdAt = Math.floor(Date.now() / 1000);
   return { id: "demo-preview", createdAt, expiresAt: createdAt + 30 * 86400, attendeeCount, emailStatus: "unconfigured", slots: chosen.map(({ remaining: _remaining, ...slot }) => { void _remaining; return { ...slot, status: "confirmed" }; }) };
 }

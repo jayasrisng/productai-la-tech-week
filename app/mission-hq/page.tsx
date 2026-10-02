@@ -98,7 +98,7 @@ export default function MissionHQPage() {
 
     <section className="live-dashboard wrap">
       <div className="city-map">
-        <div className="map-topline"><span>{cityName.toUpperCase()} / NEIGHBORHOODS</span><b>LIVE FEED · DEMO</b></div>
+        <div className="map-topline"><span>{cityName.toUpperCase()} / NEIGHBORHOODS</span><b>LIVE FEED · PREVIEW</b></div>
         <div className="map-surface real-map">
           <div className="map-tiles" aria-label={`${cityName} street map`}>{mapTiles[city].map((tile) => <Image src={assetUrl(`/maps/${city}/${tile}.png`)} alt="" width={256} height={256} unoptimized key={tile} />)}</div>
           <div className="map-tint" />

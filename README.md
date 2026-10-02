@@ -19,7 +19,7 @@ This is a static frontend planner. Visitor preferences, saved lineups, RSVP trac
 
 Mission HQ is a public mockup and is not connected to an internal calendar or team data.
 
-The GitHub Pages review site sets `NEXT_PUBLIC_RESERVATIONS_DEMO=true`. When no reservation API is configured, this enables a labeled, in-memory reservation preview: slots, guest details, confirmation and cancellation. Use fictional details and code `DEMO`. Nothing is submitted, stored or reserved, and refreshing resets the preview. A configured API always takes precedence; API failures never fall back to fake confirmations. Pulse's Live feed is marked Demo until live sources are connected.
+The GitHub Pages review site sets `NEXT_PUBLIC_RESERVATIONS_DEMO=true`. When no reservation API is configured, this enables a labeled, in-memory reservation preview: slots, guest details, confirmation and cancellation. Use fictional details. Only the exact case-sensitive code `GoldenHour08` is accepted by the preview; this browser gate is not authentication. Configure the live Worker's `REGISTRATION_CODE` secret separately before launch. Nothing is submitted, stored or reserved, and refreshing resets the preview. A configured API always takes precedence; API failures never fall back to fake confirmations. Pulse's Live feed is marked Preview until live sources are connected.
 
 ## Run locally
 
