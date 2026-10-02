@@ -1,5 +1,7 @@
 # Frontend review — October 1, 2026
 
+Poster downloads use a fixed 1080 × 1350 portrait frame. Event-name typography and spacing scale together after measured-width wrapping, retaining every selected event and date group. Dense lineups can produce small text. Both calendar and poster export actions share the same primary button style.
+
 ## Implemented
 
 - One persistent sun/moon theme control, dark by default. Removed Auto and the home sign-in sentence.

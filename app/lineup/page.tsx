@@ -5,7 +5,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { useLocalStorage } from "@/lib/storage";
 import { downloadCalendar } from "@/lib/calendar";
 import { eventsByCity } from "@/lib/events";
-import { wrapPosterText } from "@/lib/poster";
+import { fitPosterLayout, POSTER_SIZE } from "@/lib/poster";
 
 
 type Decoration={id:string;glyph:string;color:string;x:number;y:number;rotation:number};
@@ -26,29 +26,29 @@ export default function LineupPage(){
   function savePoster(){
     const canvas=document.createElement("canvas");
     const c=canvas.getContext("2d")!;
-    c.font="700 28px Arial";
-    const grouped=days.map(day=>({day,events:selected.filter(event=>event.date===day).map(event=>({event,lines:wrapPosterText(event.name,text=>c.measureText(text).width,1048)}))}));
-    const eventLineCount=grouped.reduce((total,group)=>total+group.events.reduce((sum,item)=>sum+item.lines.length,0),0);
-    canvas.width=1200;
-    canvas.height=Math.max(1500,390+(days.length*58)+(selected.length*12)+(eventLineCount*38)+90);
+    canvas.width=POSTER_SIZE.width;
+    canvas.height=POSTER_SIZE.height;
+    const layout=fitPosterLayout(days.map(day=>({day,names:selected.filter(event=>event.date===day).map(event=>event.name)})),(text,fontSize)=>{c.font=`700 ${fontSize}px Arial`;return c.measureText(text).width});
     c.fillStyle="#09090b";c.fillRect(0,0,canvas.width,canvas.height);
     c.strokeStyle="#29292f";
     for(let x=60;x<canvas.width;x+=60){c.beginPath();c.moveTo(x,0);c.lineTo(x,canvas.height);c.stroke()}
     for(let y=60;y<canvas.height;y+=60){c.beginPath();c.moveTo(0,y);c.lineTo(canvas.width,y);c.stroke()}
-    c.fillStyle="#8b5cf6";c.fillRect(54,54,1092,10);
-    c.font="700 24px monospace";c.fillText(`LA TECH WEEK / BY PRODUCT.AI / ${cityShort}`,76,108);
-    c.fillStyle="#ffffff";c.font="800 82px Arial";c.fillText("YOUR",72,205);c.fillText("TECH WEEK LINEUP",72,290);
+    c.fillStyle="#8b5cf6";c.fillRect(54,54,canvas.width-108,10);
+    c.font="700 20px monospace";c.fillText(`LA TECH WEEK / BY PRODUCT.AI / ${cityShort}`,76,108);
+    c.fillStyle="#ffffff";c.font="800 72px Arial";c.fillText("YOUR",72,205);c.fillText("TECH WEEK LINEUP",72,290);
     c.fillStyle="#a78bfa";c.font="22px monospace";c.fillText(`${cityName.toUpperCase()} / ${selected.length} EVENTS`,76,338);
-    let y=405;
-    for(const group of grouped){
-      c.fillStyle="#8b5cf6";c.font="700 22px monospace";c.fillText(dayName(group.day).toUpperCase(),76,y);y+=42;
-      for(const item of group.events){c.fillStyle="#ffffff";c.font="700 28px Arial";for(const line of item.lines){c.fillText(line,76,y);y+=38}y+=12}
-      y+=16;
+    let y=POSTER_SIZE.contentTop;
+    for(const group of layout.groups){
+      y+=layout.dateFontSize;
+      c.fillStyle="#8b5cf6";c.font=`700 ${layout.dateFontSize}px Arial`;c.fillText(dayName(group.day).toUpperCase(),72,y);y+=layout.dateGap;
+      for(const lines of group.lines){c.fillStyle="#ffffff";c.font=`700 ${layout.fontSize}px Arial`;for(const line of lines){y+=layout.lineHeight;c.fillText(line,72,y)}y+=layout.eventGap}
+      y+=layout.groupGap;
     }
-    for(const item of decorations){c.save();c.translate(item.x*12,item.y*canvas.height/100);c.rotate(item.rotation*Math.PI/180);c.fillStyle=item.color;c.font="800 42px Arial";c.fillText(item.glyph,0,0);c.restore()}
+    c.fillStyle="#a1a1aa";c.font="16px monospace";c.fillText("LA TECH WEEK / OCT 12–18, 2026",72,1300);
+    for(const item of decorations){c.save();c.translate(item.x*canvas.width/100,item.y*canvas.height/100);c.rotate(item.rotation*Math.PI/180);c.fillStyle=item.color;c.font="800 42px Arial";c.fillText(item.glyph,0,0);c.restore()}
     const a=document.createElement("a");a.href=canvas.toDataURL("image/png");a.download=`${city}-tech-week-lineup.png`;a.click();
   }
-  return <main><SiteHeader/><section className="lineup-head wrap"><p className="mono-label">YOUR LINEUP / {selected.length} EVENTS / {cityShort}</p><div><h1>Your<br/>Tech Week lineup.</h1><div className="lineup-actions"><button className="button" disabled={!selected.length} onClick={()=>downloadCalendar(selected)}>Add to calendar</button><button className="button primary" disabled={!selected.length} onClick={savePoster}>Save poster</button></div></div></section>
+  return <main><SiteHeader/><section className="lineup-head wrap"><p className="mono-label">YOUR LINEUP / {selected.length} EVENTS / {cityShort}</p><div><h1>Your<br/>Tech Week lineup.</h1><div className="lineup-actions"><button className="button primary" disabled={!selected.length} onClick={()=>downloadCalendar(selected)}>Add to calendar</button><button className="button primary" disabled={!selected.length} onClick={savePoster}>Save poster</button></div></div></section>
     {!selected.length?<section className="empty-week wrap"><h2>Your lineup is still open.</h2><p>Add events from your matches.</p><Link className="button primary" href="/events">See my matches</Link></section>:<>
       {warnings.length>0&&<section className="warning-stack wrap">{warnings.map(w=><p key={w}><span>PLAN NOTE</span>{w}</p>)}</section>}
       <section className="lineup-console wrap"><div className="console-titlebar"><span><i/><i/><i/></span><b>product.ai / tech-week-lineup</b><em>DRAG TO DECORATE</em></div><div className="console-layout"><aside className="sticker-tray"><div className="lineup-stats"><span>{cityShort}</span><b>{String(selected.length).padStart(2,"0")}</b><small>EVENTS</small></div><p>DRAG A STICKER ONTO YOUR POSTER</p><div className="sticker-grid">{stickerOptions.map(item=><button draggable onDragStart={event=>dragStart(event,item.glyph,item.color)} onClick={()=>addSticker(item.glyph,item.color)} style={{color:item.color}} aria-label={`Add ${item.glyph} decoration`} key={item.glyph}>{item.glyph}</button>)}</div>{decorations.length>0&&<button className="clear-stickers" onClick={()=>setDecorations([])}>Clear decorations</button>}</aside><section className="console-poster" onDragOver={event=>event.preventDefault()} onDrop={dropSticker}><div className="console-grid"/><div className="poster-decorations">{decorations.map(item=><button draggable onDragStart={event=>dragStart(event,item.glyph,item.color,item.id)} onDoubleClick={()=>setDecorations(decorations.filter(d=>d.id!==item.id))} style={{left:`${item.x}%`,top:`${item.y}%`,color:item.color,transform:`rotate(${item.rotation}deg)`}} title="Drag to move · double-click to remove" key={item.id}>{item.glyph}</button>)}</div><header><div><span>LA TECH WEEK · BY PRODUCT.AI</span><h2>{cityName}<br/>Lineup</h2></div><p>OCT 12—18<br/>2026</p></header><div className="console-days">{days.map(day=><section className="console-day" key={day}><div className="console-day-label"><b>{dayName(day,true).toUpperCase()}</b><span>{day.slice(-2)}</span></div><div className="console-event-stack">{selected.filter(e=>e.date===day).map((event,index)=><article className={index===0?"headliner":""} key={event.id}><div><h3>{event.name}</h3><p>{event.startTimeDisplay} · {event.neighborhood} · {event.hostDisplay}</p>{pending[event.id]&&!registered[event.id]&&<div className="registration-check"><span>RSVP done?</span><button onClick={()=>setRegistered({...registered,[event.id]:true})}>Yes</button><button onClick={()=>setPending({...pending,[event.id]:false})}>Later</button></div>}{registered[event.id]&&<strong className="registered">RSVP marked done ✓</strong>}</div><button className="remove-event" onClick={()=>setIds(ids.filter(id=>id!==event.id))} aria-label={`Remove ${event.name}`}>×</button></article>)}</div></section>)}</div><footer><span>LA TECH WEEK / OCT 12–18</span><span>YOUR TECH WEEK / {cityShort}</span></footer></section></div></section>
