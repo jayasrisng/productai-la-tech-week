@@ -22,34 +22,19 @@ const areas: Record<TechWeekCity, Area[]> = {
     { name: "West Hollywood", x: 55, y: 34, people: 36, avatars: ["👩🏻‍💼", "🧑🏿‍💻", "👩🏼‍🚀"] },
     { name: "Downtown", x: 82, y: 53, people: 54, avatars: ["🧑🏽‍🚀", "👨🏻‍💼", "👩🏿‍🔬"] },
   ],
-  sf: [
-    { name: "Marina", x: 32, y: 19, people: 29, avatars: ["👩🏼‍💻", "🧑🏾‍🎨", "👨🏻‍💼"] },
-    { name: "FiDi", x: 76, y: 33, people: 61, avatars: ["🧑🏻‍💻", "👩🏽‍💼", "🧔🏿"] },
-    { name: "SOMA", x: 66, y: 62, people: 73, avatars: ["👩🏾‍🔬", "🧑🏼‍🚀", "👨🏽‍💻"] },
-    { name: "Mission", x: 42, y: 77, people: 48, avatars: ["👩🏻‍🎨", "🧑🏿‍💻", "👩🏽‍🚀"] },
-    { name: "Dogpatch", x: 82, y: 79, people: 22, avatars: ["🧔🏼", "👩🏿‍💻", "🧑🏽‍🔬"] },
-  ],
 };
 
 const mapTiles: Record<TechWeekCity, string[]> = {
   la: ["349-816", "350-816", "351-816", "352-816", "349-817", "350-817", "351-817", "352-817", "349-818", "350-818", "351-818", "352-818"],
-  sf: ["653-1582", "654-1582", "655-1582", "656-1582", "653-1583", "654-1583", "655-1583", "656-1583", "653-1584", "654-1584", "655-1584", "656-1584"],
 };
 
 const sampleUpdates: Record<TechWeekCity, Update[]> = {
   la: [
-    { id: "la-1", name: "Maya", avatar: "👩🏽‍💻", area: "Culver City", eventName: "AI Founders & Operators Mixer", note: "Patio conversations are strong. Recruiters and early-stage founders are easy to meet.", time: "4m" },
+    { id: "la-1", name: "Maya", avatar: "👩🏽‍💻", area: "Culver City", eventName: "AI Founders & Operators Mixer", note: "Example update: the patio has space for small-group conversations.", time: "4m" },
     { id: "la-2", name: "Dev", avatar: "🧑🏻‍🚀", area: "Venice", eventName: "Consumer Tech Sunset Social", note: "The door line is 15 minutes. The courtyard has space.", time: "8m" },
     { id: "la-3", name: "Sara", avatar: "👩🏻‍🎨", area: "Santa Monica", eventName: "Women Building AI Breakfast", note: "Small-group conversations are happening near the back tables. Coffee is quick.", time: "12m", image: assetUrl("/brand/la-tech-week.jpg") },
-    { id: "la-4", name: "Noah", avatar: "🧔🏾", area: "West Hollywood", eventName: "Future of Media Dinner", note: "The room is mostly founders and creative operators. Valet is faster than street parking.", time: "16m" },
+    { id: "la-4", name: "Noah", avatar: "🧔🏾", area: "West Hollywood", eventName: "Future of Media Dinner", note: "Example update: parking is available near the entrance.", time: "16m" },
     { id: "la-5", name: "Lena", avatar: "👩🏿‍🔬", area: "Downtown", eventName: "Deep Tech Demo Night", note: "Demos have started. The hardware area on the east side is busiest.", time: "21m" },
-  ],
-  sf: [
-    { id: "sf-1", name: "Arjun", avatar: "🧑🏽‍💻", area: "SOMA", eventName: "AI Infrastructure Founders", note: "Strong technical crowd. Entry is moving quickly.", time: "3m" },
-    { id: "sf-2", name: "Tess", avatar: "👩🏼‍💻", area: "FiDi", eventName: "Fintech Operator Exchange", note: "The second floor is quieter and better for conversations.", time: "7m", image: assetUrl("/brand/sf-tech-week.jpg") },
-    { id: "sf-3", name: "Iris", avatar: "👩🏻‍🎨", area: "Mission", eventName: "Creative AI After Hours", note: "The courtyard is open. More creators than investors are here.", time: "11m" },
-    { id: "sf-4", name: "Leo", avatar: "🧔🏼", area: "Marina", eventName: "Founder Breakfast Club", note: "Small tables are turning into useful introductions.", time: "18m" },
-    { id: "sf-5", name: "Sam", avatar: "🧑🏽‍🔬", area: "Dogpatch", eventName: "Hardware & Robotics Night", note: "Live demos are at the back. Transit is easier than rideshare.", time: "24m" },
   ],
 };
 
@@ -57,8 +42,8 @@ export default function MissionHQPage() {
   const [prefs] = useLocalStorage<Preferences>("techWeekPreferences", emptyPrefs);
   const [lineupIds] = useLocalStorage<string[]>("techWeekLineup", []);
   const [updates, setUpdates] = useLocalStorage<Update[]>("neighborhoodUpdatesV2", []);
-  const city = prefs.city || "la";
-  const cityName = city === "sf" ? "San Francisco" : "Los Angeles";
+  const city = "la" as const;
+  const cityName = "Los Angeles";
   const cityAreas = areas[city];
   const cityEvents = eventsByCity[city];
   const [selectedArea, setSelectedArea] = useState(cityAreas[0].name);
@@ -108,44 +93,43 @@ export default function MissionHQPage() {
   return <main>
     <SiteHeader />
     <section className="live-head wrap">
-      <div><p className="mono-label">MISSION HQ / {city.toUpperCase()} / LIVE DEMO</p><h1>Your week,<br />on the map.</h1><p>Choose a neighborhood to see nearby events, active people, and live reports.</p></div>
-      <div className="live-count"><strong>{cityAreas.reduce((sum, area) => sum + area.people, 0)}</strong><span>PEOPLE<br />ACTIVE NOW</span></div>
+      <div><h1>Around Tech Week.</h1><p>Updates by neighborhood. You’re viewing sample posts; live sources aren’t connected yet.</p></div>
     </section>
 
     <section className="live-dashboard wrap">
       <div className="city-map">
-        <div className="map-topline"><span>{cityName.toUpperCase()} / MISSION MAP</span><b>● LIVE DEMO</b></div>
+        <div className="map-topline"><span>{cityName.toUpperCase()} / NEIGHBORHOODS</span><b>SAMPLE FEED</b></div>
         <div className="map-surface real-map">
           <div className="map-tiles" aria-label={`${cityName} street map`}>{mapTiles[city].map((tile) => <Image src={assetUrl(`/maps/${city}/${tile}.png`)} alt="" width={256} height={256} unoptimized key={tile} />)}</div>
           <div className="map-tint" />
           {cityAreas.map((area) => <button className={`neighborhood-pin avatar-pin ${activeArea === area.name ? "selected" : ""}`} style={{ left: `${area.x}%`, top: `${area.y}%` }} onClick={() => chooseArea(area.name)} key={area.name}>
             <span className="map-avatar-stack">{area.avatars.map((avatar, index) => <i key={`${avatar}-${index}`}>{avatar}</i>)}</span>
-            <b>{area.name}<small>{area.people} here</small></b>
+            <b>{area.name}<small>Explore updates</small></b>
           </button>)}
           <div className="map-credit">© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> · <a href="https://www.hotosm.org" target="_blank" rel="noreferrer">HOT style</a></div>
         </div>
-        <div className="area-strip">{cityAreas.map((area) => <button className={activeArea === area.name ? "active" : ""} onClick={() => chooseArea(area.name)} key={area.name}><span>{area.name}</span><b>{area.people}</b></button>)}</div>
+        <div className="area-strip">{cityAreas.map((area) => <button className={activeArea === area.name ? "active" : ""} onClick={() => chooseArea(area.name)} key={area.name}><span>{area.name}</span></button>)}</div>
       </div>
 
       <aside className="area-panel">
-        <p className="panel-title">SELECTED AREA / NOW</p>
+        <p className="panel-title">SELECTED NEIGHBORHOOD</p>
         <h2>{activeArea}</h2>
-        <div className="people-stack emoji-stack">{selected.avatars.map((avatar, index) => <span key={`${avatar}-${index}`}>{avatar}</span>)}<span>+{Math.max(0, selected.people - 3)}</span></div>
-        <p>{selected.people} people across {Math.max(1, eventOptions.length)} nearby events.</p>
+        <div className="people-stack emoji-stack" aria-label="Illustrative avatars">{selected.avatars.map((avatar, index) => <span key={`${avatar}-${index}`}>{avatar}</span>)}</div>
+        <p>Browse nearby events and sample updates.</p>
         <div className="nearby-events"><span>EVENTS NEARBY</span>{eventOptions.slice(0, 4).map((event) => <button onClick={() => setEventName(event.name)} key={event.id}>{event.name}<small>{event.startTimeDisplay}</small></button>)}</div>
       </aside>
     </section>
 
     <section className="neighborhood-feed wrap">
-      <div className="feed-heading"><div><p className="mono-label">{activeArea.toUpperCase()} / LIVE REPORTS</p><h2>What’s happening now.</h2></div><span>{visibleUpdates.length} REPORTS</span></div>
+      <div className="feed-heading"><div><p className="mono-label">{activeArea.toUpperCase()} / SAMPLE FEED</p><h2>Neighborhood updates.</h2></div><span>{visibleUpdates.length} POSTS</span></div>
       <div className="feed-layout">
         <div className="update-composer location-composer">
-          <div className="composer-route"><b>{prefs.name || "YOU"}</b><span>posting in</span><strong>{activeArea}</strong></div>
+          <div className="composer-route"><b>{prefs.name || "YOU"}</b><span>previewing in</span><strong>{activeArea}</strong></div>
           <label>Event<select value={currentEventName} onChange={(event) => setEventName(event.target.value)}><option>Neighborhood update</option>{eventOptions.map((event) => <option value={event.name} key={event.id}>{event.name}</option>)}</select></label>
-          <textarea value={note} onChange={(event) => setNote(event.target.value)} placeholder={`Share an update from ${activeArea}`} />
+          <textarea value={note} onChange={(event) => setNote(event.target.value)} aria-label="Update text" placeholder={`Share an update from ${activeArea}`} />
           {imageData && <div className="upload-preview"><Image src={imageData} alt="Update attachment preview" width={160} height={100} unoptimized /><button onClick={() => setImageData(undefined)}>Remove</button></div>}
-          <div className="composer-actions"><label className="image-action" htmlFor="update-image">＋ Add image<input id="update-image" type="file" accept="image/*" onChange={chooseImage} /></label><button className="button primary small" disabled={!note.trim()} onClick={post}>Post update</button></div>
-          <small>Demo posts are stored on this device.</small>
+          <div className="composer-actions"><label className="image-action" htmlFor="update-image">＋ Add image<input id="update-image" type="file" accept="image/*" onChange={chooseImage} /></label><button className="button primary small" disabled={!note.trim()} onClick={post}>Preview update</button></div>
+          <small>Saved on this device only. Not published.</small>
         </div>
 
         <div className="location-updates">{visibleUpdates.length ? visibleUpdates.map((update) => <article key={update.id}>

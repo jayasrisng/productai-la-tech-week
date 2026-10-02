@@ -1,0 +1,16 @@
+name = "productai-visit-reservations"
+main = "src/index.ts"
+compatibility_date = "2026-05-22"
+[vars]
+ALLOWED_ORIGIN = "https://lineup.product.ai"
+MANAGEMENT_PAGE_URL = "https://lineup.product.ai/office-visit/"
+# PRIVACY_APPROVED must be explicitly set to "true" after Product.ai approval.
+PRIVACY_APPROVED = "false"
+# REGISTRATION_CODE, MANAGEMENT_TOKEN_SECRET, RESEND_API_KEY: deployment secrets, not vars.
+[triggers]
+crons = ["*/15 * * * *"]
+[[d1_databases]]
+binding = "RESERVATIONS"
+database_name = "productai-visit-reservations"
+database_id = "REPLACE_AFTER_D1_CREATE"
+migrations_dir = "migrations"

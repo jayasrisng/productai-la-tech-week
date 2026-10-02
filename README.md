@@ -1,6 +1,6 @@
-# Product.ai Tech Week
+# LA Tech Week Lineup · by Product.ai
 
-A mobile-first SF and LA Tech Week planner that ranks 2,518 official calendar listings against a visitor’s goals, interests, role, preferred event formats, exclusions, and neighborhoods. Every recommendation exposes the signals behind its score.
+A mobile-first LA Tech Week planner that ranks 807 official calendar listings against a visitor’s goals, interests, role, preferred event formats, exclusions, and neighborhoods. Every recommendation exposes the signals behind its score. SF data remains archived but is not used by the app.
 
 ## What works
 
@@ -11,9 +11,13 @@ A mobile-first SF and LA Tech Week planner that ranks 2,518 official calendar li
 - Personal lineup with estimated conflict and travel notes
 - Manual RSVP tracking
 - `.ics` calendar export and downloadable lineup image
-- Neighborhood Live map with location-filtered, event-tagged community updates and local image attachments
+- Mission HQ mockup with demo updates and device-local image attachments
 
-This is a frontend prototype. Visitor data stays in `localStorage`; there is no authentication or production booking backend.
+The theme control is one sun/moon button, with dark as the default and a saved user override. Event descriptions and percentage breakdowns share one collapsed Match analysis panel. Percentages are heuristic preference coverage, not Product.ai's proprietary matching formula or attendance odds. See [`docs/preference-fit-proposal.md`](docs/preference-fit-proposal.md) for the proposed requirements/alternatives model.
+
+This is a static frontend planner. Visitor preferences, saved lineups, RSVP tracking, and map demo posts stay in `localStorage`. Office visits are different: bookings persist in the separate Worker + D1 backend in [`workers/reservations`](workers/reservations/). Configure `NEXT_PUBLIC_RESERVATIONS_API` to connect it. Without working live availability, no hours are bookable; demo slots are not offered. The confirmed office hours are October 12–16, 2026, 11 a.m.–4 p.m. Los Angeles time. See the Worker README for migrations, secure management links, email setup, privacy approval and retention requirements.
+
+Mission HQ is a public mockup and is not connected to an internal calendar or team data.
 
 ## Run locally
 
@@ -37,6 +41,20 @@ The static export is written to `out/` and can be hosted on GitHub Pages, Cloudf
 ## Event catalog
 
 The committed databases are [`data/la-tech-week-events.json`](data/la-tech-week-events.json) and [`data/sf-tech-week-events.json`](data/sf-tech-week-events.json). See [`data/README.md`](data/README.md) and [`data/SOURCE.md`](data/SOURCE.md) for their schema, provenance, and refresh workflow.
+
+Expired RSVP redirect tokens are no longer rendered or exported. [`data/la-event-links.json`](data/la-event-links.json) matches 699 catalog IDs to permanent official event pages and current times/status; 108 unmatched listings have a labeled official-calendar fallback. IDs remain stable for saved lineups. `node scripts/refresh-rsvp-links.mjs` reads the public official API and prints a patch for review. Apply the complete patch without truncating it; verify with `node scripts/verify-frontend.mjs`.
+
+## Verification
+
+```bash
+npm run lint
+npm run build
+node scripts/verify-matching.mjs
+node scripts/verify-frontend.mjs
+npm run test:reservations
+```
+
+Reservation tests use isolated local storage and mocked email, never production. Frontend review readiness does not mean production bookings or email are launched. The static frontend can use the team's preferred database through an implementation of the existing booking API contract; no database secret belongs in the browser.
 
 ## GitHub Pages
 

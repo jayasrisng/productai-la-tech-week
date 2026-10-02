@@ -1,0 +1,2 @@
+-- Schema and confirmed slots now live in versioned migrations/0001 and 0002.
+-- Do not seed demo hours. Apply with: wrangler d1 migrations apply <database> --local
