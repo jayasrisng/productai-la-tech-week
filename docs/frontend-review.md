@@ -1,5 +1,7 @@
 # Frontend review — October 1, 2026
 
+Event-card styling restored after feedback: larger desktop titles, a full-width neutral Match analysis disclosure with its percentile aligned to the right, tag chips, and original host/action styling. The compact matches header, hidden filters, inline remaining count and plain ranks remain. Checked desktop dark and mobile light, closed/expanded analysis, no horizontal overflow, lint and static build. This supersedes the earlier text-only analysis/tag treatment below.
+
 Show more now contains its remaining count within the button, using the same secondary count styling as Build my Tech Week. Browser-verified decrement from 424 to 414 after revealing ten additional matches, and no 390px overflow; lint/build pass. Counts are derived from the current profile/filters and saved LA selections, not hardcoded.
 
 Brand audit against Mission Control `src/pages/login.html` and brand assets: DM Sans and the zinc scale / #8b5cf6 violet match the reference; header wordmark Git blob hash matches exactly. Octahedron path/geometry matches (SVG formatting differs). Planner-specific differences remain: DM Mono labels, extended font weights, primary #7c3aed / hover #6d28d9 rather than reference button #8b5cf6, adapted light theme/glass styles, and Arial in canvas poster export. This is reference-aligned, not a claim of complete brand-guideline compliance. No private team/calendar data was accessed for the audit.
