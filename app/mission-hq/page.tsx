@@ -93,7 +93,7 @@ export default function MissionHQPage() {
   return <main>
     <SiteHeader />
     <section className="live-head wrap">
-      <div><p className="mono-label">TECH WEEK PULSE / {city.toUpperCase()} / SAMPLE FEED</p><h1>Around Tech Week.</h1><p>Updates by neighborhood. You’re viewing sample posts; live sources aren’t connected yet.</p></div>
+      <div><h1>Around Tech Week.</h1><p>Updates by neighborhood. You’re viewing sample posts; live sources aren’t connected yet.</p></div>
     </section>
 
     <section className="live-dashboard wrap">
