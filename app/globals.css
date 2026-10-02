@@ -253,3 +253,63 @@ button:focus:not(:focus-visible),input:focus:not(:focus-visible),select:focus:no
   .visit-page .visit-form .slot-option em{font-size:10px;max-width:110px}
   .visit-page .visit-management{padding:20px}
 }
+
+/* Shared planner rhythm: DM Sans, zinc surfaces, quiet selection, violet actions. */
+:root{--page-title-size:clamp(34px,4vw,48px);--control-radius:8px}
+.wrap{width:min(1080px,calc(100% - 40px))}
+.city-screen,.planner{padding-top:44px}
+.city-intro{gap:24px 48px;margin-bottom:32px}
+.city-intro h1,.lineup-head h1,.live-head h1,.planner-grid h1,.matches-page .events-head h1{font-size:var(--page-title-size);line-height:1.15;letter-spacing:-.045em;font-weight:500;overflow-wrap:break-word}
+.city-intro .hello-index,.lineup-head>.mono-label,.live-head .mono-label,.matches-page .events-head .mono-label{margin:0 0 18px;font:500 10px/1.4 var(--font-mono);letter-spacing:.09em;color:var(--muted)}
+.city-intro>p:last-child,.live-head>div>p:last-child{font-size:14px;line-height:1.6;margin:14px 0 0;color:var(--sub)}
+.lineup-head,.live-head,.matches-page .events-head{padding-top:44px;padding-bottom:28px;border-color:var(--line)}
+.lineup-head>div{gap:24px;align-items:center}
+.lineup-head h1{min-width:0;flex:1}
+.lineup-actions{flex-shrink:0;gap:10px}
+.button,.theme-toggle,.header-cta{border-radius:var(--control-radius)}
+.button{min-height:44px;padding:10px 16px;line-height:1.4;text-align:center}
+.button.small{min-height:38px;padding:8px 14px;font-size:12px}
+.button:disabled{opacity:.5}
+.loading-note{padding-top:32px;color:var(--muted);font-size:14px}
+.planner-progress{border-color:var(--line);color:var(--muted)}
+.planner-grid{grid-template-columns:220px minmax(0,1fr);gap:48px;padding-top:32px}
+.planner-grid aside{min-height:420px;padding-right:24px}
+.planner-grid aside p{font-size:15px;line-height:1.6;letter-spacing:0;color:var(--sub)}
+.planner-grid .mono-label{margin:0 0 18px;color:var(--muted);font-size:10px}
+.question-note{font-size:14px;line-height:1.6;margin:16px 0 24px}
+.choice-grid{gap:8px;border:0}
+.choice-grid button{min-height:52px;gap:12px;padding:12px 14px;border:1px solid var(--line)!important;border-radius:var(--control-radius);line-height:1.4;font-size:14px;transition:background-color .15s}
+.choice-grid button:hover{background:color-mix(in srgb,var(--ink) 3%,transparent)}
+.choice-grid button.selected{background:var(--soft);border-color:var(--line-strong)!important;box-shadow:none}
+.choice-grid b{color:var(--muted);font:14px var(--font-sans)}
+.filters select,.multi-filter details,.location-composer select,.location-composer textarea{border-radius:var(--control-radius);border-color:var(--line)}
+.filter-toggle{border-radius:var(--control-radius)}
+.lineup-console,.live-dashboard{border:1px solid var(--line-strong);border-radius:14px;overflow:hidden;box-shadow:none}
+.hq-invite{border-color:var(--line);padding-top:28px;padding-bottom:40px}
+.hq-invite h2,.feed-heading h2{font-size:28px;line-height:1.2;letter-spacing:-.035em}
+.feed-heading{border-color:var(--line);align-items:center}
+.neighborhood-feed{padding-top:40px;padding-bottom:72px}
+.feed-layout{grid-template-columns:300px minmax(0,1fr);gap:24px;padding-top:24px}
+.area-panel h2{font-size:26px;line-height:1.2;letter-spacing:-.035em}
+.location-composer,.location-updates article{border-radius:14px}
+.event-tag{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.5;overflow-wrap:anywhere;background:var(--soft);color:var(--sub);border-radius:6px}
+.location-composer textarea{min-height:120px;font-size:14px;line-height:1.6}
+@media(max-width:1100px){.feed-layout{grid-template-columns:280px minmax(0,1fr)}}
+@media(max-width:760px){
+  .wrap,.visit-page .wrap{width:calc(100% - 32px)}
+  .city-screen,.planner{padding-top:28px;padding-bottom:80px}
+  .city-intro{grid-template-columns:minmax(0,1fr);gap:16px}
+  .city-intro h1,.lineup-head h1,.live-head h1,.planner-grid h1,.matches-page .events-head h1{font-size:32px}
+  .lineup-head,.live-head,.matches-page .events-head{padding-top:28px;padding-bottom:24px}
+  .lineup-head>div{align-items:stretch}
+  .lineup-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .lineup-actions .button{padding-inline:10px;font-size:13px}
+  .planner-grid{grid-template-columns:minmax(0,1fr);gap:24px;padding-top:28px}
+  .choice-grid{grid-template-columns:minmax(0,1fr)}
+  .feed-layout{grid-template-columns:minmax(0,1fr);gap:20px}
+  .location-composer{position:static}
+  .location-updates{grid-template-columns:minmax(0,1fr)}
+  .feed-heading{gap:16px}
+  .feed-heading h2,.hq-invite h2{font-size:24px}
+}
+@media(prefers-reduced-motion:reduce){.choice-grid button{transition:none}}

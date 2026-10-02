@@ -126,7 +126,7 @@ export default function MissionHQPage() {
         <div className="update-composer location-composer">
           <div className="composer-route"><b>{prefs.name || "YOU"}</b><span>previewing in</span><strong>{activeArea}</strong></div>
           <label>Event<select value={currentEventName} onChange={(event) => setEventName(event.target.value)}><option>Neighborhood update</option>{eventOptions.map((event) => <option value={event.name} key={event.id}>{event.name}</option>)}</select></label>
-          <textarea value={note} onChange={(event) => setNote(event.target.value)} placeholder={`Share an update from ${activeArea}`} />
+          <textarea value={note} onChange={(event) => setNote(event.target.value)} aria-label="Update text" placeholder={`Share an update from ${activeArea}`} />
           {imageData && <div className="upload-preview"><Image src={imageData} alt="Update attachment preview" width={160} height={100} unoptimized /><button onClick={() => setImageData(undefined)}>Remove</button></div>}
           <div className="composer-actions"><label className="image-action" htmlFor="update-image">＋ Add image<input id="update-image" type="file" accept="image/*" onChange={chooseImage} /></label><button className="button primary small" disabled={!note.trim()} onClick={post}>Preview update</button></div>
           <small>Saved on this device only. Not published.</small>
