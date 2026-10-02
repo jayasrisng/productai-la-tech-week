@@ -313,3 +313,7 @@ button:focus:not(:focus-visible),input:focus:not(:focus-visible),select:focus:no
   .feed-heading h2,.hq-invite h2{font-size:24px}
 }
 @media(prefers-reduced-motion:reduce){.choice-grid button{transition:none}}
+.nearby-events{max-height:280px;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:8px}
+.nearby-events>span{position:sticky;top:0;background:var(--surface);padding-block:8px;z-index:1}
+.nearby-events button{grid-template-columns:minmax(0,1fr) auto;overflow-wrap:anywhere}
+.demo-notice{padding:12px 14px;border:1px solid var(--line);border-radius:8px;color:var(--sub);font-size:13px!important}

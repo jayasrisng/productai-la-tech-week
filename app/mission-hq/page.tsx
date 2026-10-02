@@ -98,7 +98,7 @@ export default function MissionHQPage() {
 
     <section className="live-dashboard wrap">
       <div className="city-map">
-        <div className="map-topline"><span>{cityName.toUpperCase()} / NEIGHBORHOODS</span><b>SAMPLE FEED</b></div>
+        <div className="map-topline"><span>{cityName.toUpperCase()} / NEIGHBORHOODS</span><b>LIVE FEED · DEMO</b></div>
         <div className="map-surface real-map">
           <div className="map-tiles" aria-label={`${cityName} street map`}>{mapTiles[city].map((tile) => <Image src={assetUrl(`/maps/${city}/${tile}.png`)} alt="" width={256} height={256} unoptimized key={tile} />)}</div>
           <div className="map-tint" />
@@ -116,12 +116,12 @@ export default function MissionHQPage() {
         <h2>{activeArea}</h2>
         <div className="people-stack emoji-stack" aria-label="Illustrative avatars">{selected.avatars.map((avatar, index) => <span key={`${avatar}-${index}`}>{avatar}</span>)}</div>
         <p>Browse nearby events and sample updates.</p>
-        <div className="nearby-events"><span>EVENTS NEARBY</span>{eventOptions.slice(0, 4).map((event) => <button onClick={() => setEventName(event.name)} key={event.id}>{event.name}<small>{event.startTimeDisplay}</small></button>)}</div>
+        <div className="nearby-events"><span>EVENTS NEARBY</span>{eventOptions.map((event) => <button onClick={() => setEventName(event.name)} key={event.id}>{event.name}<small>{event.startTimeDisplay}</small></button>)}</div>
       </aside>
     </section>
 
     <section className="neighborhood-feed wrap">
-      <div className="feed-heading"><div><p className="mono-label">{activeArea.toUpperCase()} / SAMPLE FEED</p><h2>Neighborhood updates.</h2></div><span>{visibleUpdates.length} POSTS</span></div>
+      <div className="feed-heading"><div><p className="mono-label">{activeArea.toUpperCase()} / LIVE FEED</p><h2>Neighborhood updates.</h2></div><span>{visibleUpdates.length} POSTS</span></div>
       <div className="feed-layout">
         <div className="update-composer location-composer">
           <div className="composer-route"><b>{prefs.name || "YOU"}</b><span>previewing in</span><strong>{activeArea}</strong></div>
@@ -129,7 +129,6 @@ export default function MissionHQPage() {
           <textarea value={note} onChange={(event) => setNote(event.target.value)} aria-label="Update text" placeholder={`Share an update from ${activeArea}`} />
           {imageData && <div className="upload-preview"><Image src={imageData} alt="Update attachment preview" width={160} height={100} unoptimized /><button onClick={() => setImageData(undefined)}>Remove</button></div>}
           <div className="composer-actions"><label className="image-action" htmlFor="update-image">＋ Add image<input id="update-image" type="file" accept="image/*" onChange={chooseImage} /></label><button className="button primary small" disabled={!note.trim()} onClick={post}>Preview update</button></div>
-          <small>Saved on this device only. Not published.</small>
         </div>
 
         <div className="location-updates">{visibleUpdates.length ? visibleUpdates.map((update) => <article key={update.id}>
