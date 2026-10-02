@@ -21,5 +21,5 @@ export function ThemeToggle() {
     const next = theme === "dark" ? "light" : "dark";
     localStorage.setItem("techWeekThemeOverride", next);window.dispatchEvent(new Event("techweek-theme"));
   };
-  return <button className="theme-toggle" onClick={toggle} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`} title={`${theme === "dark" ? "Dark" : "Light"} mode`}>{theme === "dark" ? <Moon size={18} aria-hidden="true"/> : <Sun size={18} aria-hidden="true"/>}</button>;
+  return <button className="theme-toggle" onClick={toggle} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`} title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}>{theme === "dark" ? <Sun size={18} aria-hidden="true"/> : <Moon size={18} aria-hidden="true"/>}</button>;
 }
