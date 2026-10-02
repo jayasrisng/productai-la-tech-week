@@ -1,5 +1,7 @@
 # Frontend review — October 1, 2026
 
+Copy private link now changes its button label to Copied! only after the clipboard write succeeds, with a polite live announcement. A failed write clears the success state and retains the address-bar fallback message. Feedback is tied to the specific management link, so a different booking does not inherit it. Lint and static build pass; no live booking clipboard interaction was performed for this small change.
+
 Booking management now has two equally sized, neutral actions: Cancel selected hours and Add to calendar (stacked on phones). Selecting all confirmed hours still allows full cancellation through the selected-hours action and its existing confirmation. Calendar download contains only confirmed hours, stable IDs, exact UTC start/end times and no attendee contact details or management token. It is a one-time import, not a live calendar subscription. `node scripts/verify-visit-calendar.mjs` verifies dates/timezone conversion, cancelled/empty bookings, plus-one copy, line folding and download behavior with a mocked browser download API. No real booking was submitted or cancelled during this pass.
 
 Heading layout: removed the visit title's 800px cap and hard-coded line breaks on Home, Lineup and Pulse. Page titles now wrap naturally with more line spacing. Browser checked visit in dark/light at 390px, Home/Lineup/Pulse at 1280px and 390px, with no horizontal overflow; lint and static build pass. Saved-booking action layout was not browser-verified against an actual reservation in this pass.
