@@ -1,0 +1,5013 @@
+{
+  "source": "https://www.tech-week.com/api/mcp",
+  "checkedAt": "2026-10-02T01:09:23.746Z",
+  "officialEventCount": 819,
+  "matchedCount": 699,
+  "unmatchedIds": [
+    "latw-f60e5be8a790091c",
+    "latw-db97a5aead97c008",
+    "latw-6682e0d84855d4ba",
+    "latw-3b40003d3316d92c",
+    "latw-e78adbf8b9955431",
+    "latw-50324d1816d6fec7",
+    "latw-e689b2d574a2681a",
+    "latw-8c6d0d7dc2c33581",
+    "latw-9f70300a526c4679",
+    "latw-2766c858387964f1",
+    "latw-c32c10133b96bd4d",
+    "latw-e29ea124c9991e61",
+    "latw-33e226cdaa175041",
+    "latw-65f450fdb78b17bb",
+    "latw-0afa610d39ab21bc",
+    "latw-3b7f2ee689234cf9",
+    "latw-705a48a1f93b2081",
+    "latw-6e5ff074a49fdde9",
+    "latw-26f913f479062e8c",
+    "latw-4da87fa75434bc31",
+    "latw-49e61aa591c332e7",
+    "latw-ed0bb80c084d7fc2",
+    "latw-0778aa66fa0337f1",
+    "latw-543a12bfd59c7cf6",
+    "latw-be7e454645a2836b",
+    "latw-4ec04a00569e9c88",
+    "latw-26c9018bf19a3e13",
+    "latw-1be5859c00f1deb5",
+    "latw-91adb38f67545560",
+    "latw-49b2d95e88835afb",
+    "latw-628c75d964950661",
+    "latw-3e248cf8ae4ff3dd",
+    "latw-804fd6e40e1fd35a",
+    "latw-c117b95194a25aea",
+    "latw-eefba3dd368528cc",
+    "latw-2d133d2c61125cb4",
+    "latw-c80ad90aa110da96",
+    "latw-252b51f17042e76f",
+    "latw-cac226f5a5e7d676",
+    "latw-4a91757c45638e93",
+    "latw-542d87e923588c9a",
+    "latw-4d5295a05b348717",
+    "latw-56514dd656e3f792",
+    "latw-5aed10a50e7e1c9e",
+    "latw-bb7feb0f5e3e05d5",
+    "latw-9c5fcb248211b2b9",
+    "latw-1212d603b6321733",
+    "latw-400cc68935216e9c",
+    "latw-76649c09b6982fa0",
+    "latw-589da3296b03830f",
+    "latw-18653a04499fa678",
+    "latw-c8e7fd32ac4553f6",
+    "latw-6c4e71f4396fcdca",
+    "latw-b9eb00534e0296cc",
+    "latw-370f2cbc272c043f",
+    "latw-06a11e6154146a34",
+    "latw-252f8d2d1a77f693",
+    "latw-654a58d97ca1abff",
+    "latw-f10ca6408cf0ffe7",
+    "latw-c24ecc0c12b925ee",
+    "latw-4c4c659676492e0f",
+    "latw-c867b84b2e557cb7",
+    "latw-4da4810aac524faf",
+    "latw-5f7b094dc62fc39a",
+    "latw-68a336000dcc45bf",
+    "latw-c0673405ffea211f",
+    "latw-0f930a151a84f667",
+    "latw-73d09172d85f49bd",
+    "latw-98f2590a9ab8d72c",
+    "latw-df50d0abdb679b01",
+    "latw-440480c088e7eb7d",
+    "latw-31dc09430a78ab66",
+    "latw-6b5d08a10a1c3a14",
+    "latw-b50c196179eff141",
+    "latw-e9d37ea58dc5c98d",
+    "latw-8305ae71007116c8",
+    "latw-79055f1ed8fee83d",
+    "latw-2b8ff9db777136aa",
+    "latw-03e7d0d0860cad39",
+    "latw-bfc00717ab30c124",
+    "latw-d89d800b606695be",
+    "latw-1d4cc4ee28e74cd6",
+    "latw-076abbe9f8f1ffc2",
+    "latw-abbbcab553b38c8b",
+    "latw-d50a09fc31edcdab",
+    "latw-d7ee3cd0cbbdc4d3",
+    "latw-b11ccb94ca1961f7",
+    "latw-43d8dbc3a8a7b811",
+    "latw-c3d26cce39a3d6d1",
+    "latw-2d1d14219a5bbfd3",
+    "latw-197d9a8f96472dac",
+    "latw-d9b4b18151d24a16",
+    "latw-a7cee9a6fda1e105",
+    "latw-d45fe9934c3b0b37",
+    "latw-1029d165665b7502",
+    "latw-482113fd278b8aed",
+    "latw-8e61bfb3ab4810c2",
+    "latw-e40dfb8856131be0",
+    "latw-cdf017ed3bed5f4c",
+    "latw-847e712c28301b8c",
+    "latw-7e5d6a6d36f82a28",
+    "latw-499b6228c94cd478",
+    "latw-dd0879244e2f7be1",
+    "latw-99bc22823efc15dc",
+    "latw-8d8e76e161a4e4a3",
+    "latw-95104015c64cc785",
+    "latw-c29e83bfafdad3ce",
+    "latw-dc4289c48f4dad05"
+  ],
+  "links": {
+    "latw-2083fdf0c805b604": "https://www.tech-week.com/calendar/la/events/ur-1-is-a-stranger-89b49964-6de2-4baf-bb6c-a1280d09ccf8",
+    "latw-497b3772cee6ed0c": "https://www.tech-week.com/calendar/la/events/sunrise-storytelling-1a7ee647-8702-454a-a245-5b128c74dc4f",
+    "latw-4de99b48e82a17c4": "https://www.tech-week.com/calendar/la/events/healing-space-during-tech-wifi-for-your-soul-d0ea1a31-0455-422c-bab4-931bbde05368",
+    "latw-d36f841bac0cb3a9": "https://www.tech-week.com/calendar/la/events/best-morning-ever-3aa50c01-b834-4a8d-96af-7fbbfaa47ed4",
+    "latw-1bf91401138eb748": "https://www.tech-week.com/calendar/la/events/wake-up-hardware-network-and-fun-run-sponsored-by-nominal-and-d-e-shaw-ventures-3fef80e3-eeb6-430e-a711-ab578053f46e",
+    "latw-d96a681d2b78487b": "https://www.tech-week.com/calendar/la/events/coworking-intersections-la-7693337c-82c2-4896-8587-2071181577e3",
+    "latw-85109a775333d791": "https://www.tech-week.com/calendar/la/events/founder-flow-sunrise-yoga-presented-by-cake-equity-17f9cdb0-7bd8-4287-b114-4a8576145910",
+    "latw-32d2d4a30390185a": "https://www.tech-week.com/calendar/la/events/unscripted-ideas-in-motion-a-beach-walk-for-a661077e-7bcd-44d4-8ad2-e8d51d6aa057",
+    "latw-5fe3d9149be06945": "https://www.tech-week.com/calendar/la/events/coworking-day-one-d72d24ad-b0c0-460e-81dc-08e6f8d77cde",
+    "latw-7c064d712df26abf": "https://www.tech-week.com/calendar/la/events/founders-coffee-7e8f6bd4-ace2-4e40-827d-1cf794c3f337",
+    "latw-277ff90f587699a7": "https://www.tech-week.com/calendar/la/events/la-tech-week-kickoff-from-zero-to-scale-393384e2-27e4-470d-a420-0541f6e543ef",
+    "latw-141db92a874894c0": "https://www.tech-week.com/calendar/la/events/matched-by-verci-326c6f72-2a35-4dfd-bd2a-cc29ccdb5071",
+    "latw-988f4529a49a2134": "https://www.tech-week.com/calendar/la/events/private-fund-cfo-breakfast-the-ai-enabled-fund-reporting-compliance-and-tax-stra-827caf9c-864c-4140-98ae-1c19495d7cd0",
+    "latw-281b32f9ec840e9b": "https://www.tech-week.com/calendar/la/events/sweat-equity-founder-investor-hiit-workout-203863aa-490f-470b-a280-0da31a7f0151",
+    "latw-adbc265bf72e0e46": "https://www.tech-week.com/calendar/la/events/gps-lps-breakfast-0eb04def-31ec-4e05-baac-269b99a15880",
+    "latw-00b15b1e64644032": "https://www.tech-week.com/calendar/la/events/women-backing-women-5cd07b6c-7f5b-40b4-92c3-8dcfde5e32b3",
+    "latw-f612af426062e286": "https://www.tech-week.com/calendar/la/events/find-out-what-your-clothes-say-about-you-as-a-founder-cb212e5b-3002-4ada-aaef-631d75f96967",
+    "latw-a8814253f55c8501": "https://www.tech-week.com/calendar/la/events/founders-and-funders-coffee-hour-6bbd7e83-af59-4b0b-87f1-7828261d59b3",
+    "latw-08b3293c15d8a2d1": "https://www.tech-week.com/calendar/la/events/hands-on-workshop-take-your-product-into-the-ai-chat-eb00251b-3273-41cc-aa67-4136bedf89ba",
+    "latw-1a44cf4c4e89bc5b": "https://www.tech-week.com/calendar/la/events/morning-breathwork-retreat-for-women-in-tech-bc829c0e-5c38-4fd3-beb9-d991e38a0e21",
+    "latw-21960c9fb11f6dda": "https://www.tech-week.com/calendar/la/events/morning-matcha-fashiontech-x-retailtech-x-circular-economies-fa81e0e9-be4a-4ca1-9d19-6b58e3816e90",
+    "latw-24fe5c8019b6879d": "https://www.tech-week.com/calendar/la/events/tech-founder-zero-to-one-0bd7bd74-a750-4a4b-8958-aebdb912a4b8",
+    "latw-83b45de8a85de4c8": "https://www.tech-week.com/calendar/la/events/gtm-101-content-for-growth-9a5e1f55-7857-4c87-8471-f422521d8e5a",
+    "latw-c017e4c877575d95": "https://www.tech-week.com/calendar/la/events/investors-at-the-cutting-edge-gp-lp-luncheon-deep-tech-842f5db5-7bd1-4fad-88ee-c1209cebf217",
+    "latw-10d4cbc7ee0c78a7": "https://www.tech-week.com/calendar/la/events/corporate-venture-lab-sushi-sake-and-new-ventures-5f495cdd-4b7c-4c91-ada7-7a1bbd771abd",
+    "latw-0bffc6fd32683262": "https://www.tech-week.com/calendar/la/events/the-founders-table-fueled-by-delta-4d0dfa3a-7856-4138-96f0-03225addc698",
+    "latw-f8b446b882bddf27": "https://www.tech-week.com/calendar/la/events/wavemaker-360-climb-and-connect-health-tech-at-new-heights-f7cf0296-b64f-4ee4-8c58-1a5851c07a51",
+    "latw-d9a5dbcaa0d14ae6": "https://www.tech-week.com/calendar/la/events/built-at-24-blueprint-for-esports-creators-and-community-1b17972a-92ff-42cc-92bb-2b0d79ed08ed",
+    "latw-de74d90c3da05f0e": "https://www.tech-week.com/calendar/la/events/everyone-says-use-ai-almost-no-one-makes-it-real-11e58a95-29b0-4302-8464-70e5649ab90c",
+    "latw-1590506ba4586668": "https://www.tech-week.com/calendar/la/events/genius-is-not-generated-d6c5b3f3-a14f-4c63-a383-74d6534f4711",
+    "latw-365499412485cd95": "https://www.tech-week.com/calendar/la/events/multi-media-ai-pipeline-build-networking-5e5eb2f2-e8ed-41f1-ab86-4f1711d58eb1",
+    "latw-bea6bed1bf5ad3a2": "https://www.tech-week.com/calendar/la/events/why-investors-say-no-in-the-ring-with-an-investor-b7eb01cf-b032-429b-ae11-d372f19ddcce",
+    "latw-0160a2fde565e02a": "https://www.tech-week.com/calendar/la/events/ai-meets-the-real-world-founder-and-investor-mixer-febe3336-a249-4f94-99cd-bbc508223804",
+    "latw-1fc55725f0cb7a5d": "https://www.tech-week.com/calendar/la/events/ai-startup-disruption-in-media-and-entertainment-63bc5639-f805-4d13-980e-937e2c6a207f",
+    "latw-7d142df862af2bca": "https://www.tech-week.com/calendar/la/events/founders-and-investors-pitch-jam-03a5298a-687d-4031-b03c-545d7c3a65f8",
+    "latw-213e5f359a1ae2d0": "https://www.tech-week.com/calendar/la/events/family-offices-investors-summit-michelin-dinner-los-angeles-oct-12-18-7d549a26-54ab-4146-970a-52f360236cfc",
+    "latw-5b98a8c1d75ce455": "https://www.tech-week.com/calendar/la/events/ai-for-finance-summit-2026-la-1a788789-2a00-4dd3-94dd-042d63bf1e93",
+    "latw-1576cea8a2fdde58": "https://www.tech-week.com/calendar/la/events/hands-on-workshop-build-an-mcp-app-12221771-1622-48fb-8d72-fd25f9200af1",
+    "latw-9ee4743f893c3be3": "https://www.tech-week.com/calendar/la/events/touch-grass-get-paid-how-creators-turn-taste-into-an-irl-business-c43e0ca5-879d-4c4d-b1e6-70765cedfa29",
+    "latw-f6a31af353555114": "https://www.tech-week.com/calendar/la/events/vibe-code-mama-presents-ai-creator-salon-with-michelle-phan-e9ad6711-3a67-47bb-a396-a3dd4cda83de",
+    "latw-9ae5f0b632da115b": "https://www.tech-week.com/calendar/la/events/ai-orchestration-agents-and-the-human-bottleneck-1241683e-35cc-4797-9a28-2b205caf9d54",
+    "latw-27a409c0c88a401c": "https://www.tech-week.com/calendar/la/events/borderless-7afc5746-f7af-4166-9e6d-0689551c4860",
+    "latw-a1ad8f9ce4f95552": "https://www.tech-week.com/calendar/la/events/bots-and-brews-physical-ai-meetup-37029221-b698-4cba-843a-6c742ef46fef",
+    "latw-eca1d1e71ae967c2": "https://www.tech-week.com/calendar/la/events/founder-and-investor-pickleball-party-9c14ac2b-d492-45f6-bdd6-77ac435987f8",
+    "latw-2a1151cd4e40d9b7": "https://www.tech-week.com/calendar/la/events/founder-fest-la-opening-party-d55f70c3-4a1d-401b-9f47-1b400bec6237",
+    "latw-234f1b602ead3b85": "https://www.tech-week.com/calendar/la/events/the-hidden-cost-of-legacy-software-when-to-modernise-migrate-or-leave-it-alone-17eb1c56-c235-4bb7-a29c-1c7794af7e5f",
+    "latw-3cc90f551bd39e8a": "https://www.tech-week.com/calendar/la/events/the-new-beauty-counter-beauty-and-wellness-edition-b269c257-713d-4436-ace4-73d53c851bcf",
+    "latw-05473dfe043caa95": "https://www.tech-week.com/calendar/la/events/the-penmar-social-tinder-x-wonder-ventures-top-founders-and-operators-f8e15ece-838f-4176-b8dd-f1a1cc355e69",
+    "latw-5d1f6bc9f48f4f09": "https://www.tech-week.com/calendar/la/events/the-precision-health-opportunity-c90226af-2973-4cd7-8454-7f04c16419fb",
+    "latw-c441b739a37df862": "https://www.tech-week.com/calendar/la/events/cryptomondays-culver-city-meetup-d4df3447-d408-4797-8d96-c8b77cb69a42",
+    "latw-b96399293d5c9e8d": "https://www.tech-week.com/calendar/la/events/german-tech-meets-la-ai-innovation-and-oktoberfest-d7d69964-d090-4ec7-af92-a2822f6e6992",
+    "latw-2d35ad6e6666c646": "https://www.tech-week.com/calendar/la/events/let-s-talk-fintech-and-payments-b1ffa6dc-a3b1-467e-8fbf-0aa8170aacb7",
+    "latw-e19e13513fef522f": "https://www.tech-week.com/calendar/la/events/playable-worlds-the-future-of-games-3d-and-interactive-ai-996987d0-7b9b-460f-82ed-62f1563ccfb2",
+    "latw-802c06d95505ada8": "https://www.tech-week.com/calendar/la/events/spookyaf-1dbf6615-1d65-4d77-9f06-2195f44ce9e7",
+    "latw-28c32e9e8a4d6c34": "https://www.tech-week.com/calendar/la/events/the-hybrid-studio-what-survives-when-ai-meets-oscar-grade-craft-ff5fa56b-f457-4580-81fd-c353cbbdaf1a",
+    "latw-c73d6ff582a15653": "https://www.tech-week.com/calendar/la/events/the-leap-private-dinner-from-executive-to-founder-invite-only-6569bba5-8e02-490e-acc7-b689bc21b8dd",
+    "latw-fac2a18d55d0301c": "https://www.tech-week.com/calendar/la/events/cfo-from-the-future-roundtable-cocktail-tasting-4f5a4309-cb92-490d-89da-d6c98069e6a9",
+    "latw-62d352f429d4636c": "https://www.tech-week.com/calendar/la/events/hardware-meets-intelligence-ai-for-space-and-defense-a3fa14ee-3ce3-4da9-ab73-33a3445aa7a5",
+    "latw-8dea206d4ffe450d": "https://www.tech-week.com/calendar/la/events/reliable-agents-need-evals-a-scale-ai-workshop-0851f4bc-b63b-40b4-bad4-2b250559f6b6",
+    "latw-3e5d803a17f9b96e": "https://www.tech-week.com/calendar/la/events/tech-talent-after-hours-1eb766fd-12f5-4faf-99b4-e18cf063fcbf",
+    "latw-e192d9973ec2df10": "https://www.tech-week.com/calendar/la/events/av-design-leaves-visio-a-browser-tool-your-studio-owns-74252a03-6fff-4f2c-a8c7-979099b35fb9",
+    "latw-9bc9c12a72b2d2eb": "https://www.tech-week.com/calendar/la/events/big-mixer-006290cc-74ef-4c39-bb93-f5c4ca88dff7",
+    "latw-e0f2ba5d197f8a46": "https://www.tech-week.com/calendar/la/events/healthtech-house-party-a8c626db-d395-4d02-adab-422447113fa5",
+    "latw-4c13bc14643570af": "https://www.tech-week.com/calendar/la/events/la-female-founders-and-funders-happy-hour-4337388b-40a9-4f6e-9fb4-dd00b8e106e7",
+    "latw-59d426d757b2976c": "https://www.tech-week.com/calendar/la/events/money-memories-live-the-founder-stories-behind-billion-dollar-decisions-52706373-f3eb-45a6-a1f2-2272896f1d4d",
+    "latw-e9211a78f3684074": "https://www.tech-week.com/calendar/la/events/product-and-design-happy-hour-pma-la-c5ef25ff-8ddc-4002-8fa7-f5b1587391fb",
+    "latw-81a07558ce7b984d": "https://www.tech-week.com/calendar/la/events/scaling-innovation-in-critical-industries-an-aca-kpmg-founder-dinner-5b142955-1253-4f06-a66e-45623ca73b46",
+    "latw-a6c9664fa6d30501": "https://www.tech-week.com/calendar/la/events/south-asian-mixer-eade00cd-8bcc-46de-bce3-7fb4eca33af0",
+    "latw-eccfb4c96c5919d3": "https://www.tech-week.com/calendar/la/events/swift-angels-ios-and-swift-developer-meetup-usc-36bfed1f-01f3-4848-b10c-45592dbcd884",
+    "latw-331464b29dfd4acb": "https://www.tech-week.com/calendar/la/events/t4bh-hackathon-ba63c7f8-b759-4c38-9e31-8a3857f28087",
+    "latw-6196c905c99259e1": "https://www.tech-week.com/calendar/la/events/the-asian-edge-ai-operators-and-capital-b0b63ca8-8714-41ac-8455-317b41663d06",
+    "latw-1731715835afc04f": "https://www.tech-week.com/calendar/la/events/the-la-grind-beachfront-founder-and-vc-dinner-b31e6796-0243-4c25-99ce-b2ea8f30ded9",
+    "latw-6e9d09967de1562c": "https://www.tech-week.com/calendar/la/events/the-official-a16z-tech-week-kickoff-by-hsbc-and-fenwick-bd4905fd-1223-4b6d-8285-65a3e771333f",
+    "latw-91f3657d92b04920": "https://www.tech-week.com/calendar/la/events/black-la-tech-week-mixer-ec438795-0447-4c3d-82d5-cd877030b62e",
+    "latw-7f042d61ad6de2c0": "https://www.tech-week.com/calendar/la/events/building-la-s-next-venture-hub-72f265e1-7384-432c-b897-89965cf78952",
+    "latw-602def6b6fbde75d": "https://www.tech-week.com/calendar/la/events/funding-founders-dinner-2b521c04-334f-41fe-953a-f9f7bd822ec2",
+    "latw-4c04b5380b78ed2b": "https://www.tech-week.com/calendar/la/events/genius-is-not-generated-77cf3a66-da18-41af-a913-bcf1567e0f81",
+    "latw-d84391f533b45087": "https://www.tech-week.com/calendar/la/events/ai-matched-dinners-with-rauk-ai-la-443c0714-9229-473f-8127-054abec48fd3",
+    "latw-52280c376aa9094e": "https://www.tech-week.com/calendar/la/events/founders-and-investors-mixer-84bd1262-70d5-4604-a419-215adb7e2987",
+    "latw-41f8af4b59ca6f04": "https://www.tech-week.com/calendar/la/events/general-purpose-robot-demos-at-yondu-lab-3aefc867-6e4c-4a6a-8c39-33752a7a87d5",
+    "latw-1f76495c70bdb634": "https://www.tech-week.com/calendar/la/events/in-the-arena-0be36faf-5061-45eb-8d4e-5e6bef8da3fa",
+    "latw-2cc9ad449404dd69": "https://www.tech-week.com/calendar/la/events/kick-off-dtla-tech-week-26-8314d44b-b964-4eec-8b77-1eeb5636519a",
+    "latw-ce910a6376cab6da": "https://www.tech-week.com/calendar/la/events/product-leader-dinner-ef8294c8-5be1-412f-b73d-6279615c6b11",
+    "latw-28ce27d718e44743": "https://www.tech-week.com/calendar/la/events/stablecoin-dinner-217a8b2c-269c-4d3d-a7bf-26846ead100a",
+    "latw-2cedcaa52775a5c3": "https://www.tech-week.com/calendar/la/events/the-agent-run-brand-a-dtc-founders-dinner-ce40c88d-99bb-480f-9e54-85165b20ba39",
+    "latw-9bb1fdc85d6baa8d": "https://www.tech-week.com/calendar/la/events/women-in-stem-comedy-37dedcd6-8c48-4c45-841c-49c4562db6c9",
+    "latw-2dd65400eaeb7253": "https://www.tech-week.com/calendar/la/events/loteria-casino-night-41bcc396-b9e0-42ec-807b-d5a57668245b",
+    "latw-ac89f2d0d17d9d4c": "https://www.tech-week.com/calendar/la/events/oct-12-pitch-slap-tech-comedy-e7e991d6-6535-4a3b-a348-158da13441bc",
+    "latw-c8a0986293984cef": "https://www.tech-week.com/calendar/la/events/science-x-ai-breakfast-36d65181-6d52-487d-a6bf-ef3bc55450ed",
+    "latw-bceee559419109ce": "https://www.tech-week.com/calendar/la/events/founders-and-funders-sunrise-run-cc314784-b288-4c75-bfa3-7fd1c7a8a347",
+    "latw-48d99be10b81a5d3": "https://www.tech-week.com/calendar/la/events/amplifying-scientific-innovation-ai-and-the-future-of-workforce-development-ac5d6a95-6b6b-4001-9614-368b3392d51d",
+    "latw-f6ba45c89470c2b0": "https://www.tech-week.com/calendar/la/events/coffee-on-slauson-678241f3-95a3-49c3-aab8-fb0ed99f3a95",
+    "latw-931f2dd60dd4b00d": "https://www.tech-week.com/calendar/la/events/coworking-intersections-la-682e3a13-51fc-4514-b899-dd690aefa030",
+    "latw-fc773334f46d3e7c": "https://www.tech-week.com/calendar/la/events/dawn-patrol-companies-capital-and-coffee-c63f4823-1e01-4b8d-ac75-dc039a45cfb5",
+    "latw-d65899057f035a84": "https://www.tech-week.com/calendar/la/events/spark-summit-by-genspark-130e34bf-13e9-4dd3-a22f-c88a75e6794a",
+    "latw-d65c9b0eff966830": "https://www.tech-week.com/calendar/la/events/the-scaling-transition-modern-commerce-founders-breakfast-1c00afe0-7c47-4d21-86ad-7ec554f2023e",
+    "latw-49e2703f32c287fa": "https://www.tech-week.com/calendar/la/events/ai-irl-a25efd1a-db53-4366-b56e-76a4e931df6f",
+    "latw-e241ee4ffd5954a2": "https://www.tech-week.com/calendar/la/events/founder-funder-spikeball-slam-45b72883-ac45-4c51-89a8-3b9e05db4683",
+    "latw-875684f9517fb0e5": "https://www.tech-week.com/calendar/la/events/rise-and-rally-pickleball-with-catalyze-bonfire-ventures-94ffeda7-35cc-4c81-a2ca-de8fe2555be4",
+    "latw-0084e3e149d7fb4d": "https://www.tech-week.com/calendar/la/events/5th-annual-lava-celebrity-investor-breakfast-6cad49d8-bb00-41b8-90ba-dbc5d9adfd98",
+    "latw-94ea949811d7bab0": "https://www.tech-week.com/calendar/la/events/builders-and-brews-la-cdfc3da3-079b-430b-827f-a6e700d16d42",
+    "latw-4e77282939530bdb": "https://www.tech-week.com/calendar/la/events/coworking-day-one-7a925da4-9873-4f2b-9504-c365768e89d6",
+    "latw-cce2a346658e33d7": "https://www.tech-week.com/calendar/la/events/critical-industries-brunch-riot-stifel-venture-banking-5da8a844-1f42-43ec-93ad-f38c63c13f5d",
+    "latw-ec1f6030057b633f": "https://www.tech-week.com/calendar/la/events/indie-game-showcase-2026-a2f78d93-ae82-405e-a4b7-f74570532556",
+    "latw-572722cc050d7ba5": "https://www.tech-week.com/calendar/la/events/made-in-la-breakfast-burritos-and-hardware-d0652f0a-671f-4e83-8776-0e0f3bc1018d",
+    "latw-9eb75c366c2e84ea": "https://www.tech-week.com/calendar/la/events/the-capital-room-la-5c7073ec-a8f7-4b6e-b959-f83303f4dacd",
+    "latw-22bd878c0dd9cfa8": "https://www.tech-week.com/calendar/la/events/the-influencer-tech-breakfast-turning-followers-into-revenue-with-supplements-028a2e38-7b33-4878-bbad-8cd35d794e15",
+    "latw-8562377eb1e3e0d1": "https://www.tech-week.com/calendar/la/events/early-stage-b2b-tech-founders-and-funders-breakfast-7f08ddbf-a3ce-4585-a148-976bc722619f",
+    "latw-9a38029fc581edc5": "https://www.tech-week.com/calendar/la/events/next-stop-europe-international-tech-breakfast-8699a223-73f0-4cf7-9b22-7f5d967f56a2",
+    "latw-c0e03dae1f63d7f6": "https://www.tech-week.com/calendar/la/events/ai-got-faster-we-audited-our-own-prs-and-tickets-it-wasn-t-pretty-yours-probably-c9ecaee0-a718-476b-9e8e-29aa9069f96c",
+    "latw-a7c1a49c843ddc61": "https://www.tech-week.com/calendar/la/events/building-consumer-brands-that-last-a-dtc-brand-showcase-and-expert-panel-66cc793d-3f3d-406f-a279-5fbfda5f7043",
+    "latw-97c9b1a771d478f5": "https://www.tech-week.com/calendar/la/events/building-is-easy-now-growth-is-the-hard-part-3758ca0a-7b1c-492f-895d-f7be0a01506f",
+    "latw-8e0aa49f49af5ee4": "https://www.tech-week.com/calendar/la/events/founders-and-finders-b835141f-09e6-4ac5-bc64-953f3dbebf16",
+    "latw-0df5e6959a3031d1": "https://www.tech-week.com/calendar/la/events/implementing-ai-solutions-in-layman-s-terms-d62f7857-5907-450c-9c0a-a4c45efc2c5b",
+    "latw-6d86139f8a7b2381": "https://www.tech-week.com/calendar/la/events/self-improving-agents-hackathon-9e37314b-6b83-4599-89bf-6b2a028d2261",
+    "latw-be1e16b2eea5a927": "https://www.tech-week.com/calendar/la/events/early-stage-investor-brunch-29aee4d1-c09d-4fc8-b4f4-eaf749df4e66",
+    "latw-b4255556aa9e431f": "https://www.tech-week.com/calendar/la/events/who-s-liable-when-your-agent-wires-2m-fffb187b-118b-4e95-85b6-5d84e681ad7d",
+    "latw-3594697973ae5470": "https://www.tech-week.com/calendar/la/events/eu-cyber-resilience-act-cra-automating-ci-cd-compliance-with-ai-c960c2ab-2ade-4d37-bb84-41fd8cba9900",
+    "latw-31aecaca38113567": "https://www.tech-week.com/calendar/la/events/midday-refuel-founders-lunch-hosted-by-entrepreneur-ventures-182de78d-16b7-4b01-a238-a77b9adabd36",
+    "latw-dae72b095182f5f6": "https://www.tech-week.com/calendar/la/events/pickleball-sports-tech-and-recovery-in-venice-beach-4467a1e0-8690-42a6-9fe2-7c5e1b5e429f",
+    "latw-fc02a5956402b9d4": "https://www.tech-week.com/calendar/la/events/q3-2026-state-of-ai-ae-autonomous-economy-and-investment-opportunities-653ea39f-7a03-4927-90ff-43194e7a643c",
+    "latw-43b6906946515390": "https://www.tech-week.com/calendar/la/events/south-la-founder-house-fc7cf292-850a-46e4-a71b-87d78a8946be",
+    "latw-166ac38e7d409477": "https://www.tech-week.com/calendar/la/events/the-future-of-music-summit-49060702-4da0-453d-9063-51c084241021",
+    "latw-0dfe5307d57992a8": "https://www.tech-week.com/calendar/la/events/wrapping-up-the-raise-luncheon-deep-tech-investors-and-closing-founders-53833627-cb4d-4f43-8ad5-04517e8c665e",
+    "latw-48bae9991ade09cf": "https://www.tech-week.com/calendar/la/events/beyond-the-counter-how-beauty-technology-and-community-are-reshaping-the-custome-e48be635-240a-4fee-85b2-a379f0b7d747",
+    "latw-435de5476bf924d7": "https://www.tech-week.com/calendar/la/events/build-a-bachelor-workshop-bring-ai-characters-to-life-f1411b65-d3a8-4f7a-b998-597fdda73bcb",
+    "latw-ea9e73d7f4cfbc26": "https://www.tech-week.com/calendar/la/events/building-in-la-4904cecb-bb06-462b-9c78-4b756f396fa1",
+    "latw-cf316c40ae18a333": "https://www.tech-week.com/calendar/la/events/fintech-cfo-office-hours-abf6d8a6-140a-489c-90cd-b04ca54eba4f",
+    "latw-950f022075340fb0": "https://www.tech-week.com/calendar/la/events/socal-black-tech-express-entrepreneur-s-playground-convening-10cc84e6-551c-41e3-ae17-08615201e084",
+    "latw-f10103d6c567e682": "https://www.tech-week.com/calendar/la/events/the-healthcare-executive-ai-agenda-what-leaders-are-doing-now-2a04d308-6bd9-40ab-a327-4820c97d2f94",
+    "latw-f360e52847a4a5f5": "https://www.tech-week.com/calendar/la/events/the-ventures-startup-award-los-angeles-2026-06b85523-06e2-4533-8552-a0ee05f4cb79",
+    "latw-d940ce54d936941c": "https://www.tech-week.com/calendar/la/events/agentic-voice-ama-e7f2100e-ad05-4070-a4f4-8b9b1e5e1cff",
+    "latw-5204fb8d009cf7b0": "https://www.tech-week.com/calendar/la/events/launch-your-observability-mission-with-dynatrace-and-aws-ee66cda5-8ef2-4aa0-93c5-a0c9a5d8dacf",
+    "latw-009e28ac6d698d48": "https://www.tech-week.com/calendar/la/events/0-to-2-6b-in-12-months-here-s-how-81439326-7607-4f2e-b5ae-83a29fe5286a",
+    "latw-943ca6b2e356437b": "https://www.tech-week.com/calendar/la/events/beauty-culture-and-code-building-the-future-of-beauty-discovery-d05495b5-ea80-4506-8b38-2aedcfbe2928",
+    "latw-9880a24a1eb6fd4d": "https://www.tech-week.com/calendar/la/events/from-ai-features-to-ai-powered-products-836c625d-cde1-42eb-8448-cb08f3528730",
+    "latw-6fef7cf5dbb0f79f": "https://www.tech-week.com/calendar/la/events/humanising-ai-for-businesses-965b8bec-e2c2-463a-86bc-aea823fa67bb",
+    "latw-0a3579ddc1235913": "https://www.tech-week.com/calendar/la/events/2026-face-to-face-with-investors-89f150f9-732d-45e7-b69a-5c0f686a6480",
+    "latw-b8f5b4a0bc5ade4a": "https://www.tech-week.com/calendar/la/events/skills-that-matter-536b312c-bfcc-4aa3-9f72-29392c4d5615",
+    "latw-4d1339980216c126": "https://www.tech-week.com/calendar/la/events/ai-gtm-building-workshop-and-show-and-tell-23cee0c3-89c6-4b3d-9fd0-3f5c05c68d39",
+    "latw-41268ae95c873139": "https://www.tech-week.com/calendar/la/events/founder-fight-club-c06a6a4c-8b61-405e-b204-81673e77e223",
+    "latw-01f7f5e8ceaa0783": "https://www.tech-week.com/calendar/la/events/go-to-market-mixer-3389ee42-f2f3-47dc-9287-36119aa205f3",
+    "latw-2d581d0c1fa9c865": "https://www.tech-week.com/calendar/la/events/light-speed-and-liftoff-355e0f3b-d8b5-42a7-b976-11d186fd65a1",
+    "latw-7a2b50a658dd42e3": "https://www.tech-week.com/calendar/la/events/meet-your-future-self-an-ai-powered-mental-wellness-experience-by-nissi-3933ae6e-8a77-4384-b566-caefc73d1910",
+    "latw-7c3916eea0aef15c": "https://www.tech-week.com/calendar/la/events/the-death-of-marketing-ai-hallucinations-sycophancy-and-the-fix-8076aaec-abdc-49a1-bcc6-2c0b814875cb",
+    "latw-4528dd0b1408c4ae": "https://www.tech-week.com/calendar/la/events/what-did-our-ai-agent-do-the-missing-runtime-authorization-layer-for-agents-and-174d0d9f-ff14-42cd-a837-e5531cfd9080",
+    "latw-3d6533123509be9b": "https://www.tech-week.com/calendar/la/events/lockmcp-1d7dbe3e-833b-4f0b-86eb-8f7c71222d2f",
+    "latw-b72b02fffede65f1": "https://www.tech-week.com/calendar/la/events/the-future-of-commerce-in-the-ai-era-c058a951-4478-4b8f-8759-ce8b034f1445",
+    "latw-7b321a4d5039b5dc": "https://www.tech-week.com/calendar/la/events/the-new-hollywood-stack-ai-creators-and-the-future-of-media-807601c2-1510-4b33-9842-39873286ec4a",
+    "latw-8bc326014ab87afe": "https://www.tech-week.com/calendar/la/events/the-road-to-2028-experiences-and-innovations-connecting-london-los-angeles-and-t-e14fddcb-8ee4-455a-a586-306a491c2827",
+    "latw-0bb700c11f080920": "https://www.tech-week.com/calendar/la/events/your-next-growth-move-founder-session-6847075b-6ca6-4837-b145-9a6063e0103d",
+    "latw-a9478a1f66fa45cd": "https://www.tech-week.com/calendar/la/events/ai-x-construction-panel-a598092d-632c-4187-8801-3fc9a9ffc6bf",
+    "latw-276023ec84205770": "https://www.tech-week.com/calendar/la/events/discovery-to-impact-at-caltech-d96c32ac-6853-49a9-9630-d56351d7e4cc",
+    "latw-4234da9b40d1cfd2": "https://www.tech-week.com/calendar/la/events/fractionals-taco-tuesday-a6af67da-4c0b-4a9d-b275-4e05dca55750",
+    "latw-72aa0c2b4d44ea59": "https://www.tech-week.com/calendar/la/events/hubspot-and-blackbird-collective-s-hands-on-ai-agent-lab-for-real-work-0f027ac8-aabc-4cbd-b18d-6edb2797f758",
+    "latw-dfdf17e79559a47c": "https://www.tech-week.com/calendar/la/events/the-new-front-door-to-health-creator-wellness-mixer-a5aae9dd-c10e-402e-a724-3cf7f0b02b08",
+    "latw-28b3741d883e51b7": "https://www.tech-week.com/calendar/la/events/who-benefits-from-agi-abundance-00598d8d-4905-4556-a8c1-d7bb8b9d3bb8",
+    "latw-6249a3b086f07cdf": "https://www.tech-week.com/calendar/la/events/founder-insider-networking-f3df0ec8-b68e-4060-ab5e-eae993051962",
+    "latw-38b32d5ee0cc1bf5": "https://www.tech-week.com/calendar/la/events/payloads-and-pints-7a7ac98f-02e7-48c4-ac10-267c5aeb4361",
+    "latw-9887a1dbabec73b0": "https://www.tech-week.com/calendar/la/events/the-future-of-consumer-ai-93e8bc7a-e9d8-49d1-8e9d-03ed17830547",
+    "latw-60851d9ca6ab1e45": "https://www.tech-week.com/calendar/la/events/adobe-and-greycroft-present-who-owns-creativity-now-1bb02469-314d-4a5e-8326-1aca0e64a07f",
+    "latw-27c624cf1278c5ef": "https://www.tech-week.com/calendar/la/events/b2b-bo-es-gtm-x-building-community-for-top-execs-9911d814-dc9a-4095-9a99-6ee5b92c92f6",
+    "latw-68c9fd8c5f86514b": "https://www.tech-week.com/calendar/la/events/beyond-burnout-designing-for-the-senses-cc4a2262-af46-4f0d-a0fe-d25213254a6c",
+    "latw-4ecf03b65b6e55f3": "https://www.tech-week.com/calendar/la/events/full-sphere-going-global-with-a16z-s-brian-roberts-c14689de-9938-4b74-991c-8756afd40590",
+    "latw-f47bca379c549a92": "https://www.tech-week.com/calendar/la/events/la-s-hard-tech-renaissance-robotics-and-physical-ai-6e6c5dbb-8a4d-4966-820e-cac6d41a1c08",
+    "latw-af9319307d141929": "https://www.tech-week.com/calendar/la/events/product-happy-hour-1ce59bb6-eb70-46e7-a7a4-b8b500d33cb1",
+    "latw-191e122e2213dcfd": "https://www.tech-week.com/calendar/la/events/put-your-money-in-the-room-7786610d-b42a-4bf7-b5f8-842a074eaddf",
+    "latw-4fe911a47ee2e367": "https://www.tech-week.com/calendar/la/events/reverse-career-fair-59bef9cc-5cb8-4fc2-9f4b-fe9cd7c2af52",
+    "latw-ba279c377d4542d6": "https://www.tech-week.com/calendar/la/events/the-longevity-blind-spot-why-mental-metabolic-health-may-define-your-healthspan-4a0ea5a6-fb21-4055-b5df-87cee1af9cbf",
+    "latw-d9e08b408aa18bdb": "https://www.tech-week.com/calendar/la/events/where-the-physical-future-is-gettting-built-ai-infra-and-deep-tech-88ec604c-94eb-4666-b777-de3587b937f7",
+    "latw-b3f1a6f913cde082": "https://www.tech-week.com/calendar/la/events/will-ai-really-replace-your-doctor-b88f7c30-74cb-420d-bcd4-ac2ab15dbd39",
+    "latw-3e7ebfacf496221a": "https://www.tech-week.com/calendar/la/events/scaling-with-intention-seed-to-a-and-beyond-8d688367-3ac8-4261-8c32-db7c9ceb4263",
+    "latw-4305635fe9cecc5e": "https://www.tech-week.com/calendar/la/events/a16z-perennial-founders-financial-future-collective-a1fc8c3d-7c47-4a31-86bb-6c324c26f8c5",
+    "latw-4abe672fe3d0c193": "https://www.tech-week.com/calendar/la/events/afterhour-b7477a06-6115-4079-bf90-4a063a42d7e1",
+    "latw-fa6c75aa935552fa": "https://www.tech-week.com/calendar/la/events/ai-agent-tech-talks-f2bded58-09f8-452f-b483-7dc2f8628e88",
+    "latw-63b3b084dea9a868": "https://www.tech-week.com/calendar/la/events/athletes-and-icons-investing-at-scale-eea6d316-8abe-4724-a595-a2fce499caa0",
+    "latw-315dfea1cc6b1f19": "https://www.tech-week.com/calendar/la/events/baltic-startups-networking-c7581507-21bd-4179-a174-e73fbe65ab10",
+    "latw-86118b1893a1c498": "https://www.tech-week.com/calendar/la/events/carta-and-holland-and-knight-present-startups-capital-and-connections-with-ucla-ba7d7df2-baed-4e55-bd5a-bf474b6eb70e",
+    "latw-6f3465e39c771da2": "https://www.tech-week.com/calendar/la/events/celebrating-israeli-tech-cocktail-reception-da399dee-176e-4524-ae35-7709719d579b",
+    "latw-bd75c9902e7aca0b": "https://www.tech-week.com/calendar/la/events/chloe-and-cocktails-presented-by-ayana-foundation-and-jp-morgan-2b315f78-6873-4cb4-875a-b985ac1395ab",
+    "latw-f4bd7fd3ff96c478": "https://www.tech-week.com/calendar/la/events/claude-for-wealth-managers-and-family-offices-eedbc26d-b86b-46a1-bc28-c1e04727b524",
+    "latw-3dacfe3b70646e53": "https://www.tech-week.com/calendar/la/events/dinner-and-drinks-with-fearn-matter-intelligence-78851eb7-9202-47f2-9030-d3363834a7e8",
+    "latw-4c59caf0c0a3f51c": "https://www.tech-week.com/calendar/la/events/founders-boat-party-0e6ca8d8-b817-411c-b6ab-597d4a9d6e05",
+    "latw-20bc6c9bd6078abc": "https://www.tech-week.com/calendar/la/events/full-send-party-at-spark-summit-0515ba71-89f8-41dd-9b1e-5abebda25d32",
+    "latw-7bca82d78ff0b7a6": "https://www.tech-week.com/calendar/la/events/how-chiefs-of-staff-make-the-invisible-visible-36d7bcd6-32af-4323-8329-5323a008410a",
+    "latw-1499f345f05e52e2": "https://www.tech-week.com/calendar/la/events/how-women-invest-x-wmnfintech-by-bmo-and-1871-investor-x-founder-dinner-089613f3-47e8-4ef6-a107-cc68d48de0a3",
+    "latw-915dab1d2ddda6cd": "https://www.tech-week.com/calendar/la/events/innovate-pasadena-startup-pitch-competition-40c33543-b77a-4b9f-b3f1-ede4ddf18be0",
+    "latw-aad7ce642aa2c13a": "https://www.tech-week.com/calendar/la/events/k-health-and-tech-founders-01969637-48d8-4c53-b84b-6749c1a4a3a2",
+    "latw-2f59654ed25c5d81": "https://www.tech-week.com/calendar/la/events/nachotuesday-saas-and-ai-founder-investor-rooftop-happy-hour-f6b9eb4f-c0a7-4d9a-8b04-79c30bba48dd",
+    "latw-db013e310bece838": "https://www.tech-week.com/calendar/la/events/pitch-on-tap-happy-hour-with-vcs-and-their-ai-personas-la-techweek-ad67cbe0-bc00-4b9c-acdf-de62e79d2f67",
+    "latw-48c975858cb4a22d": "https://www.tech-week.com/calendar/la/events/pitchlive-la-2c4ada73-f7ad-40a4-80ea-bad75cdd5009",
+    "latw-6a48225b03cc9f44": "https://www.tech-week.com/calendar/la/events/seed2table-pitch-dinner-for-ai-web3-and-deep-tech-investors-b2508a30-6421-41cf-ac40-9118b8616685",
+    "latw-d6914b1655bbdbad": "https://www.tech-week.com/calendar/la/events/the-agency-x-growth-accelerator-3ed87d6c-7def-421c-abe9-8f5859259453",
+    "latw-67a6610005526f71": "https://www.tech-week.com/calendar/la/events/ugly-talk-building-and-funding-tech-companies-in-la-1394da14-00ff-461b-ac34-96760983f3ba",
+    "latw-021e72f178ee4b50": "https://www.tech-week.com/calendar/la/events/vc-liquidity-happy-hour-with-turbine-d2c4ed69-9765-4978-9fb6-bb2aac5b34b8",
+    "latw-1ed5c2346d09c0c4": "https://www.tech-week.com/calendar/la/events/uncork-s-frontier-builders-and-investors-dinner-b563a709-6455-4774-98bb-d7072ba86ade",
+    "latw-df55e2ed6f0e3d8a": "https://www.tech-week.com/calendar/la/events/a-private-evening-for-la-s-tech-community-bf943e56-f7f8-4244-966d-2048afa82610",
+    "latw-b942c30a2144ca00": "https://www.tech-week.com/calendar/la/events/idea-space-launch-group-meditation-mindful-networking-4ae100f5-0ffd-4ead-92cf-3ac7d915afc0",
+    "latw-b28f99ea7c8715d1": "https://www.tech-week.com/calendar/la/events/interview-an-agent-db28722b-f839-4bdc-9362-d167dcd000c4",
+    "latw-cbe3daedcf2d8275": "https://www.tech-week.com/calendar/la/events/j-p-morgan-sunset-social-with-the-innovation-economy-2398a733-0d0e-4c8d-833b-55b270507a06",
+    "latw-a6e5dc3b192927b6": "https://www.tech-week.com/calendar/la/events/penthouse-salon-the-cap-table-x-google-a7ed02fc-ee08-49b0-a772-6e7a8a67ca19",
+    "latw-bffad19dccbf7d67": "https://www.tech-week.com/calendar/la/events/tech-bio-frontiers-popup-by-phase-capital-at-be2d236b-92da-40b3-b201-74bdc64205a7",
+    "latw-21b48fc0efd396bc": "https://www.tech-week.com/calendar/la/events/why-bidirectional-evs-will-dominate-our-energy-future-aa938907-0979-404a-9d23-5c24d6d928d6",
+    "latw-e52390b277ad35cd": "https://www.tech-week.com/calendar/la/events/l-tr8-n2-the-torm-q-and-a-with-terrence-sims-0e4995ec-4ca5-48c1-8144-c2ef6539f274",
+    "latw-cab287a26e3d9912": "https://www.tech-week.com/calendar/la/events/ai-collective-pitch-night-2f5d1e81-a621-4ab9-8f92-7be0ed15789c",
+    "latw-8426ab4e5c13af52": "https://www.tech-week.com/calendar/la/events/beyond-the-prototype-building-voice-and-consumer-facing-ai-that-wins-b99d9657-c403-4fac-a3f4-2ada89fc1ea7",
+    "latw-d07968081d8974f9": "https://www.tech-week.com/calendar/la/events/bioharmony-beyond-the-biohack-590597f4-ccac-48cc-bb3a-aa5bfafa422f",
+    "latw-12b2f4b1590f057c": "https://www.tech-week.com/calendar/la/events/building-next-generation-space-infrastructure-d24b906e-38c3-4d1c-886f-8856d0578fb5",
+    "latw-e5701599d47b4e88": "https://www.tech-week.com/calendar/la/events/closing-the-funding-gap-58852573-fdd6-4e8b-acda-548e2c353620",
+    "latw-b27d3f34f8ed479d": "https://www.tech-week.com/calendar/la/events/connecting-the-agentic-web-for-consumers-b2c-43402621-f344-4f48-b9b8-47cd9275b08f",
+    "latw-429f7f671881988d": "https://www.tech-week.com/calendar/la/events/defense-space-tech-panel-a2473d22-4c92-41fa-8c46-377d4b8bf041",
+    "latw-9cc8d9fde643fde2": "https://www.tech-week.com/calendar/la/events/dinner-with-the-author-of-the-variational-book-9183052d-04eb-4cb9-bab5-1bc4733af291",
+    "latw-80ed6170dc8292f3": "https://www.tech-week.com/calendar/la/events/f-kup-night-ai-native-across-150-engineers-here-s-what-broke-25e609a9-77eb-499f-8f60-d30e5d019848",
+    "latw-c546385bd1338639": "https://www.tech-week.com/calendar/la/events/female-founders-panel-ea11df24-9210-4255-abb8-400e085df415",
+    "latw-ffd4cd4f9dc696f9": "https://www.tech-week.com/calendar/la/events/founders-and-funders-vc-reverse-pitch-439b600c-289b-44b0-bc5d-756e2582a7ec",
+    "latw-a83b561a343bdea7": "https://www.tech-week.com/calendar/la/events/from-local-to-global-a-wine-tasting-on-scaling-your-team-everywhere-9120807d-dd07-485a-9cfd-9a290a119758",
+    "latw-5797fa8f6f7251c2": "https://www.tech-week.com/calendar/la/events/from-pixel-to-world-e75a4c59-275f-4e83-90cf-86c90f6b4e18",
+    "latw-af3116570778ae9a": "https://www.tech-week.com/calendar/la/events/good-company-from-capital-to-close-cb11557b-af5e-4637-94f9-575597a54b09",
+    "latw-9e71a7a4014640e5": "https://www.tech-week.com/calendar/la/events/gtm101-influencer-hiring-and-brand-partnerships-b65866e2-a280-4556-add1-da744c48ae93",
+    "latw-babf5d83b0ca6f9a": "https://www.tech-week.com/calendar/la/events/hardware-renaissance-and-american-dynamism-by-imagining-forward-234a5ab6-4a35-4a8d-8881-8f43d4ca9745",
+    "latw-554b5341fc1325b1": "https://www.tech-week.com/calendar/la/events/human-in-the-loop-for-ai-agents-and-automated-workflows-1407832b-2ef3-46f7-b403-145e18e23de1",
+    "latw-ca5e0ccd148683f4": "https://www.tech-week.com/calendar/la/events/it-takes-a-village-98fb959c-181e-44ff-861c-905623322a93",
+    "latw-ee3c9ca651df0f41": "https://www.tech-week.com/calendar/la/events/long-beach-builder-social-0c312721-a876-4b13-ad6a-9f1a49c1cc49",
+    "latw-2de931adbe7d313d": "https://www.tech-week.com/calendar/la/events/lovable-los-angeles-6ac41dd8-e47e-4b31-a835-c9206b04d56e",
+    "latw-794329b027deb84b": "https://www.tech-week.com/calendar/la/events/physical-ai-the-intelligence-comes-alive-426240fa-32d2-4fb3-9c42-6c1dccc58492",
+    "latw-c16f1c0e2f685031": "https://www.tech-week.com/calendar/la/events/software-for-hardware-state-of-the-industry-7d7cac77-359a-4b33-aa88-246ac0586b9a",
+    "latw-ae109d04e740334a": "https://www.tech-week.com/calendar/la/events/the-wealth-salons-presents-ogs-and-lps-d6f644ee-5b66-4c86-8389-f60a8c3244a7",
+    "latw-36d145050acff137": "https://www.tech-week.com/calendar/la/events/usc-troy-labs-x-pareto-holdings-x-rho-founder-dinner-b1038240-19ba-4f8d-bff1-138768c6aeca",
+    "latw-c3db4223e195867d": "https://www.tech-week.com/calendar/la/events/vitals-consumer-health-in-the-ai-era-d590ec4d-79df-43b1-96e5-020e5e2aa4fb",
+    "latw-7a3054dac8f6e9c5": "https://www.tech-week.com/calendar/la/events/what-s-next-an-intimate-conversation-with-evette-ellis-987575f3-9eaa-4e97-9116-bf8ed8579352",
+    "latw-50286adf6fcadc17": "https://www.tech-week.com/calendar/la/events/happy-hour-w-higherpeople-b887f4e2-0cf0-4811-a856-17196c8e074d",
+    "latw-bc0f5df1118e26b7": "https://www.tech-week.com/calendar/la/events/ai-vertical-drama-salon-9e4fb6c2-01d2-4ef4-afe7-d27090bbbe17",
+    "latw-f845baeb9acc7c62": "https://www.tech-week.com/calendar/la/events/ai-powered-site-selection-from-search-to-development-opportunity-30fbac68-7053-4508-9a5c-87ca7e4aaa90",
+    "latw-a954875c46544bd4": "https://www.tech-week.com/calendar/la/events/creator-x-commerce-panel-with-wati-943a29ac-8f19-42d4-a7e8-3c0a290358fb",
+    "latw-a5a7a3b79a72cf7f": "https://www.tech-week.com/calendar/la/events/engineering-the-future-c12b7984-ab5f-412a-a9f7-2e327feea0ec",
+    "latw-8328a5908c321f1c": "https://www.tech-week.com/calendar/la/events/the-pitch-room-live-interactive-built-for-founders-5b185352-f305-4c38-b443-c6ae09503a4c",
+    "latw-f4590b19c7ef276f": "https://www.tech-week.com/calendar/la/events/the-skeleton-is-your-operating-system-ff5bd2dc-4c9f-4435-a539-1c570447ae46",
+    "latw-0a512e2ad62a3d27": "https://www.tech-week.com/calendar/la/events/wearables-the-future-of-health-happy-hour-free-food-drinks-5879d0bf-0607-4a5f-ae0b-9f6123a39069",
+    "latw-ec143a81059270c0": "https://www.tech-week.com/calendar/la/events/a26-ventures-dinner-series-008-113f7559-d79c-46da-9011-e85d5deccbb3",
+    "latw-37452f7d25d1d3d2": "https://www.tech-week.com/calendar/la/events/ai-in-commerce-by-kinect-9166e60f-c0b2-4f3b-ae57-646e6f2b3bac",
+    "latw-5dc2c52830b6b202": "https://www.tech-week.com/calendar/la/events/astorie-live-ai-art-and-video-made-on-the-spot-7c0f36d2-1660-41ee-945d-717f3e198f10",
+    "latw-3580224de78f6750": "https://www.tech-week.com/calendar/la/events/beauty-meets-tech-the-future-is-phygital-163024aa-08fb-40f4-9d9c-1206ca260755",
+    "latw-48d71788ac93f283": "https://www.tech-week.com/calendar/la/events/claydate-b2e6f6be-f7a3-4dcc-ab87-3a14b7c1d13b",
+    "latw-1458f0d53660f99a": "https://www.tech-week.com/calendar/la/events/ecommerce-dinner-030c7651-66a1-4e5f-a1ee-03048ede5a22",
+    "latw-b8a73e83226dc579": "https://www.tech-week.com/calendar/la/events/founder-funder-matchmaking-f5ca4829-99fc-4ec9-b8ef-b823c2f02b79",
+    "latw-6ca7c19e702dbad3": "https://www.tech-week.com/calendar/la/events/from-audience-to-universe-creators-fans-and-technology-5c438b71-e256-4e5b-b7af-c1cfec945a5f",
+    "latw-90195292b1056fa7": "https://www.tech-week.com/calendar/la/events/future-of-the-future-la-tech-week-dinner-c08eaebc-e8e6-4418-ac12-952e5cb82083",
+    "latw-aab3913b659f832a": "https://www.tech-week.com/calendar/la/events/genflick-ai-film-fest-d9e73f32-c8de-4d59-88da-e8b463636025",
+    "latw-ac7db2144005a438": "https://www.tech-week.com/calendar/la/events/hard-tech-ai-dinner-325f3aee-e59e-45da-b7fb-d3898a68f665",
+    "latw-d6ada2bf04828eac": "https://www.tech-week.com/calendar/la/events/matchmaking-the-future-ai-s-role-in-building-the-next-sports-and-entertainment-e-b0629d7c-9b64-4a55-81fd-f7a9bd161344",
+    "latw-dd4c509770ea65a1": "https://www.tech-week.com/calendar/la/events/middle-easterns-in-tech-mixer-760c0f0c-6d9a-44bc-9d76-8d5bd6e6591d",
+    "latw-b1a3505960713766": "https://www.tech-week.com/calendar/la/events/night-on-the-water-ee2157af-90be-4715-835f-be46556d945f",
+    "latw-d78ff322887afb72": "https://www.tech-week.com/calendar/la/events/the-new-hollywood-dinner-be29d517-5f45-43d0-89e9-776cf5c2f052",
+    "latw-c16739df6fcaa97c": "https://www.tech-week.com/calendar/la/events/to-entity-and-beyond-the-evolving-consumer-journey-b981bd3d-90c7-4e68-abaf-2f3881e1521f",
+    "latw-a2d5a04ed593e48f": "https://www.tech-week.com/calendar/la/events/where-creation-begins-099e20c9-3b31-4b61-99c7-4258bf83f993",
+    "latw-6f560a2e6b665319": "https://www.tech-week.com/calendar/la/events/tech-is-a-joke-live-standup-comedy-aa30b4bb-0baf-401f-a06d-8de04f2eefa5",
+    "latw-22caffbed5ea6bc5": "https://www.tech-week.com/calendar/la/events/mahjong-night-a71c1277-a722-4d7f-96cf-4177996236c9",
+    "latw-a6fadd8ee469c727": "https://www.tech-week.com/calendar/la/events/dawn-patrol-surf-meetup-e3c7416b-815d-4c5b-80cd-8dbb4978fd9a",
+    "latw-98bf8d6259f56060": "https://www.tech-week.com/calendar/la/events/founder-soccer-fca8daf9-5472-4f4d-a685-ce15ad5e9fa6",
+    "latw-8cb3cf3009a11715": "https://www.tech-week.com/calendar/la/events/mobility-and-mingle-virtual-baa4fd43-29cb-4f9d-937f-2ab17eafa80c",
+    "latw-641a082d62af2632": "https://www.tech-week.com/calendar/la/events/revel-runtime-beach-run-breakfast-c51c4c81-4a92-4563-90a0-467c44081bdb",
+    "latw-cfe24df4b4bfdd63": "https://www.tech-week.com/calendar/la/events/coworking-intersections-la-490b89f1-02ea-4a76-bce3-d77de16d09cb",
+    "latw-b4da892d45012d8b": "https://www.tech-week.com/calendar/la/events/fathomwerx-summit-port-hueneme-0c325902-1aab-4717-b09a-632b3f6b15ef",
+    "latw-c61370e79ffcfeae": "https://www.tech-week.com/calendar/la/events/run-and-raise-5k-5fe33648-f4b6-410f-8d2b-d10d9436ed17",
+    "latw-3e3caf25ad7973c1": "https://www.tech-week.com/calendar/la/events/the-scaling-transition-consumer-tech-and-saas-founders-breakfast-864eed1d-0618-417d-900f-3baaae6ec1c7",
+    "latw-1389b47c5caf1eda": "https://www.tech-week.com/calendar/la/events/ai-for-housing-tech-to-end-the-crisis-68ed7d15-2b05-496a-a5b7-be383391a68e",
+    "latw-8b60f43b52a5d03a": "https://www.tech-week.com/calendar/la/events/brex-puppy-sphere-yoga-c2d7a5f1-0b9b-4d1b-9478-0baf84603e1e",
+    "latw-8ffe98ab5e5f9610": "https://www.tech-week.com/calendar/la/events/coffee-cards-and-commerce-in-an-agentic-world-with-visa-eac60239-fb0a-436e-8d42-d94440d5c390",
+    "latw-d22001a10c40a72f": "https://www.tech-week.com/calendar/la/events/coworking-day-one-9e0cb26e-b128-403a-bf4e-828da43d2aca",
+    "latw-0acf1aaf1a9790b4": "https://www.tech-week.com/calendar/la/events/google-codelabs-at-fd1e364b-fdf7-4f41-b6db-9c325d8edb74",
+    "latw-6e1ec0db0a1392c7": "https://www.tech-week.com/calendar/la/events/hiit-and-hustle-rally-beachside-workout-6cb63abf-bf15-4695-9be2-55861762005a",
+    "latw-ce596520c1395af6": "https://www.tech-week.com/calendar/la/events/surf-sessions-furl-beach-club-5bfea5cc-cb9e-4767-a93b-c08b32d0efbf",
+    "latw-367916d1f822d898": "https://www.tech-week.com/calendar/la/events/the-human-edge-ai-nature-and-intel-29477bff-cccf-469b-9b36-08804e626ccf",
+    "latw-fe11cc70a24f350c": "https://www.tech-week.com/calendar/la/events/la-mornings-investor-breakfast-8224abb7-3bf1-40f5-856c-a2a160d034b1",
+    "latw-ebfa94f73751c587": "https://www.tech-week.com/calendar/la/events/the-visionary-edge-10x-thinking-and-agentic-architecture-91964c4e-43d6-4a6b-b92b-ca6a3e5bb73f",
+    "latw-b89737573015250d": "https://www.tech-week.com/calendar/la/events/your-company-adopted-ai-what-data-is-it-attached-to-and-what-can-it-do-096a7209-374b-4cc6-ae66-49262114b557",
+    "latw-65c4667bf8515318": "https://www.tech-week.com/calendar/la/events/2nd-annual-health-and-wellness-innovation-summit-94fbc700-32ef-48df-9a8b-dae1195e3d91",
+    "latw-d76f82fdc4a31837": "https://www.tech-week.com/calendar/la/events/bridgertech-brunch-where-hollywood-courts-innovation-4c23976a-ffe9-4a3e-8eca-3b74c4b45248",
+    "latw-55be73d3347955da": "https://www.tech-week.com/calendar/la/events/demo-day-second-time-founder-edition-384479a0-3463-4895-ba18-06d2c7b8a600",
+    "latw-496359359f247f4c": "https://www.tech-week.com/calendar/la/events/hard-earned-lessons-from-building-hardware-fe686947-53a9-4625-903d-7e9ee3f82cc1",
+    "latw-0181845e7dcbc72a": "https://www.tech-week.com/calendar/la/events/public-interest-tech-un-summit-4dd1380e-e3a9-4b4a-83c6-11ab22ef509f",
+    "latw-a6ebd930e3bc4ed0": "https://www.tech-week.com/calendar/la/events/quantum-from-research-to-real-world-impact-fac1902b-2ccb-4e9d-b8dc-1e92798a8a93",
+    "latw-a70b6b8421a1a701": "https://www.tech-week.com/calendar/la/events/the-future-of-autonomous-retail-ai-and-robotics-modernization-1e2bde9c-3440-450a-9a46-febcefdcdfd9",
+    "latw-9e052fb23b25c58f": "https://www.tech-week.com/calendar/la/events/the-rise-of-ai-security-agents-defend-at-machine-speed-6b5edba5-285e-43fa-8fb4-92a3a3d48f62",
+    "latw-d68e7ec4ebe0cdc1": "https://www.tech-week.com/calendar/la/events/building-at-the-speed-of-defense-a-pwc-space-and-defense-tech-executive-roundtab-9a23d111-fe49-47e5-bf0f-f8a48b2d97e8",
+    "latw-798a8b91bdbd0aba": "https://www.tech-week.com/calendar/la/events/founders-walk-515738ed-1d57-4ff7-b82e-5decda23e9dd",
+    "latw-fb88ac4071c64f09": "https://www.tech-week.com/calendar/la/events/from-ai-experimentation-to-ai-adoption-cfaebf87-201f-4213-a6ec-b32b3c176c0b",
+    "latw-b3c345cbf71863d1": "https://www.tech-week.com/calendar/la/events/ai-native-services-summit-with-fika-and-emergence-40258c8e-1a1f-4451-bd26-d4ab4a72c326",
+    "latw-f31e0cc05a9c5487": "https://www.tech-week.com/calendar/la/events/don-t-give-your-agent-the-keys-put-a-check-blocker-between-your-apps-and-the-llm-c70d3ea4-a7c3-4eb8-9910-b701ccc33e64",
+    "latw-4de95261a91f095a": "https://www.tech-week.com/calendar/la/events/founder-meets-marketing-913db552-f15c-4d09-bb89-f4c5cf11a954",
+    "latw-aebb168012f29bb4": "https://www.tech-week.com/calendar/la/events/how-women-invest-x-wmnfintech-by-bmo-and-1871-operator-corporate-and-cvc-lunch-39be69e6-aae2-4b9b-9b8a-77e2c24dc2d1",
+    "latw-60a222ae0e4e2dc2": "https://www.tech-week.com/calendar/la/events/pickleball-sports-tech-and-recovery-in-venice-beach-0e54acfb-88d0-4bd8-b242-aaf46f28aba4",
+    "latw-ca7a679237697a68": "https://www.tech-week.com/calendar/la/events/vcpe-luncheon-keynote-and-panels-2026-b248de7c-c38f-4682-8521-05c63785ec93",
+    "latw-e9c83e75a3b9c52a": "https://www.tech-week.com/calendar/la/events/growth-teardown-la-5-companies-in-60-minutes-a9535ffc-fc37-420c-b020-984e2eef90b2",
+    "latw-f350f8c9c1262df1": "https://www.tech-week.com/calendar/la/events/an-intimate-lunch-for-the-defense-industry-68f9ae69-acef-4391-8f37-2da66ba67e79",
+    "latw-6cf9cb17d0d52f2b": "https://www.tech-week.com/calendar/la/events/la-tech-week-life-sciences-lunch-5ebb8547-9f59-4f8a-8286-cf80768c96c7",
+    "latw-8d8b78a4edca0c65": "https://www.tech-week.com/calendar/la/events/robots-above-la-24aff265-5199-41df-b978-05c34b2730fd",
+    "latw-76efd93e45d8ca69": "https://www.tech-week.com/calendar/la/events/sushi-night-vol-2-japanese-beauty-culture-and-ai-a7901415-f2fa-4fee-aa18-7c63e0a99c5e",
+    "latw-d0912667036e10b8": "https://www.tech-week.com/calendar/la/events/the-cpg-accelerator-map-the-right-program-for-your-next-milestone-b67d8fb6-4f22-4a45-bf32-c7b506437eaf",
+    "latw-26f0f21812c32af9": "https://www.tech-week.com/calendar/la/events/from-efficiency-to-expansion-optimizing-models-gtm-and-growth-acfcbe8a-f3ea-4052-b143-1e95a4b80807",
+    "latw-f2a222ad26a30644": "https://www.tech-week.com/calendar/la/events/wellness-mansion-reboot-rejuvenate-6de720f8-fc6a-43ca-ba57-ef4c9ffdd025",
+    "latw-5155d1bbadfe51f0": "https://www.tech-week.com/calendar/la/events/building-better-trading-strategies-with-ai-0f0b9be0-ece3-48c6-b3e0-81e06f7acbc8",
+    "latw-185e8bc52608c400": "https://www.tech-week.com/calendar/la/events/funding-readiness-seed-and-series-a-for-founders-6c949a4c-a403-4ad3-85d5-83b43ffbcad8",
+    "latw-f69f895fd8169b27": "https://www.tech-week.com/calendar/la/events/world-models-the-next-frontier-for-media-and-entertainment-7073cb3b-924f-4034-828a-1da963598369",
+    "latw-f5bcd6efe71d3aa3": "https://www.tech-week.com/calendar/la/events/the-future-of-sports-ai-building-toward-la28-0e3fcfb7-6d59-4583-bf5b-6cb1af8e6d1f",
+    "latw-f8766beac4a483f1": "https://www.tech-week.com/calendar/la/events/ai-media-career-fair-062b027e-3859-4282-8be5-31694807ca8f",
+    "latw-cd9f69fdc12d22b9": "https://www.tech-week.com/calendar/la/events/pitch4capital-com-funding-day-founder-investor-mixer-55b76caf-2ce2-4e15-89d6-d47d8e85d1e0",
+    "latw-1f940e3f6591ac40": "https://www.tech-week.com/calendar/la/events/pre-incorporation-training-day-create-the-next-openai-foundation-c7902b4d-e44c-45d1-b650-0d08c92bc358",
+    "latw-90478c5608eab6ee": "https://www.tech-week.com/calendar/la/events/preparing-for-your-raise-c4fb182a-89eb-430d-9c74-401c60cdec8a",
+    "latw-07349a6552c6db9b": "https://www.tech-week.com/calendar/la/events/preparing-kids-for-a-future-we-can-t-yet-predict-312026d8-360b-41d0-ae35-f079ee062f1a",
+    "latw-138ddff186bd7122": "https://www.tech-week.com/calendar/la/events/startup-founder-stories-live-and-uncut-615ec438-220d-4096-9aa2-1a74ec77de71",
+    "latw-42a26927bce4cbaf": "https://www.tech-week.com/calendar/la/events/in-her-timing-a-room-for-women-who-build-and-back-1a6ea798-4866-463c-aded-19fc0baafa77",
+    "latw-39e88a53b2f2094f": "https://www.tech-week.com/calendar/la/events/ai-x-science-1546dbb4-843f-4a1d-b3be-0dbbb3fe74a5",
+    "latw-4318421532f330b1": "https://www.tech-week.com/calendar/la/events/beyond-borders-scaling-consumer-brands-in-the-u-s-27b2fc77-f069-42dd-912c-5508fecbe734",
+    "latw-3e5e5849ecfa0243": "https://www.tech-week.com/calendar/la/events/beyond-the-deck-ai-storytelling-for-studios-and-audiences-3082f56f-ef8c-47e5-8bc4-2b586934f531",
+    "latw-cec1100a2e8fd7e5": "https://www.tech-week.com/calendar/la/events/canada-reception-0a3404f1-1824-4015-8fdf-b3ce436cfdd2",
+    "latw-72ba588ed065804f": "https://www.tech-week.com/calendar/la/events/from-search-to-answers-the-future-of-entertainment-discovery-24348ad6-fb88-4cd0-af5e-3f71ae1e6452",
+    "latw-e62ee3418aa46dfd": "https://www.tech-week.com/calendar/la/events/j-p-morgan-the-intersection-of-technology-and-wellness-9b9fb870-db5b-4c70-87cb-f1b75c089b0a",
+    "latw-113464abd64ba518": "https://www.tech-week.com/calendar/la/events/the-future-is-still-brighter-than-your-screen-372d9c3c-5a9c-4444-b096-43846463cf80",
+    "latw-c0025c0359a4ab72": "https://www.tech-week.com/calendar/la/events/the-future-of-entertainment-a-spooky-screening-conversation-and-cocktail-recepti-a34c0f5f-2101-4167-9510-f7860d912dfa",
+    "latw-b11cf0ae4223db50": "https://www.tech-week.com/calendar/la/events/accountability-that-actually-works-a-playbook-for-first-time-founders-04c7b79b-a348-42c3-b093-557e61cce1b4",
+    "latw-f1130e02f096ced2": "https://www.tech-week.com/calendar/la/events/ai-markethon-2026-13k-cash-prize-d2e5c057-ad31-4226-a6e5-341e71511513",
+    "latw-638fcf2f9ab1e74f": "https://www.tech-week.com/calendar/la/events/ai-unscripted-5c5a0615-2974-4bca-a578-97560c9ecd54",
+    "latw-641a364b7f4aef94": "https://www.tech-week.com/calendar/la/events/apis-and-aperol-a-rooftop-social-hour-w-vonage-12b40209-7a51-4657-b7f8-a75c88214186",
+    "latw-6f2c8cfe9c5a0771": "https://www.tech-week.com/calendar/la/events/build-anywhere-scale-everywhere-global-founders-picnic-d2637299-5c23-4ac3-be1b-8cd42a06533b",
+    "latw-282adc5b4a7d9944": "https://www.tech-week.com/calendar/la/events/consumer-tech-creative-lounge-550d9146-f0a5-4400-91e8-c426069ae600",
+    "latw-0064bbcdfd8ea077": "https://www.tech-week.com/calendar/la/events/experience-the-best-of-ai-filmmaking-neu-wave-ai-film-festival-8d289448-609f-4fac-ad7a-bc36a82a67a7",
+    "latw-ea46aadcbe74e417": "https://www.tech-week.com/calendar/la/events/highways-in-space-f5a4010b-8a3d-42f3-852a-809188424bfe",
+    "latw-4f204e5eff313d13": "https://www.tech-week.com/calendar/la/events/how-to-market-any-app-101-8bc46f84-2714-4e2c-a482-884e0f1c83f4",
+    "latw-db1f628f054e7b84": "https://www.tech-week.com/calendar/la/events/innovation-in-sports-and-media-7d522b6f-1ef8-415f-b724-ae108b2116fd",
+    "latw-3c9dc76e13545919": "https://www.tech-week.com/calendar/la/events/litquidity-ventures-hospitality-suite-8f7b3558-07e0-4d54-b21c-c6d6e02a24e4",
+    "latw-5961b4735cde428f": "https://www.tech-week.com/calendar/la/events/successfully-scaling-in-the-ai-era-capital-and-growth-180b39da-5a17-463b-a85d-8d0338e84532",
+    "latw-3f7668cc5696de62": "https://www.tech-week.com/calendar/la/events/the-new-map-of-global-investment-4a3c9a6a-d066-41f7-ad8b-eb1a9d2c1eea",
+    "latw-0a0735d0f862f86a": "https://www.tech-week.com/calendar/la/events/the-non-diluted-stack-funding-growth-with-sba-debt-cdfis-and-grants-36c2bbae-502e-467e-b565-a9f9ddeb0dd9",
+    "latw-52ac149b34554cab": "https://www.tech-week.com/calendar/la/events/vcpe-and-family-offices-happy-hour-3c1a89e7-2ede-4804-9279-06f7d41ef3a3",
+    "latw-66f37e995e600ed2": "https://www.tech-week.com/calendar/la/events/ai-native-value-creation-a-pe-operating-partner-fireside-37b9ada3-be3d-4bd6-a0db-f2f018126e37",
+    "latw-ecac9ef9cd6ed1bb": "https://www.tech-week.com/calendar/la/events/la-s-deep-tech-ecosystem-aerospace-robotics-and-defense-startups-cb078f46-8b30-4298-b94d-78b673e521cc",
+    "latw-9efea491ec5c322d": "https://www.tech-week.com/calendar/la/events/ai-for-solo-founders-virtual-coffee-chat-and-networking-858299c5-bec8-41ed-94e8-af9e28de1ecc",
+    "latw-3d1e8a84dfdd3dfc": "https://www.tech-week.com/calendar/la/events/bam-octoberfest-e6c46f61-98af-4934-b478-ae6000bccbb1",
+    "latw-ce10cb1fc8259bcc": "https://www.tech-week.com/calendar/la/events/dry-eye-in-the-digital-age-screen-hygiene-for-healthier-eyes-c7104a0d-2eca-499d-9a14-9b759b49b901",
+    "latw-df8e0b035f68f0cf": "https://www.tech-week.com/calendar/la/events/executive-roundtable-future-of-work-377a1ab0-0b20-4804-b4dc-651f15d14f3f",
+    "latw-237d3c3049ac736c": "https://www.tech-week.com/calendar/la/events/future-legacies-series-beauty-tech-at-scale-d0bd42c1-5c5b-479d-825e-ea6b1e7c436c",
+    "latw-d1956e844dec1aa9": "https://www.tech-week.com/calendar/la/events/go-scout-hackathon-your-production-cheat-code-to-reduce-costs-and-maximize-effic-cf41b92e-600e-4017-9b39-c5ad9382cc89",
+    "latw-69981e8bce736ca0": "https://www.tech-week.com/calendar/la/events/la-tech-week-2026-tech-media-mixer-ac0afe55-b234-40f2-87ad-1b73c60fd39d",
+    "latw-710db5364280b276": "https://www.tech-week.com/calendar/la/events/legendary-ventures-45eb3639-0e12-47f8-8edb-34ad5e03a5cb",
+    "latw-77b0e5015e62c727": "https://www.tech-week.com/calendar/la/events/mexico-meetup-building-funding-and-scaling-cross-border-7838c36f-df8f-464b-915c-2c60a822053e",
+    "latw-2de580183e9e3bc5": "https://www.tech-week.com/calendar/la/events/premier-creator-economy-event-by-pioneer-square-labs-and-yamaha-music-innovation-d002a40e-88e4-4798-9651-0526f35d6919",
+    "latw-134312ab7c4a53b0": "https://www.tech-week.com/calendar/la/events/stan-la-pitch-and-connect-8dc61e63-e1bd-478b-95f8-a6eb1ec0719f",
+    "latw-954866214ec602ae": "https://www.tech-week.com/calendar/la/events/tech-shaping-cities-26c237ac-c88c-48ae-9b54-c6e9485148fe",
+    "latw-62e124bfbf4e10ed": "https://www.tech-week.com/calendar/la/events/techstars-aerospace-and-defense-happy-hour-w-us-space-force-and-nasa-jpl-0a3f7b85-9584-447a-9d6e-12e4f587e285",
+    "latw-d4de8758723ac1c2": "https://www.tech-week.com/calendar/la/events/the-art-of-being-supported-af-sound-bath-convo-w-amanda-frances-and-hatday-it-s-22a2a64b-fb58-42aa-8e33-87a8c039c12e",
+    "latw-1f2ae8b9b599bb41": "https://www.tech-week.com/calendar/la/events/the-capital-stack-for-socal-enterprise-tech-31b8228b-a118-476a-b2e5-a114faf83112",
+    "latw-1ed7bba096a3dc20": "https://www.tech-week.com/calendar/la/events/an-evening-at-love-life-longevity-club-17cb13e9-3284-4a1a-b7bf-26f32d495232",
+    "latw-0fa890d29acfd952": "https://www.tech-week.com/calendar/la/events/building-for-government-la-govtech-happy-hour-05f80298-d69a-4d10-ba03-36b7c0944a49",
+    "latw-e76a5d4f01c85d30": "https://www.tech-week.com/calendar/la/events/burbank-tech-talks-fcd8e0d2-e598-49d5-a4a3-abed4b5108a9",
+    "latw-c2094802147c4ae3": "https://www.tech-week.com/calendar/la/events/clippers-vs-nuggets-suite-7d453261-7bb7-40c0-af2e-f4d5694ac0dc",
+    "latw-ea856a6b3285ed5f": "https://www.tech-week.com/calendar/la/events/gitlab-behind-the-curtain-ai-governance-at-the-magic-castle-cf52081c-de07-468e-9108-1d516df53c6b",
+    "latw-0f6601fe4b533dcf": "https://www.tech-week.com/calendar/la/events/health-tech-panel-4d3a0be0-85da-433b-8fbc-40d9607e1b1e",
+    "latw-b89a188e63d8c7be": "https://www.tech-week.com/calendar/la/events/marketplace-meetup-be5d18dc-07c1-4815-b2a7-97390a61c89d",
+    "latw-38e1dc852f958368": "https://www.tech-week.com/calendar/la/events/penthouse-investor-soiree-175f4e98-aff6-43e0-89fb-4b5aa2fb1385",
+    "latw-9fe3758c08a27b4c": "https://www.tech-week.com/calendar/la/events/tcsi-s-headshot-happy-hour-eb5a2e1f-144c-4cca-b28b-593ef1dfc329",
+    "latw-860d88938410ce22": "https://www.tech-week.com/calendar/la/events/the-novus-garden-society-1cb9f125-dd82-4d8a-908c-e613103d4e7a",
+    "latw-aa7b7a73d2385fc2": "https://www.tech-week.com/calendar/la/events/j-p-morgan-software-leaders-and-investors-forum-b251842b-05ff-4261-83cd-4cc7add51fd9",
+    "latw-1229ddacb0f07c31": "https://www.tech-week.com/calendar/la/events/a-new-creative-stack-how-ai-is-reshaping-content-6e0d30e3-cf3a-4a62-b5e2-f5e85aff02b0",
+    "latw-6ddbb89dec483d1f": "https://www.tech-week.com/calendar/la/events/advertising-and-marketing-mixer-1a1f1a3b-8040-4079-918f-2dfbf27cea8c",
+    "latw-b332f400c6c4a12c": "https://www.tech-week.com/calendar/la/events/ai-agents-speakeasy-with-livekit-and-modal-0bc83c23-bd43-4e51-be3e-5866cfac815e",
+    "latw-920dc98bea7f0ac2": "https://www.tech-week.com/calendar/la/events/build-and-deploy-an-app-in-minutes-6ca06165-ce5b-444c-a43f-80595c58b0a7",
+    "latw-236be097753b6965": "https://www.tech-week.com/calendar/la/events/built-fast-secured-smart-cybersecurity-for-the-vibe-coded-era-2e76c2a6-6004-4e76-b105-96556c9325bf",
+    "latw-fd7b51da005d9592": "https://www.tech-week.com/calendar/la/events/claude-lawyer-v-real-lawyer-f3e9b744-2b8c-41b8-88e7-a905f7fc9176",
+    "latw-a51068a8bb7fa1dd": "https://www.tech-week.com/calendar/la/events/climate-commons-the-water-energy-nexus-and-startup-showcase-cb157d6b-b1e1-4f83-92f3-fc28c6f96cff",
+    "latw-28fa9ba81c946395": "https://www.tech-week.com/calendar/la/events/first-offer-night-the-scrimmages-d8d765e3-7908-43b9-a521-34bfffbd6952",
+    "latw-b45e5d7d510ac4ba": "https://www.tech-week.com/calendar/la/events/founder-golden-hour-w-fin-fireworks-vanta-ab491a8d-da36-4f0c-9859-2cc891025ea3",
+    "latw-5e7d88c368566752": "https://www.tech-week.com/calendar/la/events/founder-off-the-record-presented-by-citizens-for-startups-a61f6cf2-7e66-454d-970b-9268d77d111b",
+    "latw-1e52cea97a8706f8": "https://www.tech-week.com/calendar/la/events/from-wakeboats-to-workboats-inside-arc-s-commercial-program-229d5b08-21c1-46ac-81f6-829d8f084454",
+    "latw-41e6c126cb5170f2": "https://www.tech-week.com/calendar/la/events/future-of-entertainment-mixer-7ed742fd-07d1-4a39-a635-621bdf539bd9",
+    "latw-d28bbd3d69fb997a": "https://www.tech-week.com/calendar/la/events/generative-vs-agentic-ai-what-s-the-difference-and-how-builders-are-using-them-t-0fe132b7-43e0-4c9b-813d-cf1b70a9aa23",
+    "latw-df9235124143c29d": "https://www.tech-week.com/calendar/la/events/immigrant-founder-mixer-0c819f6c-9a14-4d28-8f56-9a2c93b63078",
+    "latw-47bfd374087d5deb": "https://www.tech-week.com/calendar/la/events/inside-planhat-an-evening-on-the-pacific-for-post-sales-leaders-db164b61-01bb-4ee7-8567-30d73d754267",
+    "latw-c9cac82a17a57b95": "https://www.tech-week.com/calendar/la/events/internet-icon-awardstm-women-who-define-tech-and-culture-5325c64d-5138-44fa-a92b-b30618323b19",
+    "latw-6e301ed9374b6c01": "https://www.tech-week.com/calendar/la/events/la-biotech-community-rooftop-social-hosted-by-nucleate-la-0469f1bb-95a8-4ada-a724-b406ec5e7e17",
+    "latw-3978721a8f521b97": "https://www.tech-week.com/calendar/la/events/l-a-made-native-foreign-ca245839-9afb-4448-ae42-c60154572125",
+    "latw-c78b84cbb57bcaf1": "https://www.tech-week.com/calendar/la/events/lowenstein-sandler-and-qapita-punch-financial-dinner-during-la-tech-week-9e6b6ede-d4b2-466c-a4bd-7628bd5f41dd",
+    "latw-16e052f87f1394cc": "https://www.tech-week.com/calendar/la/events/musa-capital-x-l4l-circular-economies-meet-up-04ad7207-a97c-48c6-b740-0467219fd1be",
+    "latw-29ce83a834e21763": "https://www.tech-week.com/calendar/la/events/ourstory-irl-66f1c320-3d1e-4ae5-aea2-b2ba7f984d4e",
+    "latw-f7b72e2b502a2b72": "https://www.tech-week.com/calendar/la/events/pitch-and-startup-networking-by-startup-valley-f31c144c-aab9-4199-bd5f-a180334ccd13",
+    "latw-3cb283367b2df162": "https://www.tech-week.com/calendar/la/events/pitch-roast-young-founders-edition-1c12b981-c799-4763-94ac-3a703bad05c2",
+    "latw-39e06bafeda43f0b": "https://www.tech-week.com/calendar/la/events/proof-l-a-tm-build-it-prove-it-deploy-it-0eb020f4-e4d6-458a-be9a-fe0b821a7715",
+    "latw-5f4d52269a2a518f": "https://www.tech-week.com/calendar/la/events/solo-startup-founder-dinner-hollywood-hills-098496a2-7493-414f-9780-5892f2fa4b5f",
+    "latw-e251ae0011a65800": "https://www.tech-week.com/calendar/la/events/speedrun-insiders-vip-dinner-invite-only-912d95b8-f8f5-4de6-8bc1-0255622f59db",
+    "latw-70e26193605c9f1d": "https://www.tech-week.com/calendar/la/events/testify-and-pitch-faith-sacrifice-and-the-courage-to-build-9687f998-a6b1-412f-87a6-939f4e5021ca",
+    "latw-7bbdaf88fe55bc6f": "https://www.tech-week.com/calendar/la/events/the-agency-intelligence-era-what-happens-when-ai-becomes-infrastructure-acb0993b-7fb0-4e5e-a376-18b3d83ec2b6",
+    "latw-8bab3dbb2133ae0b": "https://www.tech-week.com/calendar/la/events/unpacked-2-0-a-midweek-happy-hour-for-creative-women-in-tech-82001f88-ac87-4af4-a717-1681942d5b79",
+    "latw-4af63dae7e0cb584": "https://www.tech-week.com/calendar/la/events/untapped-ventures-lp-dinner-los-angeles-b66c2fea-3ab3-4e6d-8240-d894040f4094",
+    "latw-51b7710db7ce39f7": "https://www.tech-week.com/calendar/la/events/ai-intersect-94b566fb-dea5-4c6f-974a-bfd4552c030a",
+    "latw-e9dad5b577193dd3": "https://www.tech-week.com/calendar/la/events/ai-writes-a-movie-with-adult-supervision-acaf328a-2155-42cb-8785-626be2a70c93",
+    "latw-5c48bf3f1ae0d67b": "https://www.tech-week.com/calendar/la/events/antler-operator-and-future-founder-dinner-b87e9489-a124-467f-b50a-6758d256574a",
+    "latw-4f7e29d518fef524": "https://www.tech-week.com/calendar/la/events/digital-discipleship-navigating-ai-with-wisdom-40e69a2b-544c-4406-bc47-b6d4654364a5",
+    "latw-829bc0eb7f4cb29e": "https://www.tech-week.com/calendar/la/events/openclaw-la-meetup-4c9d80a7-e54b-4562-9182-aeb0cf4f6e29",
+    "latw-0a4fbc04db203e1a": "https://www.tech-week.com/calendar/la/events/worlds-in-progress-e4ebf2a3-f489-47c4-b016-56c31ba7648d",
+    "latw-ef9a692003e42985": "https://www.tech-week.com/calendar/la/events/photo-disco-play-the-room-a-real-world-camera-game-night-3c36dbe4-a72a-4310-b12b-35f5eb974bc6",
+    "latw-f72496434125fcb9": "https://www.tech-week.com/calendar/la/events/agentic-ai-design-and-3d-metal-printing-precixion-dinner-fa224a75-d9f7-49cf-a1d1-2d07e687962f",
+    "latw-82c4bdb95d013314": "https://www.tech-week.com/calendar/la/events/founder-and-creator-dinner-062949cb-da68-4494-9fb5-1c5583e0709c",
+    "latw-ccaf1c43060503a9": "https://www.tech-week.com/calendar/la/events/gundo-meetup-58d42738-b32a-400c-97cf-fa09af81db50",
+    "latw-3d1f6faf4e61e4be": "https://www.tech-week.com/calendar/la/events/investing-in-2026-dinner-with-founders-and-investors-cf82cfcc-d028-4b18-8567-0f440577b1c1",
+    "latw-9f71f284491e33aa": "https://www.tech-week.com/calendar/la/events/israel-s-business-ecosystem-innovation-growth-and-global-impact-d7fb32d5-6144-4dfc-8c01-47e9c1fb2563",
+    "latw-645b764f9ae89e7d": "https://www.tech-week.com/calendar/la/events/regenerative-impact-for-founders-and-investors-78c19b0d-d5a5-43c6-9aec-cf0ae5426768",
+    "latw-77e90d0ac2db0035": "https://www.tech-week.com/calendar/la/events/series-b-and-beyond-mansion-party-1ad3cfdb-1172-4670-b01f-ce5cf0ce8342",
+    "latw-a72db3633d1d8746": "https://www.tech-week.com/calendar/la/events/the-1-000-strangers-experiment-5-scoops-of-ice-cream-5-introductions-and-human-c-1727a6f4-eb93-4f36-997c-27c70dc20c89",
+    "latw-0c613905cf344a37": "https://www.tech-week.com/calendar/la/events/the-ai-native-influencer-agency-how-ai-agents-are-changing-the-way-creator-campa-661e5101-3dfc-4a23-8d60-91c700db59fd",
+    "latw-3c752e52aebc9f24": "https://www.tech-week.com/calendar/la/events/the-human-side-of-ai-umbrella-gravitas-9dea4347-57d3-4a56-93c1-0eb6345074b9",
+    "latw-ebb6c0d13a66ea7f": "https://www.tech-week.com/calendar/la/events/the-operators-table-scaling-series-a-c-startups-the-decisions-that-matter-most-7c034936-82f6-45a9-9a12-bf22a9e1c675",
+    "latw-9f87af378b02ebc7": "https://www.tech-week.com/calendar/la/events/ugly-talk-ai-entertainment-and-content-creators-2a5e17d9-b82c-4917-82d3-99033331e897",
+    "latw-006aad49c8975be1": "https://www.tech-week.com/calendar/la/events/ugly-talk-tech-founders-and-builder-open-mic-and-mixer-ee0bf7b7-2951-456f-bfc7-ceaab4532463",
+    "latw-55bf21128a75d326": "https://www.tech-week.com/calendar/la/events/unlocking-cognitive-performance-fee7b1a1-02bf-4680-a6f3-04503a932a2a",
+    "latw-fe3256925c564eff": "https://www.tech-week.com/calendar/la/events/vcpe-and-family-offices-dinner-63d27043-6f7b-4297-8599-9dcf44758b2b",
+    "latw-13ee23f44cf7c842": "https://www.tech-week.com/calendar/la/events/match-makers-wmnfintech-by-1871-x-bmo-lafc-soccer-game-f08282bc-18da-4fb1-ba7f-d2926074e9d1",
+    "latw-abe434711bd04db7": "https://www.tech-week.com/calendar/la/events/prediction-markets-for-clinical-trials-9f114c4c-0d85-4178-a787-8fcbf5c6cece",
+    "latw-d4c89b61eb96e7b0": "https://www.tech-week.com/calendar/la/events/the-real-founders-dilemma-building-vs-joining-6f335b55-e820-4849-a015-2a58867d570c",
+    "latw-8e7c0f957ff64991": "https://www.tech-week.com/calendar/la/events/defense-deep-tech-after-party-357029d1-1349-40a3-8456-a0b51376bf5d",
+    "latw-811fc5c46610a6f5": "https://www.tech-week.com/calendar/la/events/gundo-bonfire-1ffe0a2e-c787-4660-9a76-e4b9ee2d9d00",
+    "latw-4c33504eae1db55f": "https://www.tech-week.com/calendar/la/events/the-creator-table-a63c49c8-c0fd-4037-b4eb-820ba379941a",
+    "latw-77b467627c77dc63": "https://www.tech-week.com/calendar/la/events/coffee-connect-intentional-mixer-for-founders-and-investors-48b98813-afc6-4fb8-b9de-c8a1ed245360",
+    "latw-62668cebd982c648": "https://www.tech-week.com/calendar/la/events/coworking-intersections-la-76a894a6-cec4-4ef8-930c-32ccba69dd89",
+    "latw-20ddf5a8bf32bf84": "https://www.tech-week.com/calendar/la/events/empowering-patients-how-ai-can-expand-access-to-care-e4ee69cb-86d1-4ae3-a0c9-0719e913929a",
+    "latw-e1b02cece960a500": "https://www.tech-week.com/calendar/la/events/the-future-of-hard-tech-e2059bf8-5003-404e-80b2-ee213cf2e8da",
+    "latw-fb07b0e0f8114fc7": "https://www.tech-week.com/calendar/la/events/coworking-day-one-251d463d-5bac-4461-b7cc-d05c34253441",
+    "latw-8650b86b1c80e4d7": "https://www.tech-week.com/calendar/la/events/fuel-and-focus-hub-wework-and-doordash-for-business-4bdf93c7-24eb-4497-b906-bee96a1a6477",
+    "latw-1e10638b1695a1d1": "https://www.tech-week.com/calendar/la/events/law-in-the-age-of-ai-7c486345-5207-4a2d-843c-59f899ba6739",
+    "latw-a5eb2dcb11d6174c": "https://www.tech-week.com/calendar/la/events/a16z-speedrun-startup-culture-brunch-advisors-angels-4b986665-d4d5-46fd-b194-6073f36bbf44",
+    "latw-564eddd713110bb3": "https://www.tech-week.com/calendar/la/events/build-ai-agents-on-aws-cf4b8e15-c2d1-46ca-b321-93d25751ea8c",
+    "latw-319479a5cb898e0e": "https://www.tech-week.com/calendar/la/events/find-your-flow-state-23f0f22d-f323-4f30-85a5-2003bda60876",
+    "latw-7160a22e619b8c12": "https://www.tech-week.com/calendar/la/events/recruiting-rewired-cf5b990f-4005-40c1-a5ef-2478f0297f86",
+    "latw-d224a71f6e2d52ba": "https://www.tech-week.com/calendar/la/events/scale-client-delivery-not-headcount-the-ai-native-agency-workshop-47df1543-6091-4008-9d62-36f5727b2e1b",
+    "latw-2f48c7258081081b": "https://www.tech-week.com/calendar/la/events/the-value-creation-plan-built-live-6a420c04-e9a2-484b-90a9-00ef756d62da",
+    "latw-18a6693f19b58e05": "https://www.tech-week.com/calendar/la/events/when-your-agent-speaks-for-you-in-a-regulated-category-a-closed-door-life-scienc-8e8ddb34-d749-4f49-9dc8-f7679e62e51a",
+    "latw-971c731a10e8799c": "https://www.tech-week.com/calendar/la/events/content-for-growth-6e2d098e-2539-4d95-9a79-e3d0ae5f02b8",
+    "latw-b37fc4fdfc67ac04": "https://www.tech-week.com/calendar/la/events/fast-ai-sales-c4592c6a-d995-49fd-8965-a1869f8d37e8",
+    "latw-58b0f96f697dfba7": "https://www.tech-week.com/calendar/la/events/leading-through-transformational-change-a84dd134-01a8-4145-b43c-54911f194397",
+    "latw-2ab5a285442e36e4": "https://www.tech-week.com/calendar/la/events/pickleball-sports-tech-and-recovery-in-venice-beach-73fb89a9-456c-4558-a362-5774b937a101",
+    "latw-badff164411b3833": "https://www.tech-week.com/calendar/la/events/voice-ai-innovation-summit-w-vonage-and-deepgram-the-kinn-a8f245b4-57ad-4f78-9c9a-57406b007fd9",
+    "latw-2dc01ba63d2b72ea": "https://www.tech-week.com/calendar/la/events/what-breaks-when-you-scale-the-hidden-hr-risks-of-growth-0f25abda-1d72-468f-b92a-9a0e241fa1b9",
+    "latw-c20707c49d3eec5a": "https://www.tech-week.com/calendar/la/events/consumer-founders-and-investors-lunch-05549512-8999-453e-97dc-5ce3d52c954b",
+    "latw-e7c056c0c0259eff": "https://www.tech-week.com/calendar/la/events/founder-lunch-club-w-fin-and-stripe-94c31cdc-e2c8-4a50-8dbe-5c3c15ed38c7",
+    "latw-f56cda5e26df5ea4": "https://www.tech-week.com/calendar/la/events/female-founders-and-capital-allocators-lunch-hosted-by-the-3i-investor-community-ffd7d857-8d11-43ff-8dfb-06cd73c50860",
+    "latw-7c336b0e823f9a41": "https://www.tech-week.com/calendar/la/events/five-layers-of-agentic-voice-from-design-to-governance-a0f9a4f8-2a24-4b4a-80c4-de9dee97f48f",
+    "latw-193421582ad391a9": "https://www.tech-week.com/calendar/la/events/future-of-commerce-tech-585802aa-1ae3-417a-9233-8516c55dfce4",
+    "latw-5411d9b88b535ab5": "https://www.tech-week.com/calendar/la/events/gtm-101-ask-a-founder-anything-b58f8e42-a9b6-495a-8890-4e0f6b3985a0",
+    "latw-15e463ba3da6fee9": "https://www.tech-week.com/calendar/la/events/happy-wellness-group-demo-day-iii-d4c19a72-1ef7-4fdf-a168-a4794362ac1e",
+    "latw-fe9fd46b160ee70f": "https://www.tech-week.com/calendar/la/events/just-do-it-a-performance-psychology-workshop-to-help-founders-perform-like-olymp-60276d18-f307-4f00-869e-b9831785a5a6",
+    "latw-031eae168ad07ff0": "https://www.tech-week.com/calendar/la/events/the-new-rules-of-video-marketing-73049136-598d-49b0-a1ff-e795d4d5a05b",
+    "latw-10d7e3eb120574a6": "https://www.tech-week.com/calendar/la/events/the-mix-of-modern-finance-leadership-ai-and-the-future-of-fp-and-a-7be34103-db10-4311-987d-cec01784319e",
+    "latw-28aca087bdd96170": "https://www.tech-week.com/calendar/la/events/prove-it-wasn-t-the-ai-a-live-agent-incident-post-mortem-be4527f1-71f6-4b56-943b-c7477d24c675",
+    "latw-676c32f302bbb438": "https://www.tech-week.com/calendar/la/events/female-founders-and-funders-walk-a17effa1-4b49-4044-b94b-964c1413372e",
+    "latw-377d3d4229c97767": "https://www.tech-week.com/calendar/la/events/figuring-out-first-funding-a5f711d6-e0f1-474d-8375-b225577b6dd2",
+    "latw-2c9140d07dc07580": "https://www.tech-week.com/calendar/la/events/get-ripe-heat-ice-book-launch-045942f3-193c-4c04-a94e-17f4bcc54617",
+    "latw-9d7ec07dc60f94c7": "https://www.tech-week.com/calendar/la/events/space-the-next-frontier-of-technology-2026192d-c83f-4e6c-b7e3-04b1e45abb43",
+    "latw-73a07c564714f74b": "https://www.tech-week.com/calendar/la/events/the-city-hacks-the-state-beach-edition-123efe40-8761-4821-bd61-9bd182d4209c",
+    "latw-8203470cc16504c3": "https://www.tech-week.com/calendar/la/events/the-future-of-entertainment-ai-creators-and-hollywood-25895220-c300-485c-9200-651e441eee09",
+    "latw-8c51a2a4c5fe0857": "https://www.tech-week.com/calendar/la/events/zero-to-one-growth-playbook-for-early-stage-b2b-startups-82c5bce0-b5c8-4381-8c81-6670d99e0c31",
+    "latw-d858e2bce6a016cb": "https://www.tech-week.com/calendar/la/events/fireside-chat-a-conversation-with-the-gps-of-a26-ventures-7b10403f-8e35-4107-972d-47c260dc9939",
+    "latw-dc4302c477500289": "https://www.tech-week.com/calendar/la/events/navigating-the-path-to-the-public-markets-crafting-your-story-for-a-successful-i-ce32e009-ebcf-4172-845b-65dfeba06a97",
+    "latw-9ad28df37629926a": "https://www.tech-week.com/calendar/la/events/next-consumer-ai-frontier-companion-to-personal-intelligenc-latechweek-a88f5744-70b3-4fca-8278-0cbf7f606d94",
+    "latw-abf73154bb38f550": "https://www.tech-week.com/calendar/la/events/5-on-5-pick-up-basketball-78e72e81-f45b-47f7-a4d2-0f7b459b8254",
+    "latw-6fae377940565538": "https://www.tech-week.com/calendar/la/events/abbot-kinney-open-house-57393ef8-eb1e-4c7c-8d55-aa1bdacc3bf6",
+    "latw-5d73fb2127f1fcfc": "https://www.tech-week.com/calendar/la/events/creator-x-brand-mixer-cf529f17-9e1d-4126-826b-e5617ec0a65c",
+    "latw-861812821f43ef1f": "https://www.tech-week.com/calendar/la/events/investher-roundtables-8233b52e-0013-472b-9920-5213804a44a0",
+    "latw-b47486dc03f9d51a": "https://www.tech-week.com/calendar/la/events/responsible-ai-as-a-value-driver-how-to-make-trustworthy-ai-attractive-to-invest-41947c13-e79d-4d7e-bd70-2996b680058e",
+    "latw-0d43cb92fdf871f0": "https://www.tech-week.com/calendar/la/events/ai-agents-can-create-who-decides-what-marketing-should-say-05e5f3df-d348-4d9e-9a06-e55b7e44002f",
+    "latw-0d48f8f57e078bad": "https://www.tech-week.com/calendar/la/events/a-venice-happy-hour-with-venture-point-legal-startup-vc-lawyers-176d7234-540e-44f1-b9be-96bda869d6d5",
+    "latw-260bf57d53e8ed6f": "https://www.tech-week.com/calendar/la/events/agents-and-angels-2e9af4b6-f617-4d07-a4d2-8b049c40e451",
+    "latw-60e2d775934b86d7": "https://www.tech-week.com/calendar/la/events/built-in-la-the-next-era-of-flight-f0f74f72-58fb-4c1c-a9fc-47227cc523bd",
+    "latw-3c2451e954b7dd04": "https://www.tech-week.com/calendar/la/events/founders-funders-and-high-performance-mixer-a779d28b-6517-44a0-8f2a-3efae92a31ea",
+    "latw-aaca875acec16cd3": "https://www.tech-week.com/calendar/la/events/future-forward-impact-summit-a738f6c8-01b1-4b2f-b3a5-261a50b5245d",
+    "latw-4fc509f25b8057f4": "https://www.tech-week.com/calendar/la/events/hybrid-production-night-w-luma-2fa0ab57-cc6a-4285-bac2-2fcdb6d87ce6",
+    "latw-8b923248960389e6": "https://www.tech-week.com/calendar/la/events/microsoft-copilot-ai-for-biz-workshop-061f2001-2557-4fa9-adee-c5111b248c1a",
+    "latw-82dfc6be1eae8165": "https://www.tech-week.com/calendar/la/events/miso-robotics-lab-flippy-frying-live-fdc88e4c-a2d0-4457-b80e-e8e9c858da85",
+    "latw-bbc1bed738300130": "https://www.tech-week.com/calendar/la/events/never-finished-creativity-reimagined-a-dialogue-on-reinvention-035329c6-8137-45af-99b6-62133a365e5d",
+    "latw-dde64e973c999cfa": "https://www.tech-week.com/calendar/la/events/phil-e-productions-c3cf8b78-ded5-413d-b657-3f63c4447404",
+    "latw-ae5adbe0ea24f867": "https://www.tech-week.com/calendar/la/events/reindustrializing-the-manufacturing-industry-robot-mixer-launchpad-hq-la-techwee-e379901b-7a7d-4e1a-b864-079f196f2a91",
+    "latw-16b04ac9b0a2cf1e": "https://www.tech-week.com/calendar/la/events/space-defense-star-trek-star-wars-and-star-defense-919d18d3-2444-4899-8217-806b454bd596",
+    "latw-58f34a97319d43a9": "https://www.tech-week.com/calendar/la/events/the-future-of-restaurant-tech-and-ai-c333314c-351f-4454-ae47-fae586903cc5",
+    "latw-63280e7905798814": "https://www.tech-week.com/calendar/la/events/ai-and-infrastructure-world-congress-summit-and-soiree-4b7e9cb2-ee71-4b35-8912-b7659a56ea86",
+    "latw-a1764983f63e7406": "https://www.tech-week.com/calendar/la/events/ai-for-good-connecting-la-s-tech-community-x-nonprofit-innovators-bae7e15c-fa8e-44f2-aeec-1237ee261121",
+    "latw-c657ce2e42701346": "https://www.tech-week.com/calendar/la/events/are-you-real-439ddc9b-6403-4660-9799-440346c54f08",
+    "latw-c70024eeef078a27": "https://www.tech-week.com/calendar/la/events/be-playful-black-public-media-games-showcase-a3c4f3dc-6389-47b6-9791-9e50e70f85df",
+    "latw-f6f1e9a0fb4fb787": "https://www.tech-week.com/calendar/la/events/can-ai-teammates-unlock-your-next-stage-of-growth-4f77b066-4014-41c2-99e2-0e022743687c",
+    "latw-2920d40ef976b99a": "https://www.tech-week.com/calendar/la/events/deadline-blind-match-speed-networking-e1823755-58d2-475b-89f5-2d0a10a8dc98",
+    "latw-d7d92bb1e5ec9134": "https://www.tech-week.com/calendar/la/events/hardware-engineering-happy-hour-a76923ab-1104-486d-be74-37b8149035b9",
+    "latw-28ca788b901adf6d": "https://www.tech-week.com/calendar/la/events/hops-and-hypercars-hard-tech-happy-hour-at-common-space-brewery-6c385a5a-0d4d-4db5-b837-c0037a2b2ec6",
+    "latw-dce136379099beff": "https://www.tech-week.com/calendar/la/events/investor-meetup-sauna-before-slush-discover-finland-s-startup-and-venture-ecosys-171e28af-b3c4-47b7-a339-487de724d5c2",
+    "latw-4cc1a9ea692970ee": "https://www.tech-week.com/calendar/la/events/kolo-founders-tech-mixer-f44ed810-7a9e-4753-9acb-419c81e58f66",
+    "latw-ca04d604c6bfd99e": "https://www.tech-week.com/calendar/la/events/lets-get-the-la-bioeconomy-brewing-aa9d522c-146f-4b8d-bbf4-97eafd351be3",
+    "latw-aac3338ed71ce466": "https://www.tech-week.com/calendar/la/events/thank-god-for-el-segundo-4f8833ed-6c22-4637-afb6-f70ff251b1fd",
+    "latw-8dbe0f2434fafb7b": "https://www.tech-week.com/calendar/la/events/the-age-of-video-agents-and-branding-alibaba-vizard-agent-1eee305f-7e9e-4449-b0d8-7a05bbd6631a",
+    "latw-f1b0d8d932467e7c": "https://www.tech-week.com/calendar/la/events/the-customer-is-in-the-room-live-ai-focus-groups-for-dtc-brands-14844dc8-3cce-4386-9e4f-59758271a0f8",
+    "latw-84630b2ef5974982": "https://www.tech-week.com/calendar/la/events/the-ipo-window-today-what-s-obvious-and-what-s-not-692f7789-ffc7-4662-96cd-fe63b07ff7ba",
+    "latw-fddf6b073e828216": "https://www.tech-week.com/calendar/la/events/ai-has-a-pr-problem-7dc0bec6-4bda-4638-bd31-1492dd9c476b",
+    "latw-087fa7f34ae568e9": "https://www.tech-week.com/calendar/la/events/beyond-the-screen-what-happens-when-technology-becomes-invisible-d99b1f84-a3fe-45a7-9883-f507c5eb561c",
+    "latw-917e849ea0a42981": "https://www.tech-week.com/calendar/la/events/bring-a-bottleneck-leave-with-a-claude-workflow-dc242404-4418-4dd6-9732-914a72a10bfc",
+    "latw-ba015ec325b8515b": "https://www.tech-week.com/calendar/la/events/can-ai-have-taste-la-tech-week-ba4c8183-50f2-4134-b463-da305ef1f5ff",
+    "latw-69c5bd58b8bb0bb2": "https://www.tech-week.com/calendar/la/events/dudilagent-live-investors-meetup-c121c28a-05cb-47e4-abe8-8d43d42d0ae2",
+    "latw-a31b276308bd8fc3": "https://www.tech-week.com/calendar/la/events/future-of-logistics-and-delivery-5ccb0354-40f4-4edc-b4fb-ad328f671b1e",
+    "latw-2211c45fa3d575eb": "https://www.tech-week.com/calendar/la/events/gp-and-fo-happy-hour-hosted-by-fidelity-and-3i-members-2ca6d411-490b-485c-88f9-c0306e10f05d",
+    "latw-4cbf1388c3abc4af": "https://www.tech-week.com/calendar/la/events/healthtech-for-students-9f99db06-e096-43d0-9652-336767a2926e",
+    "latw-4a02c758c92b78fe": "https://www.tech-week.com/calendar/la/events/music-ate-ai-s-homework-620bb7a8-267f-44f3-b112-5d6ea90f785f",
+    "latw-ae0ea1a6058fbb6a": "https://www.tech-week.com/calendar/la/events/no-guestlist-backstage-with-the-future-of-music-tech-and-live-events-d9ebd9aa-71de-4ad2-a9c8-2ce0216b7fd9",
+    "latw-735900b56cd94be5": "https://www.tech-week.com/calendar/la/events/pitch-workshop-a-vc-thinks-out-loud-a2h2-wedbush-ventures-cd1cd001-637a-4098-aa06-2b5fd0f03ed4",
+    "latw-ff9d8c2f42e3d6e0": "https://www.tech-week.com/calendar/la/events/project-and-delivery-meet-up-261ac94c-8ec7-4061-a941-51ac54f334b3",
+    "latw-2d97b7e573747d7e": "https://www.tech-week.com/calendar/la/events/security-leaders-dinner-rethinking-crisis-readiness-78bad55b-6766-4ed4-ba4c-ae4cedfea4bf",
+    "latw-cca53ab703d6214e": "https://www.tech-week.com/calendar/la/events/sunset-sessions-live-ciso-interview-b1888353-ab07-4c24-97ac-8ab3f8d4f85d",
+    "latw-fedd348c22201c8d": "https://www.tech-week.com/calendar/la/events/the-anti-pitch-f91f1d68-eec9-4db4-80b6-a37e25a846f5",
+    "latw-0bac480fb1f885c7": "https://www.tech-week.com/calendar/la/events/the-brick-room-where-the-best-ideas-get-built-twice-85216ef6-6fc7-4ffe-a35c-08b69b595afb",
+    "latw-8da8d931f70d1f64": "https://www.tech-week.com/calendar/la/events/the-dog-longevity-mixer-by-panio-57503c8f-83a6-4e1c-bd36-2753fdade05c",
+    "latw-351cf95722c75f10": "https://www.tech-week.com/calendar/la/events/the-future-is-built-in-la-4dcd2048-b900-4b34-9b6c-aa74e598a6bd",
+    "latw-b96dea979214e437": "https://www.tech-week.com/calendar/la/events/the-owners-playbook-storefronts-and-startups-e921be59-6b2e-4ba6-b6bd-5821b3cbcf26",
+    "latw-3e0a35db7d815e8b": "https://www.tech-week.com/calendar/la/events/the-state-of-ai-in-medical-legal-c2af511a-b2d9-44ba-bc2d-55900a579f40",
+    "latw-69801d901aa72555": "https://www.tech-week.com/calendar/la/events/future-of-talent-representation-dinner-662b1acc-7423-41d4-a293-96a6f96552ba",
+    "latw-09dae081c9e48e75": "https://www.tech-week.com/calendar/la/events/la-fintech-4c7b890a-2345-4c8a-bf5e-febcf86536ae",
+    "latw-2d5b30ce01f2bab8": "https://www.tech-week.com/calendar/la/events/alpfa-la-tech-meets-entertainment-13bba055-463d-4195-9eac-5896f63ddd03",
+    "latw-ac08602c58a13fba": "https://www.tech-week.com/calendar/la/events/capital-for-atoms-finance-leader-dinner-241b7fc8-b8d4-4a30-8455-473e57c3bf18",
+    "latw-3b022338adf37498": "https://www.tech-week.com/calendar/la/events/cocktails-and-capital-0e7b5800-0850-4504-93d4-b719e61ea0c8",
+    "latw-b56d61536b5c3741": "https://www.tech-week.com/calendar/la/events/elevate-fall-soiree-f8060fd3-7818-4bba-9e2c-b9ddb44a7322",
+    "latw-82846551228c2831": "https://www.tech-week.com/calendar/la/events/female-founders-and-investors-mixer-e3e09add-6d19-4fb9-9e66-0480e3818daf",
+    "latw-ea91164f9ad95e2b": "https://www.tech-week.com/calendar/la/events/financial-model-makeover-71cb89f4-29a6-43a5-8593-7b99a080fc7d",
+    "latw-7f8a6059f3add459": "https://www.tech-week.com/calendar/la/events/fireside-chat-rooftop-mixer-how-founders-build-success-through-impact-53ed18be-a8f4-4237-a8be-74dcd4adccfd",
+    "latw-07ab353db6dbb59f": "https://www.tech-week.com/calendar/la/events/focus-on-demand-train-your-brain-with-neurotech-and-vr-078b037c-23db-4365-babb-a85af104ba25",
+    "latw-6a65cd8d1189da2b": "https://www.tech-week.com/calendar/la/events/founder-and-investor-happy-hour-3d26a12e-8741-434e-87a2-7156d71e78eb",
+    "latw-e27e53f7a5f528a2": "https://www.tech-week.com/calendar/la/events/from-employee-to-entrepreneur-women-s-roundtable-and-mastermind-68d1228e-af9e-4436-9e7d-fe8c5426f88b",
+    "latw-a586bfcb26446ae6": "https://www.tech-week.com/calendar/la/events/happy-head-happy-hour-8f041314-77f3-4d26-9430-dd5e9379417c",
+    "latw-014643f65e8df62a": "https://www.tech-week.com/calendar/la/events/how-breakout-brands-ugly-talk-founders-how-to-cut-through-the-noise-466ed797-2cec-41fd-9542-bfffccc0942d",
+    "latw-8b464b7f059022f0": "https://www.tech-week.com/calendar/la/events/humanism-in-the-age-of-algorithms-ai-trust-and-public-storytelling-babe0d71-e0d2-472f-bd24-79ffb59d0033",
+    "latw-0d97b2401d5b7dff": "https://www.tech-week.com/calendar/la/events/investor-founder-connect-777485c6-c567-474c-939d-84e350818416",
+    "latw-1057a2dfa4fc2df5": "https://www.tech-week.com/calendar/la/events/la-seo-meetup-5ea51820-b921-471d-a230-5c2ea501c7e7",
+    "latw-91b2b52a21aa8a45": "https://www.tech-week.com/calendar/la/events/la-tech-week-2026-sip-sign-and-scale-the-vpb-experience-4c06ddf9-ade5-487f-8b23-c253c85964ee",
+    "latw-65cbd4622ec66ecf": "https://www.tech-week.com/calendar/la/events/liquidity-and-legacy-a-private-mixer-for-ai-company-shareholders-fos-and-gps-fe9c6667-8fe9-438f-906a-0d7cc4cdeb3b",
+    "latw-6e97c50fdec0e90e": "https://www.tech-week.com/calendar/la/events/mach-engineering-after-hours-afterburner-12caaf4e-87c3-4e21-8bd1-dd35b17e9b2e",
+    "latw-18c6e3c647981f74": "https://www.tech-week.com/calendar/la/events/media-arts-hubs-in-college-towns-the-future-of-innovation-ecosystems-ceeeea92-7063-4ba6-aa5a-2e8bafb4d72a",
+    "latw-8bbec55d8ec3f662": "https://www.tech-week.com/calendar/la/events/off-the-field-sports-and-social-media-66640286-2fb3-4dc0-ad59-63e67866dec1",
+    "latw-d2ddb87c928bd626": "https://www.tech-week.com/calendar/la/events/overlook-x-speedrun-investor-dinner-8056db2d-51bb-4bd3-a327-7db4a1f4b5a1",
+    "latw-dc2501c1725c24a1": "https://www.tech-week.com/calendar/la/events/park-charge-and-connect-arriv-pre-launch-gathering-networking-1d57dff6-63c6-4f5b-a61d-273f9f9905b1",
+    "latw-c74e0ae99af347c4": "https://www.tech-week.com/calendar/la/events/pasadena-tech-happy-hour-42f3c967-8468-475e-9898-b0a3769dcf87",
+    "latw-9a08614c30572b68": "https://www.tech-week.com/calendar/la/events/pitch-investors-la-tech-week-pitch-night-by-raisi-x-seed2table-d47eef73-fc77-40a4-a40f-4504e26c7852",
+    "latw-be40c5311b07f7ea": "https://www.tech-week.com/calendar/la/events/pitch-roast-live-0c491a5d-f286-4917-a01f-9cab00f3792d",
+    "latw-7a1637232566965c": "https://www.tech-week.com/calendar/la/events/queertech-founder-investor-mixer-hosted-by-jp-morgan-and-build-momentum-2e57baa8-dbbd-4d96-9655-bcb0627a2494",
+    "latw-3fec63f197977b94": "https://www.tech-week.com/calendar/la/events/surprise-match-party-2aac5748-6d03-477b-8fce-a47ef7a79e08",
+    "latw-f4d97895bf06869d": "https://www.tech-week.com/calendar/la/events/the-borderline-store-60eb99ed-59d5-473f-b723-a1e1279b85d7",
+    "latw-7a7f6352c6653e12": "https://www.tech-week.com/calendar/la/events/the-table-a-dinner-for-women-building-in-ai-aabbdb69-30cc-4be2-b7de-1843d0142392",
+    "latw-f5073a2557394e55": "https://www.tech-week.com/calendar/la/events/tool-social-club-4b93d5f1-e5d5-4059-b472-68c4234467c1",
+    "latw-a9ca871e100a0976": "https://www.tech-week.com/calendar/la/events/vantora-formerly-up-labs-flight-club-la-tech-week-after-hours-7288fe6a-db08-49c8-9fde-bfae76627500",
+    "latw-b08e497e494cbc1e": "https://www.tech-week.com/calendar/la/events/women-in-advertising-panel-navigating-the-era-of-ai-22bbeb37-588e-48f6-a0da-a52902b30f56",
+    "latw-3cb4168d905a483f": "https://www.tech-week.com/calendar/la/events/you-re-a-founder-you-just-don-t-know-it-yet-5f40c1c4-13b3-4415-8a65-adbe85776a74",
+    "latw-330643e4612a3b96": "https://www.tech-week.com/calendar/la/events/youcode-ai-salon-1feff1c6-9099-480d-84c6-04d80f62e77c",
+    "latw-6b5f036ca4a4b442": "https://www.tech-week.com/calendar/la/events/consumer-tech-night-happy-hour-free-food-drinks-4bc676eb-a90a-471e-8430-521be0ea19a5",
+    "latw-e84a2f2c6237d023": "https://www.tech-week.com/calendar/la/events/an-evening-with-dallas-dolen-leading-through-the-age-of-ai-08700df6-88ee-46fd-a4b6-aa5300be1429",
+    "latw-4cd6e4c7d2edac22": "https://www.tech-week.com/calendar/la/events/deel-alliant-dinner-75cb0f3f-482f-4a5c-9c75-dea64ee71ac6",
+    "latw-0325835eee7a9d1b": "https://www.tech-week.com/calendar/la/events/off-the-record-sunset-edition-vip-dinner-invitation-only-c8e2bfde-7496-434b-aa12-47b783e6b398",
+    "latw-039299da96cddcd3": "https://www.tech-week.com/calendar/la/events/sip-and-startup-with-protolive-xyz-4cc4983f-d6fc-43b1-bad4-84e99bdebd7c",
+    "latw-41a26fdd7ea3c807": "https://www.tech-week.com/calendar/la/events/the-founder-deal-room-5e3bb43f-3b41-498c-8306-27d6db326c8b",
+    "latw-cfd23e67d4fd0d42": "https://www.tech-week.com/calendar/la/events/the-next-wearble-la-techweek-4d8e9373-ca7d-4724-a853-179a7c7a4c56",
+    "latw-654fcbc3bd6f056c": "https://www.tech-week.com/calendar/la/events/aerospace-happy-hour-5a06defa-0dfd-43de-8c1a-4c346d436a83",
+    "latw-d1085c151db02d7a": "https://www.tech-week.com/calendar/la/events/after-spacex-building-the-industrial-space-age-37561fc1-2647-46ca-b5f0-968df08438d5",
+    "latw-6f314e4a12140b0a": "https://www.tech-week.com/calendar/la/events/bad-bitch-empire-women-on-top-f03a0984-2bc2-4baf-ae15-b100a4d74f79",
+    "latw-c8facb03ad84e807": "https://www.tech-week.com/calendar/la/events/consumer-founder-michelin-dinner-f1402f11-98a3-4fd7-adc0-cd098153cb70",
+    "latw-5af69ef657ae209e": "https://www.tech-week.com/calendar/la/events/grand-rounds-a-dinner-for-clinician-builders-and-investors-bd4a5d85-cc10-4e29-bdcb-87f74dc27a75",
+    "latw-198cfd0a748a1a7b": "https://www.tech-week.com/calendar/la/events/how-music-s-digital-experience-is-the-ultimate-frontier-stage-for-revenue-and-fa-3f8c7c94-90be-401d-908e-c599d6f7d5df",
+    "latw-352f9da50b0a0ff2": "https://www.tech-week.com/calendar/la/events/long-beach-social-and-tech-meetup-02a3c6ce-f474-4eb3-8040-a6efec3eeee5",
+    "latw-231715e92d35a971": "https://www.tech-week.com/calendar/la/events/marketing-with-ai-015c4e12-48d3-4455-a69d-9c7efdd2802f",
+    "latw-fb8e715e5d05bf0a": "https://www.tech-week.com/calendar/la/events/moms-and-women-in-tech-mat-pilates-05c69306-e79d-4ca4-8d71-37624226afcb",
+    "latw-f03ffeab90014511": "https://www.tech-week.com/calendar/la/events/space-comedy-night-e01a0288-ec7b-442d-9239-c9d01c5de7d8",
+    "latw-ff7a985a5e322408": "https://www.tech-week.com/calendar/la/events/tech-for-good-salon-dc4c2bba-cb1a-4aa5-b970-9d8248cca3ff",
+    "latw-da71c715a2bfbfd6": "https://www.tech-week.com/calendar/la/events/tech-industry-speed-networking-pasadena-67de4aba-f505-444b-96bb-713d480cabd6",
+    "latw-fd1f33d093143a62": "https://www.tech-week.com/calendar/la/events/the-industrial-operators-table-candid-conversations-on-ai-floorops-and-margins-81db501b-d8f2-48b7-b8cc-0f8654fa5925",
+    "latw-b617bc6cd4ba00c6": "https://www.tech-week.com/calendar/la/events/the-road-to-miami-la-vip-activation-f4f97e6b-d65e-4f45-915a-10a21e058e4d",
+    "latw-955f5fb1f5f9cf15": "https://www.tech-week.com/calendar/la/events/when-your-world-is-a-market-what-people-really-think-of-prediction-markets-c9b3b3d2-8662-4c4a-995d-d11202172e2e",
+    "latw-91b7c87b11ca1d20": "https://www.tech-week.com/calendar/la/events/out-of-office-8127cd6d-fd8e-444b-ba5c-619f40d0ca2c",
+    "latw-b3dd0e5db7668703": "https://www.tech-week.com/calendar/la/events/run-tech-club-signal-run-c1f23b2d-f4c0-4718-8f28-015612dafc3b",
+    "latw-34bdafd466260898": "https://www.tech-week.com/calendar/la/events/coworking-intersections-la-561a6c17-a7e2-4819-803d-1134536df3fe",
+    "latw-06ed73b9d7167a89": "https://www.tech-week.com/calendar/la/events/founders-and-builders-morning-walk-run-coffee-meetup-3282b4eb-77dc-42de-a880-4c86ecedd1d6",
+    "latw-2b4c05eb4c85deea": "https://www.tech-week.com/calendar/la/events/music-tech-move-with-the-global-ikon-and-lululemon-f33b9d93-2d90-4136-877a-a24ef0a85e4f",
+    "latw-8034e7a18be0d150": "https://www.tech-week.com/calendar/la/events/silicon-beach-volleyball-social-c4edada3-7156-46aa-800e-84a5706d5412",
+    "latw-7d09add123f92dc5": "https://www.tech-week.com/calendar/la/events/tech-trails-founder-and-investor-hike-afb6c610-aac5-4458-b03b-ec353297ae1d",
+    "latw-7f8536ad82a52207": "https://www.tech-week.com/calendar/la/events/wedbush-ventures-x-women-in-product-breakfast-a5fc92b9-ac66-4f66-aed5-d953737eecf7",
+    "latw-99ccc1893351e26d": "https://www.tech-week.com/calendar/la/events/where-not-how-a-roundtable-on-scaling-ai-adoption-d8dd2f82-d5b8-4a7d-9b9b-caf132e6c0ed",
+    "latw-9da45978638ece1f": "https://www.tech-week.com/calendar/la/events/ask-a-vp-of-sales-live-gtm-office-hours-for-early-stage-b2b-founders-8abc9af0-1d0c-42dc-af72-49b6ceb2695e",
+    "latw-55c47f8ad2d70b99": "https://www.tech-week.com/calendar/la/events/caffeinated-fridays-coworking-b93fe4d4-ff1d-434f-9918-6115fcd7be8d",
+    "latw-a76ef71465375f54": "https://www.tech-week.com/calendar/la/events/laci-fall-power-day-2026-6a4e2bb0-ce40-47f0-84fc-10edf15cd918",
+    "latw-837ce8f8995c368b": "https://www.tech-week.com/calendar/la/events/ucla-tech-society-conference-87dead98-fe6e-4ba8-9e2c-58551ae811b8",
+    "latw-e3b68e15a065f59b": "https://www.tech-week.com/calendar/la/events/ai-lax-summit-culture-meets-ai-6eebb89f-c78d-4016-8710-473d3cb43df6",
+    "latw-ad79107226715798": "https://www.tech-week.com/calendar/la/events/aws-expert-booth-startups-aws-28194188-91e8-42a2-b988-65a93bcb3842",
+    "latw-9018559f73b44a84": "https://www.tech-week.com/calendar/la/events/gen-ai-observability-for-engineering-leaders-200d6bf5-c1b4-4897-9f46-c1ce419a38b0",
+    "latw-4fe61e7bd7adba7a": "https://www.tech-week.com/calendar/la/events/ggw-sharks-ai-founders-and-investors-8e698d38-b5ad-4cfb-b0d2-e5bb0519a2b0",
+    "latw-6d4042d861ba8554": "https://www.tech-week.com/calendar/la/events/live-models-fireside-chat-7fe72a46-059c-47be-a561-1730e595d73a",
+    "latw-4d4d5ccd2c3d1caf": "https://www.tech-week.com/calendar/la/events/civic-tech-day-04c8c35c-039f-45b9-9d77-c21e6fc7a0f6",
+    "latw-31a7a81768628a0c": "https://www.tech-week.com/calendar/la/events/fit-check-personal-styling-for-founders-and-vcs-02010217-a4bd-4e1e-9fcd-16260491b567",
+    "latw-5315cc5aa781b969": "https://www.tech-week.com/calendar/la/events/power-unperformed-0bd2b4d0-32ef-4191-956d-7c2b6e10d896",
+    "latw-dcf117ffcfb35751": "https://www.tech-week.com/calendar/la/events/vibe-marketing-in-the-age-of-ai-agents-live-workshop-d3c4eff8-3a29-4fe5-aa3c-3a9ed6ffb176",
+    "latw-3fc2bd1368af91f7": "https://www.tech-week.com/calendar/la/events/when-the-founder-goes-back-to-product-cbc203b3-5f87-4e15-806e-a7a4fec61d5d",
+    "latw-ccf39defbe5d9d10": "https://www.tech-week.com/calendar/la/events/sun-sand-food-trucks-and-good-company-what-better-way-to-close-out-la-tech-week-6d1633cf-c8d4-4e23-b967-028169b30dc2",
+    "latw-8b4eb8a1c338ccf0": "https://www.tech-week.com/calendar/la/events/immersive-breathwork-experience-7357b0b0-f6ed-4298-a249-e4006197c188",
+    "latw-dc8d4e2b8e769ee0": "https://www.tech-week.com/calendar/la/events/pasadena-spacetech-showcase-ea3e40e6-49ac-4b1d-8b24-787f2c51ccf9",
+    "latw-d6cf400669efadbe": "https://www.tech-week.com/calendar/la/events/what-really-happens-after-you-raise-but-no-one-talks-about-funded-founder-lunch-323aa562-00c1-4518-a50e-9b0fe4c69f1e",
+    "latw-8a36239579308532": "https://www.tech-week.com/calendar/la/events/gtm-101-bootstrapping-a-tech-startup-cbba187b-8002-4d48-a36c-c4f28186ba07",
+    "latw-f198d4093e3d8271": "https://www.tech-week.com/calendar/la/events/self-host-frontier-ai-running-open-weight-models-on-aws-d954f52b-17ec-4a43-befd-caba4b985fc0",
+    "latw-aec6d3e7a194a18f": "https://www.tech-week.com/calendar/la/events/what-fashion-runs-on-35970759-39f5-40c4-b183-fa27707dd266",
+    "latw-5de00a2c40198d5e": "https://www.tech-week.com/calendar/la/events/ai-in-healthcare-by-medphone-ai-f7ff950c-992b-4c87-b372-bb1c894f5a98",
+    "latw-50d086da0586fc6c": "https://www.tech-week.com/calendar/la/events/trustworthy-ai-showcase-9e9eef0f-07e4-4b3c-85b1-9b2b90155ab8",
+    "latw-f6a81bffcc03f0a5": "https://www.tech-week.com/calendar/la/events/soma-mini-mart-brain-fuel-d4327300-2615-4392-91f8-fc21ec63fe80",
+    "latw-d9d168f169c7565d": "https://www.tech-week.com/calendar/la/events/reinventing-ai-infrastructure-caad3514-bdaf-4687-b2d1-db7ceaa72f38",
+    "latw-a892540beb4b20e1": "https://www.tech-week.com/calendar/la/events/south-asians-shaping-digital-media-630625ad-ef33-4f56-ac78-6ebb0bbdc997",
+    "latw-4f1f8880e082117a": "https://www.tech-week.com/calendar/la/events/spatial-storytelling-the-next-generation-of-content-ed2c5127-84ed-4a4e-8166-8a7ac682d317",
+    "latw-3abd36c1b14ea39d": "https://www.tech-week.com/calendar/la/events/fractionals-and-friends-meet-up-cb6b9999-cc23-42a2-88fa-dd7c2eef5452",
+    "latw-4d2a9cbc07d1a94c": "https://www.tech-week.com/calendar/la/events/pasadena-ascends-vip-closing-reception-hosted-by-wedbush-9591a86a-0f89-440f-b1e8-514af4919450",
+    "latw-7afc27442c2b0033": "https://www.tech-week.com/calendar/la/events/the-future-of-skiing-0c3ef1f2-a1dc-404a-9b15-06ffe1aad0df",
+    "latw-4152eb59e94f7337": "https://www.tech-week.com/calendar/la/events/get-wired-with-senra-systems-f8b870b5-bc91-407a-9f4f-c29c91fde46d",
+    "latw-4b32b58978689eca": "https://www.tech-week.com/calendar/la/events/gold-house-x-speedrun-investors-social-3f7fe366-4243-424c-9fd8-d0ded0e8c618",
+    "latw-12d047a52138d7f1": "https://www.tech-week.com/calendar/la/events/no-human-no-creativity-who-creates-culture-now-69d57fee-9086-4396-9f0c-4ba4a36f016c",
+    "latw-c37fe1676d2f5e99": "https://www.tech-week.com/calendar/la/events/sep-hacks-e08fabab-bd0f-4795-819b-3ec97db9104e",
+    "latw-05deb46c48710da0": "https://www.tech-week.com/calendar/la/events/alpha-bets-trading-crypto-and-prediction-markets-493f75fb-a04f-4bf8-976b-2a2e292638d8",
+    "latw-53a482fa25b89af4": "https://www.tech-week.com/calendar/la/events/female-led-startups-f4912e71-48e5-4fa9-bbd1-ebd50435b261",
+    "latw-b608a6d9ab573644": "https://www.tech-week.com/calendar/la/events/la-founders-x-product-showcase-3cf608bd-b75c-4704-a6db-c79c55c18dce",
+    "latw-4480090fc7de9162": "https://www.tech-week.com/calendar/la/events/the-autonomous-playbook-scaling-revenue-faster-with-ai-6e48edb3-6ee2-4bcc-98f5-19589fbe79a2",
+    "latw-6dc9cfd5c59436e2": "https://www.tech-week.com/calendar/la/events/a16z-elevenlabs-official-afterparty-b1629b8e-0162-4c65-9aff-1018902ad0a3",
+    "latw-83f57729ed84af9a": "https://www.tech-week.com/calendar/la/events/la-tech-fall-fiesta-bdc7e62b-c065-47de-b2d6-0e87f3190fce",
+    "latw-6a30a628e1dcd4bd": "https://www.tech-week.com/calendar/la/events/riding-the-new-wave-of-networking-903be50e-d266-45d2-8d10-f8530d6387d1",
+    "latw-449355f871e39c5f": "https://www.tech-week.com/calendar/la/events/tech-week-date-night-red-string-os-5c0d7909-775a-4776-b2ed-c2c01e596c1b",
+    "latw-37d2ae96b1acb536": "https://www.tech-week.com/calendar/la/events/the-ai-storytelling-room-live-demo-of-ai-native-filmmaking-73671ff3-ada4-4102-a046-4ab5b540f1fe",
+    "latw-e8202d304bead3d4": "https://www.tech-week.com/calendar/la/events/the-music-ai-can-t-hear-what-s-actually-missing-from-the-future-of-sound-d75eb02b-d290-482d-b1d2-aa4b770b4b70",
+    "latw-a9f7a434102e4de2": "https://www.tech-week.com/calendar/la/events/token-economics-for-ai-assisted-engineering-60af9e13-560a-4616-a640-fcbd5fd2f517",
+    "latw-121254d59c62f6e0": "https://www.tech-week.com/calendar/la/events/executive-presence-lab-built-for-tech-and-business-leaders-a68fd63a-85b8-4f38-bbf5-f8bb37151728",
+    "latw-b5275ab1f5a86a3f": "https://www.tech-week.com/calendar/la/events/founders-social-after-dark-2c41c681-fa14-4a0d-9eb8-2afab235766b",
+    "latw-4ffc231dcff900a5": "https://www.tech-week.com/calendar/la/events/hr-and-people-leaders-rooftop-happy-hour-leadership-signals-bdeb8ad7-e45e-484f-9a3f-b432ad4e0fdf",
+    "latw-47705075f8ed3e1e": "https://www.tech-week.com/calendar/la/events/rocket-launch-a-usc-builders-night-by-troylabs-3045c03a-e9a3-49a0-839f-4e56e643cfad",
+    "latw-40338e0dcffb3e7c": "https://www.tech-week.com/calendar/la/events/a-mixer-4c2df855-401a-48c5-9770-d4fd0741675a",
+    "latw-af7381445e5f4736": "https://www.tech-week.com/calendar/la/events/apex-space-happy-hour-2adf37c5-98bc-42f6-b30b-7d58571c2de0",
+    "latw-38b412eddd05bbf0": "https://www.tech-week.com/calendar/la/events/capital-without-giving-up-equity-7f4463e0-65f8-4928-9474-0e6952d8141b",
+    "latw-d4c6908098a4bb1e": "https://www.tech-week.com/calendar/la/events/defense-tech-social-cc7613c0-2d53-49ef-847f-7e3b4d5ae5c3",
+    "latw-ab98eee30f62a581": "https://www.tech-week.com/calendar/la/events/hardware-hackathon-b16254b5-8e45-4608-a0bc-2507dad8fcdf",
+    "latw-a81fcb8a04c7ed44": "https://www.tech-week.com/calendar/la/events/live-music-spun-labs-aa982224-42d6-4e93-9be5-1842109ba6e5",
+    "latw-3f4324a2ce073520": "https://www.tech-week.com/calendar/la/events/loop-a-supper-on-the-physical-economy-85ca29fd-6835-4a8f-b33b-da1988ed8aff",
+    "latw-3827143fa802979d": "https://www.tech-week.com/calendar/la/events/steal-my-studio-c1abc320-bfc7-40fe-8272-bb99eb130654",
+    "latw-95eb37ea7589f692": "https://www.tech-week.com/calendar/la/events/tech-industry-speed-networking-marina-del-rey-5d425db0-6812-4e6a-bc3c-8cfdf32f0ea5",
+    "latw-6e1d821fa146dcd6": "https://www.tech-week.com/calendar/la/events/tech-meets-couture-d0a86886-e36c-4df9-8aac-47e957352744",
+    "latw-8f2e9db759338186": "https://www.tech-week.com/calendar/la/events/the-new-wave-the-future-of-hollywood-in-the-age-of-ai-c0df57c5-3e6e-4ca2-bdc4-01760a7d8649",
+    "latw-dd6bdc8617e77aa3": "https://www.tech-week.com/calendar/la/events/wellness-social-of-tech-week-bcd86818-509f-45ed-8458-cde21508b78d",
+    "latw-9fe9bc80a4d47adc": "https://www.tech-week.com/calendar/la/events/la-tech-week-afrobeats-party-43c707df-b752-496f-a835-7ffebceb4471",
+    "latw-628e1aef1c671c2e": "https://www.tech-week.com/calendar/la/events/afrobeats-next-door-d6346451-3c1b-466b-a15a-5c8a09e735e9",
+    "latw-2af49035aeca7306": "https://www.tech-week.com/calendar/la/events/jollof-szn-3e7d1b07-8a68-45c5-8ed9-471a410f7c8c",
+    "latw-cb4297760ff30bb8": "https://www.tech-week.com/calendar/la/events/open-air-health-tech-c207070e-b497-4f2f-90ed-3b9ca4d6857b",
+    "latw-9d1b041832d37cfb": "https://www.tech-week.com/calendar/la/events/griffith-observatory-hike-with-longevity-cities-and-don-t-die-la-fe5fe9ce-e118-4942-b0a7-21e2217929c7",
+    "latw-ca45312ab1303a33": "https://www.tech-week.com/calendar/la/events/acm-usc-trojanhacks-0c957754-0610-49be-83ff-33ba6fb53c20",
+    "latw-f1205dec04d87f3c": "https://www.tech-week.com/calendar/la/events/ask-a-vp-of-sales-live-gtm-office-hours-for-early-stage-b2b-founders-00096c75-3933-48f5-900a-4cbafcfd8f78",
+    "latw-c3c8fa687140f69c": "https://www.tech-week.com/calendar/la/events/the-brazen-capital-walk-connecting-women-capital-and-opportunity-60766a10-aa37-4062-a4f3-402e45a5907c",
+    "latw-2261afa7a46c1df3": "https://www.tech-week.com/calendar/la/events/0-to-shipped-5dabef5b-e201-4a38-a090-b90062a0a905",
+    "latw-8d4f0e6588db7ddd": "https://www.tech-week.com/calendar/la/events/ai-after-5-yoga-and-ai-bf24cdfa-abba-48d5-8b4b-0b869f7c13dd",
+    "latw-59efd6f75eb39910": "https://www.tech-week.com/calendar/la/events/be-you-louder-find-build-tell-your-story-05831465-5b28-42e4-b848-810a4dc1c0ae",
+    "latw-8e0d8e806686af27": "https://www.tech-week.com/calendar/la/events/cars-and-coffee-dbe11a23-1434-4944-bea7-0ed19072fa97",
+    "latw-78aa7505c166060f": "https://www.tech-week.com/calendar/la/events/live-models-tbd-c318d009-9b02-42e0-9fa6-c8617f9c9055",
+    "latw-632483da19b80ef9": "https://www.tech-week.com/calendar/la/events/creatorthon-5b26888c-f232-4e7f-ab7a-2b611a355476",
+    "latw-fd66b280930dd269": "https://www.tech-week.com/calendar/la/events/touch-sand-the-voice-agent-outdoor-hackathon-46a27e93-5b52-46b4-b477-b0873c46f579",
+    "latw-802d673bcc4df250": "https://www.tech-week.com/calendar/la/events/community-build-tech-4-good-hackathon-db3c139f-ce97-4a0d-8706-5c47eec1797b",
+    "latw-c8ff6ac34223159d": "https://www.tech-week.com/calendar/la/events/sip-and-ship-the-un-hackathon-1724716b-30be-440b-8540-24362aa5dab5",
+    "latw-a63289779877f983": "https://www.tech-week.com/calendar/la/events/the-10x-engineer-showed-up-the-10x-organization-didn-t-85fd90b4-9dba-4521-b3e3-b3d002fb60c7",
+    "latw-059413bbedf2392f": "https://www.tech-week.com/calendar/la/events/behind-the-product-how-great-products-get-built-dfe66757-21d1-437d-887d-5b770541c0c0",
+    "latw-90d38d532bdcdf45": "https://www.tech-week.com/calendar/la/events/lovable-hackathon-competition-2970bb58-8816-4324-990b-79452dbd3f8a",
+    "latw-3afd1ee2c12cee2b": "https://www.tech-week.com/calendar/la/events/tech-beach-party-long-beach-8ed87288-2f53-47aa-ae6f-7051ab495502",
+    "latw-b1487b382b41f34c": "https://www.tech-week.com/calendar/la/events/wafer-print-and-the-entertainment-business-b93c1a84-3200-4e9f-bbc1-e0645cefcf80",
+    "latw-9fef59f0186b82ef": "https://www.tech-week.com/calendar/la/events/dfa-designathon-a9a098e5-787e-43c0-80ce-1f258977c03b",
+    "latw-ef9143e6999485e7": "https://www.tech-week.com/calendar/la/events/founder-investor-fight-club-7b666b4e-66e1-4620-92f2-b73dd04c90d1",
+    "latw-52dc22c37498af67": "https://www.tech-week.com/calendar/la/events/graphic-design-and-digital-printing-meetup-08702a5b-515c-4d16-9abd-4a72a8f2548d",
+    "latw-49d9f19b96714d1c": "https://www.tech-week.com/calendar/la/events/la-traffic-crisis-hackathon-build-the-future-e1e81628-dda7-490b-bc55-2c5a5c9ae8c4",
+    "latw-4d79b773d262ccf6": "https://www.tech-week.com/calendar/la/events/ai-film-and-the-new-economics-of-creativity-13a2fac8-a994-446d-a064-8395c66b347d",
+    "latw-0dbad9abc7652a58": "https://www.tech-week.com/calendar/la/events/the-future-of-human-creativity-in-film-and-emerging-media-dc967717-6160-4047-bbec-0f666bc3d611",
+    "latw-fda00f66903f223c": "https://www.tech-week.com/calendar/la/events/build-a-voice-agent-in-3-minutes-e3209cf5-1349-45ab-b26e-a6a11e35558b",
+    "latw-d5e48a54d17ecfd5": "https://www.tech-week.com/calendar/la/events/creator-world-43ff1514-9328-435d-8f37-d19a5b754552",
+    "latw-8456a8939fd17820": "https://www.tech-week.com/calendar/la/events/micro1-sunset-soiree-604dde2f-2c5b-4097-98ee-d296a356c0f1",
+    "latw-10991da74ada8189": "https://www.tech-week.com/calendar/la/events/speak-easy-pitch-lab-social-fb2d659a-6ce0-4701-a7cf-41d6e05b58c1",
+    "latw-700642823aeb5630": "https://www.tech-week.com/calendar/la/events/the-future-is-fun-an-ai-storytelling-showcase-bea7f448-601f-476d-82c1-f56f10080a67",
+    "latw-00a42b8e51590f3e": "https://www.tech-week.com/calendar/la/events/wardrobe-debug-49133ab5-d969-4dc1-ad64-27ada11df7fe",
+    "latw-c8b8b27928db1c5e": "https://www.tech-week.com/calendar/la/events/build-an-ai-workflow-editor-natively-in-angular-17391fba-ff33-4043-af58-7b758828799d",
+    "latw-1ef280805d4fdea9": "https://www.tech-week.com/calendar/la/events/the-era-of-agentic-networking-c64266f2-e28c-49f2-9568-d4d013f22db1",
+    "latw-89e2ea66b2809056": "https://www.tech-week.com/calendar/la/events/hackathon-9716e1f3-a95d-4697-9aeb-4bcc7271be7e",
+    "latw-9e4dff658530bc1c": "https://www.tech-week.com/calendar/la/events/ready-or-not-the-founder-game-night-a3ba8238-cfa9-4123-bf77-ba8f105cdf3b",
+    "latw-92dff2906a3369f9": "https://www.tech-week.com/calendar/la/events/tech-industry-speed-networking-west-la-1a965b24-4f45-4cd0-b3db-d621c0736d74",
+    "latw-23d72ba1f930a0cd": "https://www.tech-week.com/calendar/la/events/funny-women-of-tech-live-standup-comedy-ce9bce24-98d1-45c7-ab47-adac0628f525",
+    "latw-7fcd725daf38fadc": "https://www.tech-week.com/calendar/la/events/tech-week-after-dark-f24fa885-777d-46f9-bd09-8d3355e6e0c4",
+    "latw-fb38b262db77f1b7": "https://www.tech-week.com/calendar/la/events/svrn-x-latechweek-after-hours-party-bcc8bda4-b6b1-4b48-ba02-96c56d060fe7",
+    "latw-e3456c3ce4020f0b": "https://www.tech-week.com/calendar/la/events/pedal-and-network-tech-cyclists-8cd98f7e-7d8f-4e20-b105-6b9b3c714977",
+    "latw-57089ed3a9b4c555": "https://www.tech-week.com/calendar/la/events/health-is-wealth-0c4b8e9a-7f48-4e2d-bcd7-057ec233d3c5",
+    "latw-e44e87141feb48b0": "https://www.tech-week.com/calendar/la/events/la-creatives-buildathon-d94076b9-1d46-42f6-a974-b3733bd77716",
+    "latw-866d10035d9c05e3": "https://www.tech-week.com/calendar/la/events/entertainment-tech-new-renaissance-f15db888-b7f5-421d-a35f-04a1dccdb697",
+    "latw-6129e1fe69ce3dd7": "https://www.tech-week.com/calendar/la/events/how-to-raise-funds-to-fund-any-business-using-digital-products-d34cc05b-7ffb-4c25-acb3-2a0f581f132f",
+    "latw-b0fb8d71c463be9d": "https://www.tech-week.com/calendar/la/events/organic-life-labstm-presents-the-alignment-lab-the-science-of-human-performance-af4d3e73-23fc-46a0-82ca-c947f8486687",
+    "latw-e8e4badd0a4ba45a": "https://www.tech-week.com/calendar/la/events/creative-co-working-and-brunch-60ffde92-abdb-4673-9a82-ca6c974241e1",
+    "latw-97c62d6fa7984669": "https://www.tech-week.com/calendar/la/events/infoports-soft-launch-party-d064c65a-8ace-43a5-85ee-ecdf30148843",
+    "latw-3c23513a95a27f9a": "https://www.tech-week.com/calendar/la/events/future-builders-family-stem-day-ab2c1666-009c-4e78-89af-359da3d7e430",
+    "latw-a82931cf8b721dd2": "https://www.tech-week.com/calendar/la/events/ai-film-and-the-new-economics-of-creativity-43d3fe65-31ff-44e8-9896-e3a400e31c33",
+    "latw-92e6b4d538424883": "https://www.tech-week.com/calendar/la/events/golf-day-social-b50c1dd6-53ba-4479-9041-8f6f87bdf022",
+    "latw-898512dc91340d8f": "https://www.tech-week.com/calendar/la/events/meaningful-connections-experiment-7ec55d04-114f-4918-b634-b27004f8275a",
+    "latw-f02405b002eb22aa": "https://www.tech-week.com/calendar/la/events/tech-industry-speed-networking-dtla-931d400b-3d9e-4a3c-930a-29b38517c0fb"
+  },
+  "updates": {
+    "latw-2083fdf0c805b604": [
+      "00:00",
+      "23:45",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-497b3772cee6ed0c": [
+      "06:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4de99b48e82a17c4": [
+      "07:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d36f841bac0cb3a9": [
+      "07:30",
+      "08:45",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-1bf91401138eb748": [
+      "07:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d96a681d2b78487b": [
+      "08:00",
+      "19:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-85109a775333d791": [
+      "08:00",
+      "09:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-32d2d4a30390185a": [
+      "08:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-5fe3d9149be06945": [
+      "09:00",
+      "15:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-7c064d712df26abf": [
+      "09:00",
+      "15:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-277ff90f587699a7": [
+      "08:45",
+      "11:45",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-141db92a874894c0": [
+      "09:00",
+      "22:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-988f4529a49a2134": [
+      "09:00",
+      "11:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-281b32f9ec840e9b": [
+      "09:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-adbc265bf72e0e46": [
+      "09:30",
+      "11:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-00b15b1e64644032": [
+      "09:30",
+      "12:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-f612af426062e286": [
+      "10:00",
+      "18:30",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-a8814253f55c8501": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-08b3293c15d8a2d1": [
+      "10:00",
+      "11:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-1a44cf4c4e89bc5b": [
+      "10:00",
+      "12:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-21960c9fb11f6dda": [
+      "10:00",
+      "13:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-24fe5c8019b6879d": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-83b45de8a85de4c8": [
+      "11:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c017e4c877575d95": [
+      "11:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-10d4cbc7ee0c78a7": [
+      "12:00",
+      "14:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-0bffc6fd32683262": [
+      "12:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f8b446b882bddf27": [
+      "12:00",
+      "14:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-d9a5dbcaa0d14ae6": [
+      "12:15",
+      "16:30",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-de74d90c3da05f0e": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-1590506ba4586668": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-365499412485cd95": [
+      "13:00",
+      "16:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-bea6bed1bf5ad3a2": [
+      "13:45",
+      null,
+      null,
+      "open"
+    ],
+    "latw-0160a2fde565e02a": [
+      "14:00",
+      "16:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-1fc55725f0cb7a5d": [
+      "14:00",
+      "16:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-7d142df862af2bca": [
+      "14:00",
+      "16:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-213e5f359a1ae2d0": [
+      "15:00",
+      "21:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-5b98a8c1d75ce455": [
+      "15:00",
+      "19:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-1576cea8a2fdde58": [
+      "15:00",
+      "17:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-9ee4743f893c3be3": [
+      "15:00",
+      "16:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-f6a31af353555114": [
+      "15:00",
+      "17:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-9ae5f0b632da115b": [
+      "16:00",
+      "18:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-27a409c0c88a401c": [
+      "16:00",
+      "19:00",
+      "2026-10-12",
+      "closed"
+    ],
+    "latw-a1ad8f9ce4f95552": [
+      "16:00",
+      "18:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-eca1d1e71ae967c2": [
+      "16:00",
+      "18:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-2a1151cd4e40d9b7": [
+      "16:00",
+      "19:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-234f1b602ead3b85": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3cc90f551bd39e8a": [
+      "16:00",
+      "19:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-05473dfe043caa95": [
+      "16:00",
+      "18:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-5d1f6bc9f48f4f09": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c441b739a37df862": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b96399293d5c9e8d": [
+      "17:00",
+      "20:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-2d35ad6e6666c646": [
+      "17:00",
+      "19:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-e19e13513fef522f": [
+      "17:00",
+      "23:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-802c06d95505ada8": [
+      "17:00",
+      "19:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-28c32e9e8a4d6c34": [
+      "17:00",
+      "20:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-c73d6ff582a15653": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-fac2a18d55d0301c": [
+      "17:30",
+      "20:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-62d352f429d4636c": [
+      "17:30",
+      "20:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-8dea206d4ffe450d": [
+      "17:30",
+      "20:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-3e5d803a17f9b96e": [
+      "17:30",
+      "20:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-e192d9973ec2df10": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9bc9c12a72b2d2eb": [
+      "18:00",
+      "21:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-e0f2ba5d197f8a46": [
+      "18:00",
+      "22:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-4c13bc14643570af": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-59d426d757b2976c": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e9211a78f3684074": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-81a07558ce7b984d": [
+      "18:00",
+      "20:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-a6c9664fa6d30501": [
+      "18:00",
+      "20:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-eccfb4c96c5919d3": [
+      "18:00",
+      "22:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-331464b29dfd4acb": [
+      "18:00",
+      "21:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-6196c905c99259e1": [
+      "18:00",
+      "21:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-1731715835afc04f": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-6e9d09967de1562c": [
+      "18:00",
+      "21:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-91f3657d92b04920": [
+      "18:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-7f042d61ad6de2c0": [
+      "18:30",
+      "20:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-602def6b6fbde75d": [
+      "18:30",
+      "21:30",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-4c04b5380b78ed2b": [
+      "19:00",
+      "22:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-d84391f533b45087": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-52280c376aa9094e": [
+      "18:00",
+      "20:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-41f8af4b59ca6f04": [
+      "19:00",
+      "21:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-1f76495c70bdb634": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-2cc9ad449404dd69": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ce910a6376cab6da": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-28ce27d718e44743": [
+      "19:00",
+      "22:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-2cedcaa52775a5c3": [
+      "19:00",
+      "21:00",
+      "2026-10-12",
+      "open"
+    ],
+    "latw-9bb1fdc85d6baa8d": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-2dd65400eaeb7253": [
+      "19:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ac89f2d0d17d9d4c": [
+      "20:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c8a0986293984cef": [
+      "06:15",
+      "10:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-bceee559419109ce": [
+      "07:00",
+      "09:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-48d99be10b81a5d3": [
+      "08:00",
+      "09:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-f6ba45c89470c2b0": [
+      "08:00",
+      "11:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-931f2dd60dd4b00d": [
+      "08:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-fc773334f46d3e7c": [
+      "08:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d65899057f035a84": [
+      "08:00",
+      "20:30",
+      "2026-10-13",
+      "closed"
+    ],
+    "latw-d65c9b0eff966830": [
+      "08:00",
+      "09:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-49e2703f32c287fa": [
+      "08:30",
+      "10:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-e241ee4ffd5954a2": [
+      "08:30",
+      "10:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-875684f9517fb0e5": [
+      "08:30",
+      "11:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-0084e3e149d7fb4d": [
+      "09:00",
+      "11:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-94ea949811d7bab0": [
+      "09:00",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-4e77282939530bdb": [
+      "09:00",
+      "15:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-cce2a346658e33d7": [
+      "09:00",
+      "11:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-ec1f6030057b633f": [
+      "09:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-572722cc050d7ba5": [
+      "09:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9eb75c366c2e84ea": [
+      "09:00",
+      "12:00",
+      "2026-10-13",
+      "closed"
+    ],
+    "latw-22bd878c0dd9cfa8": [
+      "09:00",
+      "11:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-8562377eb1e3e0d1": [
+      "09:30",
+      "11:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-9a38029fc581edc5": [
+      "09:30",
+      "11:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-c0e03dae1f63d7f6": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-a7c1a49c843ddc61": [
+      "10:00",
+      "13:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-97c9b1a771d478f5": [
+      "10:00",
+      "11:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-8e0aa49f49af5ee4": [
+      "10:00",
+      "12:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-0df5e6959a3031d1": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-6d86139f8a7b2381": [
+      "10:00",
+      "16:00",
+      "2026-10-13",
+      "waitlist"
+    ],
+    "latw-be1e16b2eea5a927": [
+      "10:30",
+      "12:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-b4255556aa9e431f": [
+      "10:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3594697973ae5470": [
+      "11:00",
+      "12:00",
+      "2026-10-13",
+      "waitlist"
+    ],
+    "latw-31aecaca38113567": [
+      "11:00",
+      "13:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-dae72b095182f5f6": [
+      "11:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-fc02a5956402b9d4": [
+      "11:00",
+      "12:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-43b6906946515390": [
+      "11:00",
+      "18:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-166ac38e7d409477": [
+      "11:00",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-0dfe5307d57992a8": [
+      "11:00",
+      "14:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-48bae9991ade09cf": [
+      "12:00",
+      "15:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-435de5476bf924d7": [
+      "12:00",
+      "16:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-ea9e73d7f4cfbc26": [
+      "12:00",
+      "14:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-cf316c40ae18a333": [
+      "12:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-950f022075340fb0": [
+      "12:00",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-f10103d6c567e682": [
+      "12:00",
+      "13:15",
+      "2026-10-13",
+      "waitlist"
+    ],
+    "latw-f360e52847a4a5f5": [
+      "12:00",
+      "15:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-d940ce54d936941c": [
+      "12:30",
+      "13:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-5204fb8d009cf7b0": [
+      "12:30",
+      "15:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-009e28ac6d698d48": [
+      "13:00",
+      null,
+      null,
+      "closed"
+    ],
+    "latw-943ca6b2e356437b": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9880a24a1eb6fd4d": [
+      "13:00",
+      "14:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-6fef7cf5dbb0f79f": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-0a3579ddc1235913": [
+      "13:30",
+      "16:30",
+      "2026-10-13",
+      "waitlist"
+    ],
+    "latw-b8f5b4a0bc5ade4a": [
+      "13:30",
+      "14:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-4d1339980216c126": [
+      "14:00",
+      "18:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-41268ae95c873139": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-01f7f5e8ceaa0783": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-2d581d0c1fa9c865": [
+      "14:00",
+      "18:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-7a2b50a658dd42e3": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-7c3916eea0aef15c": [
+      "14:00",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-4528dd0b1408c4ae": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3d6533123509be9b": [
+      "14:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b72b02fffede65f1": [
+      "14:30",
+      "18:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-7b321a4d5039b5dc": [
+      "14:30",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-8bc326014ab87afe": [
+      "14:30",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-0bb700c11f080920": [
+      "14:30",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-a9478a1f66fa45cd": [
+      "15:00",
+      "18:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-276023ec84205770": [
+      "15:00",
+      "18:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-4234da9b40d1cfd2": [
+      "15:00",
+      "17:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-72aa0c2b4d44ea59": [
+      "15:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-dfdf17e79559a47c": [
+      "15:00",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-28b3741d883e51b7": [
+      "15:00",
+      "16:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-6249a3b086f07cdf": [
+      "15:30",
+      null,
+      null,
+      "closed"
+    ],
+    "latw-38b32d5ee0cc1bf5": [
+      "15:30",
+      "18:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-9887a1dbabec73b0": [
+      "15:30",
+      "17:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-60851d9ca6ab1e45": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-27c624cf1278c5ef": [
+      "16:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-68c9fd8c5f86514b": [
+      "16:00",
+      "18:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-4ecf03b65b6e55f3": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f47bca379c549a92": [
+      "16:00",
+      "18:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-af9319307d141929": [
+      "16:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-191e122e2213dcfd": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4fe911a47ee2e367": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ba279c377d4542d6": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d9e08b408aa18bdb": [
+      "16:00",
+      "18:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-b3f1a6f913cde082": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3e7ebfacf496221a": [
+      "16:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4305635fe9cecc5e": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4abe672fe3d0c193": [
+      "17:00",
+      "21:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-fa6c75aa935552fa": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-63b3b084dea9a868": [
+      "17:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-315dfea1cc6b1f19": [
+      "17:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-86118b1893a1c498": [
+      "17:00",
+      "19:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-6f3465e39c771da2": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-bd75c9902e7aca0b": [
+      "17:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-f4bd7fd3ff96c478": [
+      "17:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-3dacfe3b70646e53": [
+      "17:00",
+      "21:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-4c59caf0c0a3f51c": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-20bc6c9bd6078abc": [
+      "17:00",
+      null,
+      null,
+      "closed"
+    ],
+    "latw-7bca82d78ff0b7a6": [
+      "17:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-1499f345f05e52e2": [
+      "17:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-915dab1d2ddda6cd": [
+      "17:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-aad7ce642aa2c13a": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-2f59654ed25c5d81": [
+      "17:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-db013e310bece838": [
+      "17:00",
+      "18:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-48c975858cb4a22d": [
+      "17:00",
+      "21:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-6a48225b03cc9f44": [
+      "17:00",
+      "22:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-d6914b1655bbdbad": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-67a6610005526f71": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-021e72f178ee4b50": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-1ed5c2346d09c0c4": [
+      "17:15",
+      "20:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-df55e2ed6f0e3d8a": [
+      "18:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b942c30a2144ca00": [
+      "17:30",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-b28f99ea7c8715d1": [
+      "17:30",
+      "19:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-cbe3daedcf2d8275": [
+      "17:30",
+      "20:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-a6e5dc3b192927b6": [
+      "17:30",
+      "20:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-bffad19dccbf7d67": [
+      "17:30",
+      "19:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-21b48fc0efd396bc": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e52390b277ad35cd": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-cab287a26e3d9912": [
+      "18:00",
+      "21:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-8426ab4e5c13af52": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d07968081d8974f9": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-12b2f4b1590f057c": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e5701599d47b4e88": [
+      "18:00",
+      null,
+      null,
+      "closed"
+    ],
+    "latw-b27d3f34f8ed479d": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-429f7f671881988d": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-9cc8d9fde643fde2": [
+      "18:00",
+      "21:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-80ed6170dc8292f3": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-c546385bd1338639": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ffd4cd4f9dc696f9": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-a83b561a343bdea7": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-5797fa8f6f7251c2": [
+      "17:00",
+      "19:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-af3116570778ae9a": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9e71a7a4014640e5": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-babf5d83b0ca6f9a": [
+      "18:00",
+      "21:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-554b5341fc1325b1": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ca5e0ccd148683f4": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ee3c9ca651df0f41": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-2de931adbe7d313d": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-794329b027deb84b": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c16f1c0e2f685031": [
+      "18:00",
+      "20:15",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-ae109d04e740334a": [
+      "18:00",
+      "21:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-36d145050acff137": [
+      "18:00",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-c3db4223e195867d": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-7a3054dac8f6e9c5": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-50286adf6fcadc17": [
+      "18:15",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-bc0f5df1118e26b7": [
+      "18:30",
+      "21:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-f845baeb9acc7c62": [
+      "18:30",
+      "20:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-a954875c46544bd4": [
+      "18:30",
+      "21:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-a5a7a3b79a72cf7f": [
+      "18:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8328a5908c321f1c": [
+      "18:30",
+      "20:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-f4590b19c7ef276f": [
+      "18:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-0a512e2ad62a3d27": [
+      "18:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ec143a81059270c0": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-37452f7d25d1d3d2": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-5dc2c52830b6b202": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3580224de78f6750": [
+      "19:00",
+      "21:00",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-48d71788ac93f283": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-1458f0d53660f99a": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b8a73e83226dc579": [
+      "14:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-6ca7c19e702dbad3": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-90195292b1056fa7": [
+      "19:00",
+      "21:00",
+      "2026-10-13",
+      "full"
+    ],
+    "latw-aab3913b659f832a": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ac7db2144005a438": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d6ada2bf04828eac": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-dd4c509770ea65a1": [
+      "19:00",
+      "21:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-b1a3505960713766": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d78ff322887afb72": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c16739df6fcaa97c": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-a2d5a04ed593e48f": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-6f560a2e6b665319": [
+      "19:30",
+      "21:30",
+      "2026-10-13",
+      "open"
+    ],
+    "latw-22caffbed5ea6bc5": [
+      "20:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-a6fadd8ee469c727": [
+      "07:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-98bf8d6259f56060": [
+      "07:00",
+      "09:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-8cb3cf3009a11715": [
+      "07:30",
+      "08:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-641a082d62af2632": [
+      "07:30",
+      "09:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-cfe24df4b4bfdd63": [
+      "08:00",
+      "19:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-b4da892d45012d8b": [
+      "08:00",
+      "17:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-c61370e79ffcfeae": [
+      "08:00",
+      "10:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-3e3caf25ad7973c1": [
+      "08:00",
+      "09:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-1389b47c5caf1eda": [
+      "08:30",
+      "10:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-8b60f43b52a5d03a": [
+      "09:00",
+      "10:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-8ffe98ab5e5f9610": [
+      "09:00",
+      "11:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-d22001a10c40a72f": [
+      "09:00",
+      "17:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-0acf1aaf1a9790b4": [
+      "09:00",
+      "17:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-6e1ec0db0a1392c7": [
+      "09:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ce596520c1395af6": [
+      "09:00",
+      "11:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-367916d1f822d898": [
+      "09:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-fe11cc70a24f350c": [
+      "09:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ebfa94f73751c587": [
+      "09:30",
+      "13:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-b89737573015250d": [
+      "09:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-65c4667bf8515318": [
+      "10:00",
+      "18:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-d76f82fdc4a31837": [
+      "10:00",
+      "13:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-55be73d3347955da": [
+      "10:00",
+      "13:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-496359359f247f4c": [
+      "10:00",
+      "11:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-0181845e7dcbc72a": [
+      "10:00",
+      "15:45",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-a6ebd930e3bc4ed0": [
+      "10:00",
+      "12:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-a70b6b8421a1a701": [
+      "10:00",
+      "12:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-9e052fb23b25c58f": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d68e7ec4ebe0cdc1": [
+      "10:30",
+      "13:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-798a8b91bdbd0aba": [
+      "10:30",
+      "12:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-fb88ac4071c64f09": [
+      "10:30",
+      "12:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-b3c345cbf71863d1": [
+      "11:00",
+      "13:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-f31e0cc05a9c5487": [
+      "11:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4de95261a91f095a": [
+      "11:00",
+      "14:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-aebb168012f29bb4": [
+      "11:00",
+      "13:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-60a222ae0e4e2dc2": [
+      "11:00",
+      "19:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-ca7a679237697a68": [
+      "11:00",
+      "15:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-e9c83e75a3b9c52a": [
+      "11:30",
+      "12:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-f350f8c9c1262df1": [
+      "12:00",
+      "13:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-6cf9cb17d0d52f2b": [
+      "12:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8d8b78a4edca0c65": [
+      "12:00",
+      "14:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-76efd93e45d8ca69": [
+      "12:00",
+      "15:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-d0912667036e10b8": [
+      "12:00",
+      "14:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-26f0f21812c32af9": [
+      "12:15",
+      "17:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-f2a222ad26a30644": [
+      "12:30",
+      "16:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-5155d1bbadfe51f0": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-185e8bc52608c400": [
+      "13:00",
+      "14:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-f69f895fd8169b27": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f5bcd6efe71d3aa3": [
+      "14:00",
+      "17:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-f8766beac4a483f1": [
+      "14:00",
+      "17:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-cd9f69fdc12d22b9": [
+      "14:00",
+      "16:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-1f940e3f6591ac40": [
+      "14:00",
+      "16:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-90478c5608eab6ee": [
+      "16:00",
+      "17:45",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-07349a6552c6db9b": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-138ddff186bd7122": [
+      "14:00",
+      "16:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-42a26927bce4cbaf": [
+      "08:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-39e88a53b2f2094f": [
+      "14:45",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4318421532f330b1": [
+      "15:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3e5e5849ecfa0243": [
+      "15:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-cec1100a2e8fd7e5": [
+      "15:00",
+      "17:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-72ba588ed065804f": [
+      "15:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e62ee3418aa46dfd": [
+      "15:00",
+      "18:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-113464abd64ba518": [
+      "15:30",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-c0025c0359a4ab72": [
+      "15:30",
+      "18:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-b11cf0ae4223db50": [
+      "16:00",
+      "18:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-f1130e02f096ced2": [
+      "16:00",
+      "16:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-638fcf2f9ab1e74f": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-641a364b7f4aef94": [
+      "16:00",
+      "18:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-6f2c8cfe9c5a0771": [
+      "16:00",
+      "18:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-282adc5b4a7d9944": [
+      "16:00",
+      "19:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-0064bbcdfd8ea077": [
+      "16:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-ea46aadcbe74e417": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4f204e5eff313d13": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-db1f628f054e7b84": [
+      "16:00",
+      null,
+      null,
+      "closed"
+    ],
+    "latw-3c9dc76e13545919": [
+      "16:00",
+      "23:45",
+      "2026-10-15",
+      "closed"
+    ],
+    "latw-5961b4735cde428f": [
+      "16:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-3f7668cc5696de62": [
+      "16:00",
+      "18:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-0a0735d0f862f86a": [
+      "16:00",
+      "18:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-52ac149b34554cab": [
+      "16:00",
+      "18:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-66f37e995e600ed2": [
+      "16:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ecac9ef9cd6ed1bb": [
+      "16:30",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-9efea491ec5c322d": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3d1e8a84dfdd3dfc": [
+      "17:00",
+      "19:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-ce10cb1fc8259bcc": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-df8e0b035f68f0cf": [
+      "17:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-237d3c3049ac736c": [
+      "17:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-d1956e844dec1aa9": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-69981e8bce736ca0": [
+      "17:00",
+      "22:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-710db5364280b276": [
+      "17:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-77b0e5015e62c727": [
+      "17:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-2de580183e9e3bc5": [
+      "17:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-134312ab7c4a53b0": [
+      "17:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-954866214ec602ae": [
+      "17:00",
+      "19:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-62e124bfbf4e10ed": [
+      "17:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-d4de8758723ac1c2": [
+      "17:00",
+      "19:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-1f2ae8b9b599bb41": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-1ed7bba096a3dc20": [
+      "17:30",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-0fa890d29acfd952": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e76a5d4f01c85d30": [
+      "17:30",
+      "20:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-c2094802147c4ae3": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ea856a6b3285ed5f": [
+      "17:30",
+      "21:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-0f6601fe4b533dcf": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b89a188e63d8c7be": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-38e1dc852f958368": [
+      "17:30",
+      "20:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-9fe3758c08a27b4c": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-860d88938410ce22": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-aa7b7a73d2385fc2": [
+      "17:45",
+      "20:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-1229ddacb0f07c31": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-6ddbb89dec483d1f": [
+      "18:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-b332f400c6c4a12c": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-920dc98bea7f0ac2": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-236be097753b6965": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-fd7b51da005d9592": [
+      "18:00",
+      "20:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-a51068a8bb7fa1dd": [
+      "18:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-28fa9ba81c946395": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-b45e5d7d510ac4ba": [
+      "18:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-5e7d88c368566752": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-1e52cea97a8706f8": [
+      "18:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-41e6c126cb5170f2": [
+      "18:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-d28bbd3d69fb997a": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-df9235124143c29d": [
+      "18:00",
+      "20:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-47bfd374087d5deb": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-c9cac82a17a57b95": [
+      "18:00",
+      "20:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-6e301ed9374b6c01": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-3978721a8f521b97": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c78b84cbb57bcaf1": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-16e052f87f1394cc": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-29ce83a834e21763": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-f7b72e2b502a2b72": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-3cb283367b2df162": [
+      "18:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-39e06bafeda43f0b": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-5f4d52269a2a518f": [
+      "18:00",
+      "22:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-e251ae0011a65800": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-70e26193605c9f1d": [
+      "18:00",
+      "20:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-7bbdaf88fe55bc6f": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8bab3dbb2133ae0b": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-4af63dae7e0cb584": [
+      "18:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-51b7710db7ce39f7": [
+      "18:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e9dad5b577193dd3": [
+      "18:30",
+      "20:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-5c48bf3f1ae0d67b": [
+      "18:30",
+      "21:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-4f7e29d518fef524": [
+      "18:30",
+      "20:30",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-829bc0eb7f4cb29e": [
+      "18:30",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-0a4fbc04db203e1a": [
+      "18:30",
+      "21:00",
+      "2026-10-14",
+      "closed"
+    ],
+    "latw-ef9a692003e42985": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f72496434125fcb9": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-82c4bdb95d013314": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ccaf1c43060503a9": [
+      "19:00",
+      "22:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-3d1f6faf4e61e4be": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9f71f284491e33aa": [
+      "19:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-645b764f9ae89e7d": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-77e90d0ac2db0035": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-a72db3633d1d8746": [
+      "19:00",
+      "21:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-0c613905cf344a37": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3c752e52aebc9f24": [
+      "19:00",
+      "22:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-ebb6c0d13a66ea7f": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9f87af378b02ebc7": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-006aad49c8975be1": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-55bf21128a75d326": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-fe3256925c564eff": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-13ee23f44cf7c842": [
+      "19:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-abe434711bd04db7": [
+      "19:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d4c89b61eb96e7b0": [
+      "19:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8e7c0f957ff64991": [
+      "20:00",
+      "23:00",
+      "2026-10-14",
+      "open"
+    ],
+    "latw-811fc5c46610a6f5": [
+      "20:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4c33504eae1db55f": [
+      "20:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-77b467627c77dc63": [
+      "08:00",
+      "10:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-62668cebd982c648": [
+      "08:00",
+      "19:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-20ddf5a8bf32bf84": [
+      "08:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e1b02cece960a500": [
+      "08:30",
+      "10:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-fb07b0e0f8114fc7": [
+      "09:00",
+      "17:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-8650b86b1c80e4d7": [
+      "09:00",
+      "17:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-1e10638b1695a1d1": [
+      "09:00",
+      "11:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-a5eb2dcb11d6174c": [
+      "09:30",
+      "11:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-564eddd713110bb3": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-319479a5cb898e0e": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-7160a22e619b8c12": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d224a71f6e2d52ba": [
+      "10:00",
+      "11:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-2f48c7258081081b": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-18a6693f19b58e05": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-971c731a10e8799c": [
+      "11:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b37fc4fdfc67ac04": [
+      "11:00",
+      "13:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-58b0f96f697dfba7": [
+      "11:00",
+      "13:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-2ab5a285442e36e4": [
+      "11:00",
+      "19:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-badff164411b3833": [
+      "11:00",
+      "14:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-2dc01ba63d2b72ea": [
+      "11:00",
+      "11:45",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-c20707c49d3eec5a": [
+      "12:00",
+      "14:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-e7c056c0c0259eff": [
+      "12:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f56cda5e26df5ea4": [
+      "12:30",
+      "14:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-7c336b0e823f9a41": [
+      "12:30",
+      "13:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-193421582ad391a9": [
+      "13:00",
+      "17:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-5411d9b88b535ab5": [
+      "13:00",
+      "14:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-15e463ba3da6fee9": [
+      "12:30",
+      "15:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-fe9fd46b160ee70f": [
+      "13:00",
+      "17:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-031eae168ad07ff0": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-10d7e3eb120574a6": [
+      "13:45",
+      "16:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-28aca087bdd96170": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-676c32f302bbb438": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-377d3d4229c97767": [
+      "14:00",
+      "17:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-2c9140d07dc07580": [
+      "14:00",
+      "16:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-9d7ec07dc60f94c7": [
+      "14:00",
+      "15:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-73a07c564714f74b": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8203470cc16504c3": [
+      "14:00",
+      "18:00",
+      "2026-10-15",
+      "closed"
+    ],
+    "latw-8c51a2a4c5fe0857": [
+      "14:00",
+      "16:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-d858e2bce6a016cb": [
+      "14:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-dc4302c477500289": [
+      "14:30",
+      "17:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-9ad28df37629926a": [
+      "14:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-abf73154bb38f550": [
+      "15:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-6fae377940565538": [
+      "15:00",
+      "17:00",
+      "2026-10-15",
+      "waitlist"
+    ],
+    "latw-5d73fb2127f1fcfc": [
+      "15:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-861812821f43ef1f": [
+      "15:00",
+      "18:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-b47486dc03f9d51a": [
+      "15:00",
+      "17:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-0d43cb92fdf871f0": [
+      "15:30",
+      "16:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-0d48f8f57e078bad": [
+      "16:00",
+      "18:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-260bf57d53e8ed6f": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-60e2d775934b86d7": [
+      "18:00",
+      "21:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-3c2451e954b7dd04": [
+      "16:00",
+      "18:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-aaca875acec16cd3": [
+      "16:00",
+      "19:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-4fc509f25b8057f4": [
+      "16:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-8b923248960389e6": [
+      "17:30",
+      "20:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-82dfc6be1eae8165": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-bbc1bed738300130": [
+      "16:00",
+      "17:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-dde64e973c999cfa": [
+      "16:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-ae5adbe0ea24f867": [
+      "16:00",
+      "18:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-16b04ac9b0a2cf1e": [
+      "16:00",
+      "19:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-58f34a97319d43a9": [
+      "16:30",
+      "19:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-63280e7905798814": [
+      "17:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-a1764983f63e7406": [
+      "17:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-c657ce2e42701346": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c70024eeef078a27": [
+      "17:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-f6f1e9a0fb4fb787": [
+      "17:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-2920d40ef976b99a": [
+      "17:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-d7d92bb1e5ec9134": [
+      "17:00",
+      "19:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-28ca788b901adf6d": [
+      "17:00",
+      "19:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-dce136379099beff": [
+      "17:00",
+      "19:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-4cc1a9ea692970ee": [
+      "17:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-ca04d604c6bfd99e": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-aac3338ed71ce466": [
+      "17:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-8dbe0f2434fafb7b": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f1b0d8d932467e7c": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-84630b2ef5974982": [
+      "17:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-fddf6b073e828216": [
+      "17:30",
+      "19:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-087fa7f34ae568e9": [
+      "17:30",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-917e849ea0a42981": [
+      "17:30",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-ba015ec325b8515b": [
+      "17:30",
+      "21:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-69c5bd58b8bb0bb2": [
+      "17:30",
+      "20:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-a31b276308bd8fc3": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-2211c45fa3d575eb": [
+      "17:30",
+      "19:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-4cbf1388c3abc4af": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4a02c758c92b78fe": [
+      "17:30",
+      "19:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-ae0ea1a6058fbb6a": [
+      "17:30",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-735900b56cd94be5": [
+      "17:30",
+      "19:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-ff9d8c2f42e3d6e0": [
+      "17:30",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-2d97b7e573747d7e": [
+      "17:30",
+      "20:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-cca53ab703d6214e": [
+      "17:30",
+      "20:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-fedd348c22201c8d": [
+      "17:30",
+      "19:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-0bac480fb1f885c7": [
+      "17:30",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-8da8d931f70d1f64": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-351cf95722c75f10": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b96dea979214e437": [
+      "17:30",
+      "20:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-3e0a35db7d815e8b": [
+      "17:30",
+      "19:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-69801d901aa72555": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-09dae081c9e48e75": [
+      "18:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-2d5b30ce01f2bab8": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-ac08602c58a13fba": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3b022338adf37498": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-b56d61536b5c3741": [
+      "18:00",
+      "22:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-82846551228c2831": [
+      "18:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-ea91164f9ad95e2b": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-7f8a6059f3add459": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-07ab353db6dbb59f": [
+      "18:00",
+      "19:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-6a65cd8d1189da2b": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-e27e53f7a5f528a2": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-a586bfcb26446ae6": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-014643f65e8df62a": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8b464b7f059022f0": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-0d97b2401d5b7dff": [
+      "18:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-1057a2dfa4fc2df5": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-91b2b52a21aa8a45": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-65cbd4622ec66ecf": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-6e97c50fdec0e90e": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-18c6e3c647981f74": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8bbec55d8ec3f662": [
+      "18:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-d2ddb87c928bd626": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-dc2501c1725c24a1": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c74e0ae99af347c4": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-9a08614c30572b68": [
+      "18:00",
+      "21:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-be40c5311b07f7ea": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-7a1637232566965c": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3fec63f197977b94": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-f4d97895bf06869d": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-7a7f6352c6653e12": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f5073a2557394e55": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-a9ca871e100a0976": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-b08e497e494cbc1e": [
+      "18:00",
+      "20:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-3cb4168d905a483f": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-330643e4612a3b96": [
+      "18:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-6b5f036ca4a4b442": [
+      "18:15",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e84a2f2c6237d023": [
+      "18:30",
+      "20:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-4cd6e4c7d2edac22": [
+      "18:30",
+      "20:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-0325835eee7a9d1b": [
+      "18:30",
+      "20:45",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-039299da96cddcd3": [
+      "18:30",
+      "20:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-41a26fdd7ea3c807": [
+      "18:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-cfd23e67d4fd0d42": [
+      "18:30",
+      "22:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-654fcbc3bd6f056c": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d1085c151db02d7a": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-6f314e4a12140b0a": [
+      "19:00",
+      "21:30",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-c8facb03ad84e807": [
+      "19:00",
+      "22:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-5af69ef657ae209e": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-198cfd0a748a1a7b": [
+      "19:00",
+      "22:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-352f9da50b0a0ff2": [
+      "19:00",
+      "21:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-231715e92d35a971": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-fb8e715e5d05bf0a": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f03ffeab90014511": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ff7a985a5e322408": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-da71c715a2bfbfd6": [
+      "19:00",
+      "23:00",
+      "2026-10-15",
+      "open"
+    ],
+    "latw-fd1f33d093143a62": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b617bc6cd4ba00c6": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-955f5fb1f5f9cf15": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-91b7c87b11ca1d20": [
+      "21:00",
+      "02:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-b3dd0e5db7668703": [
+      "07:30",
+      "09:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-34bdafd466260898": [
+      "08:00",
+      "19:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-06ed73b9d7167a89": [
+      "08:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-2b4c05eb4c85deea": [
+      "08:00",
+      "11:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-8034e7a18be0d150": [
+      "08:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-7d09add123f92dc5": [
+      "08:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-7f8536ad82a52207": [
+      "08:30",
+      "10:30",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-99ccc1893351e26d": [
+      "08:30",
+      "10:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-9da45978638ece1f": [
+      "09:00",
+      "10:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-55c47f8ad2d70b99": [
+      "09:00",
+      "16:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-a76ef71465375f54": [
+      "09:00",
+      "12:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-837ce8f8995c368b": [
+      "09:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e3b68e15a065f59b": [
+      "10:00",
+      "18:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-ad79107226715798": [
+      "10:00",
+      "17:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-9018559f73b44a84": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4fe61e7bd7adba7a": [
+      "10:00",
+      "12:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-6d4042d861ba8554": [
+      "10:00",
+      "12:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-4d4d5ccd2c3d1caf": [
+      "11:00",
+      "20:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-31a7a81768628a0c": [
+      "11:00",
+      "14:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-5315cc5aa781b969": [
+      "11:30",
+      "14:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-dcf117ffcfb35751": [
+      "11:00",
+      "12:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-3fc2bd1368af91f7": [
+      "11:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ccf39defbe5d9d10": [
+      "11:30",
+      "14:30",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-8b4eb8a1c338ccf0": [
+      "12:00",
+      "13:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-dc8d4e2b8e769ee0": [
+      "12:00",
+      "14:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-d6cf400669efadbe": [
+      "12:00",
+      "13:30",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-8a36239579308532": [
+      "13:00",
+      "14:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-f198d4093e3d8271": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-aec6d3e7a194a18f": [
+      "13:00",
+      "16:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-5de00a2c40198d5e": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-50d086da0586fc6c": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-f6a81bffcc03f0a5": [
+      "14:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d9d168f169c7565d": [
+      "15:00",
+      "18:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-a892540beb4b20e1": [
+      "15:00",
+      "17:30",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-4f1f8880e082117a": [
+      "15:00",
+      null,
+      null,
+      "waitlist"
+    ],
+    "latw-3abd36c1b14ea39d": [
+      "16:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4d2a9cbc07d1a94c": [
+      "16:00",
+      "19:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-7afc27442c2b0033": [
+      "16:00",
+      "20:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-4152eb59e94f7337": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4b32b58978689eca": [
+      "17:00",
+      "19:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-12d047a52138d7f1": [
+      "19:00",
+      "22:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-c37fe1676d2f5e99": [
+      "17:00",
+      "17:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-05deb46c48710da0": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-53a482fa25b89af4": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b608a6d9ab573644": [
+      "17:30",
+      "20:30",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-4480090fc7de9162": [
+      "17:30",
+      "19:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-6dc9cfd5c59436e2": [
+      "18:00",
+      "22:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-83f57729ed84af9a": [
+      "18:00",
+      "20:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-6a30a628e1dcd4bd": [
+      "18:00",
+      "21:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-449355f871e39c5f": [
+      "18:00",
+      "20:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-37d2ae96b1acb536": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-e8202d304bead3d4": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-a9f7a434102e4de2": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-121254d59c62f6e0": [
+      "18:30",
+      "20:30",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-b5275ab1f5a86a3f": [
+      "18:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-4ffc231dcff900a5": [
+      "18:30",
+      "20:30",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-47705075f8ed3e1e": [
+      "12:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-40338e0dcffb3e7c": [
+      "18:00",
+      "20:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-af7381445e5f4736": [
+      "18:00",
+      "20:00",
+      "2026-10-16",
+      "full"
+    ],
+    "latw-38b412eddd05bbf0": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-d4c6908098a4bb1e": [
+      "19:00",
+      "22:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-ab98eee30f62a581": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-a81fcb8a04c7ed44": [
+      "19:00",
+      "23:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-3f4324a2ce073520": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-3827143fa802979d": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-95eb37ea7589f692": [
+      "19:00",
+      "22:00",
+      "2026-10-16",
+      "open"
+    ],
+    "latw-6e1d821fa146dcd6": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8f2e9db759338186": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-dd6bdc8617e77aa3": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9fe9bc80a4d47adc": [
+      "20:00",
+      null,
+      null,
+      "closed"
+    ],
+    "latw-628e1aef1c671c2e": [
+      "22:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-2af49035aeca7306": [
+      "22:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-cb4297760ff30bb8": [
+      "08:00",
+      "11:30",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-9d1b041832d37cfb": [
+      "08:30",
+      "10:30",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-ca45312ab1303a33": [
+      "09:00",
+      "16:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-f1205dec04d87f3c": [
+      "09:00",
+      "10:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-c3c8fa687140f69c": [
+      "09:30",
+      "11:30",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-2261afa7a46c1df3": [
+      "10:00",
+      "19:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-8d4f0e6588db7ddd": [
+      "13:15",
+      "14:15",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-59efd6f75eb39910": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8e0d8e806686af27": [
+      "10:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-78aa7505c166060f": [
+      "10:00",
+      "11:30",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-632483da19b80ef9": [
+      "10:30",
+      "13:30",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-fd66b280930dd269": [
+      "10:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-802d673bcc4df250": [
+      "11:00",
+      "18:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-c8ff6ac34223159d": [
+      "11:00",
+      "13:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-a63289779877f983": [
+      "11:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-059413bbedf2392f": [
+      "12:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-90d38d532bdcdf45": [
+      "12:00",
+      "17:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-3afd1ee2c12cee2b": [
+      "12:00",
+      "14:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-b1487b382b41f34c": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9fef59f0186b82ef": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-ef9143e6999485e7": [
+      "14:00",
+      "16:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-52dc22c37498af67": [
+      "14:00",
+      "17:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-49d9f19b96714d1c": [
+      "14:00",
+      "17:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-4d79b773d262ccf6": [
+      "15:00",
+      "17:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-0dbad9abc7652a58": [
+      "15:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-fda00f66903f223c": [
+      "16:00",
+      "22:30",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-d5e48a54d17ecfd5": [
+      "17:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-8456a8939fd17820": [
+      "17:00",
+      "20:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-10991da74ada8189": [
+      "17:00",
+      "19:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-700642823aeb5630": [
+      "17:00",
+      "20:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-00a42b8e51590f3e": [
+      "17:30",
+      null,
+      null,
+      "open"
+    ],
+    "latw-c8b8b27928db1c5e": [
+      "18:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-1ef280805d4fdea9": [
+      "18:00",
+      "21:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-89e2ea66b2809056": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-9e4dff658530bc1c": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-92dff2906a3369f9": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-23d72ba1f930a0cd": [
+      "19:30",
+      "21:30",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-7fcd725daf38fadc": [
+      "20:00",
+      "23:00",
+      "2026-10-17",
+      "open"
+    ],
+    "latw-fb38b262db77f1b7": [
+      "22:00",
+      "02:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-e3456c3ce4020f0b": [
+      "08:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-57089ed3a9b4c555": [
+      "10:00",
+      "13:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-e44e87141feb48b0": [
+      "10:00",
+      "20:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-866d10035d9c05e3": [
+      "12:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-6129e1fe69ce3dd7": [
+      "12:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-b0fb8d71c463be9d": [
+      "12:00",
+      "19:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-e8e4badd0a4ba45a": [
+      "13:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-97c62d6fa7984669": [
+      "13:00",
+      "15:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-3c23513a95a27f9a": [
+      "14:00",
+      null,
+      null,
+      "open"
+    ],
+    "latw-a82931cf8b721dd2": [
+      "15:00",
+      "17:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-92e6b4d538424883": [
+      "15:15",
+      null,
+      null,
+      "open"
+    ],
+    "latw-898512dc91340d8f": [
+      "18:00",
+      "21:00",
+      "2026-10-18",
+      "open"
+    ],
+    "latw-f02405b002eb22aa": [
+      "19:00",
+      null,
+      null,
+      "open"
+    ]
+  }
+}

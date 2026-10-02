@@ -13,6 +13,8 @@ The import preserves official listing data and links. Audience, goal, networking
 
 ## How ranking works
 
-The browser loads the validated catalog and scores every open event against the user’s locally stored preferences. Goals receive the highest weight, followed by interests, audience, room format, and neighborhood. Closed events receive a score of zero. Location mismatch lowers a score but does not hide an unusually strong event.
+The browser scores eligible events against locally saved preferences. Goals receive the highest weight, followed by event formats, interests, role and neighborhood. Closed, out-of-week and excluded-format events never enter recommendations. Flexible location removes that dimension from the denominator. See `docs/matching.md` for the implemented formula and `docs/preference-fit-proposal.md` for the proposed alternative.
+
+The original RSVP redirect tokens expired. `la-event-links.json` supplements the snapshot with permanent official event-page URLs, current start/end times and registration status from the public Tech Week MCP API. Unmatched events use a clearly labeled official-calendar fallback, not a purported RSVP URL. Refresh with `scripts/refresh-rsvp-links.mjs`, review its printed patch and run `scripts/verify-frontend.mjs` to check mapping completeness. Saved event IDs are unchanged.
 
 No visitor preferences are committed to GitHub. They remain in that visitor’s browser via `localStorage`.

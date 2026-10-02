@@ -1,6 +1,10 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import ts from "typescript";
+import { build } from "esbuild";
+
+const catalogBundle=await build({entryPoints:["lib/events.ts"],bundle:true,write:false,format:"esm",platform:"node",alias:{"@":process.cwd()}});
+const {events:currentLaEvents}=await import(`data:text/javascript,${encodeURIComponent(catalogBundle.outputFiles[0].text)}`);
 
 const js = ts.transpileModule(fs.readFileSync("lib/calculateEventMatch.ts", "utf8"), { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText;
 const { calculateEventMatch, rankEvents } = await import(`data:text/javascript,${encodeURIComponent(js)}`);
@@ -11,7 +15,7 @@ const profiles = {
   engineer: { ...base, identity: ["Engineer"], goals: ["Learn", "Find collaborators"], interests: ["Engineering", "Infrastructure"], formats: ["Hackathons", "Workshops"], locations: ["Anywhere if it’s worth it"] },
 };
 for (const city of ["la", "sf"]) {
-  const events = JSON.parse(fs.readFileSync(`data/${city}-tech-week-events.json`, "utf8")).events;
+  const events = city==="la"?currentLaEvents:JSON.parse(fs.readFileSync(`data/${city}-tech-week-events.json`, "utf8")).events;
   const tops = [];
   for (const [label, preferences] of Object.entries(profiles)) {
     const ranked = rankEvents(events, preferences);

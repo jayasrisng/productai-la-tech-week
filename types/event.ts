@@ -5,6 +5,7 @@ export type EventItem = {
   timezone:"America/Los_Angeles"; neighborhood:string; venueName:string|null; address:string|null; isVirtual:boolean;
   organizers:string[]; hostDisplay:string; topics:string[]; formats:string[]; audiences:string[]; goals:string[];
   networkingStrength:number; summary:string; descriptionSource:string; access:EventAccess; rsvpUrl:string;
+  endTime?:string; endDate?:string;
   featured:boolean; inOfficialWeek:boolean; source:{provider:string;cityCalendar:string;sourceRow:number;snapshotGeneratedAt:string};
 };
 export type EventCatalog = { schemaVersion:string; city:string; timezone:string; week:{startsOn:string;endsOn:string}; generatedAt:string; sourceSnapshotGeneratedAt:string; sourceUrl:string; officialCalendarUrl:string; eventCount:number; inWeekEventCount:number; notes:string; events:EventItem[] };
