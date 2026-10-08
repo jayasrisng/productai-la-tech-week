@@ -36,7 +36,7 @@ export function fitPosterLayout(groups:{day:string;names:string[]}[],measure:(te
         });
       };
       group.names.forEach((name,eventIndex)=>{
-        if(eventIndex)add("|",null);
+        if(eventIndex)add("◆",null);
         name.trim().split(/\s+/).forEach(word=>add(word,eventIndex));
       });
       return {...group,runs,lineCount:runs.length?line+1:0,lines:group.names.map(name=>wrapPosterText(name,text=>measure(text,fontSize),maxWidth))};

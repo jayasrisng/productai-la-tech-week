@@ -11,15 +11,13 @@ A mobile-first LA Tech Week planner that ranks 807 official calendar listings ag
 - Personal lineup with estimated conflict and travel notes
 - Manual RSVP tracking
 - `.ics` calendar export and downloadable lineup image
-- Mission HQ mockup with demo updates and device-local image attachments
+- Pulse map with public event times and device-local avatars
 
-The theme control is one sun/moon button, with dark as the default and a saved user override. Event descriptions and percentage breakdowns share one collapsed Match analysis panel. Percentages are heuristic preference coverage, not Product.ai's proprietary matching formula or attendance odds. See [`docs/preference-fit-proposal.md`](docs/preference-fit-proposal.md) for the proposed requirements/alternatives model.
+The GitHub Pages demo mirrors the frontend at `jayasrisng/lineup` branch `jayasri/v3`, commit `97f068b8a22091371810adac94e53af8aa171215`. It includes the v3 brand fonts, featured artwork, avatar picker, Matches, Lineup poster tools, Recharge and Pulse screens. Home defaults to dark; the other screens default to light, with a saved theme override.
 
-This is a static frontend planner. Visitor preferences, saved lineups, RSVP tracking, and map demo posts stay in `localStorage`. Office visits are different: bookings persist in the separate Worker + D1 backend in [`workers/reservations`](workers/reservations/). Configure `NEXT_PUBLIC_RESERVATIONS_API` to connect it. Without working live availability, no hours are bookable; demo slots are not offered. The confirmed office hours are October 12–16, 2026, 11 a.m.–4 p.m. Los Angeles time. See the Worker README for migrations, secure management links, email setup, privacy approval and retention requirements.
+This repository’s demo is frontend-only. Preferences, avatars, saved lineups and RSVP tracking stay on the device. Recharge uses 24 mock lounge hours (Monday 11 a.m.–3 p.m.; Tuesday–Friday 11 a.m.–4 p.m.) and a labeled, in-memory confirmation/cancellation preview. Use fictional details and any sample code without spaces. Refreshing clears the booking preview. Its calendar is labeled PREVIEW and tentative. No reservation, email, public presence, or management link is created. Live booking requests are blocked even if an API URL is supplied. Organizer access is disabled.
 
-Mission HQ is a public mockup and is not connected to an internal calendar or team data.
-
-The GitHub Pages review site sets `NEXT_PUBLIC_RESERVATIONS_DEMO=true`. When no reservation API is configured, this enables a labeled, in-memory reservation preview: slots, guest details, confirmation and cancellation. Use fictional details. Only the exact case-sensitive code `GoldenHour08` is accepted by the preview; this browser gate is not authentication. Configure the live Worker's `REGISTRATION_CODE` secret separately before launch. Nothing is submitted, stored or reserved, and refreshing resets the preview. A configured API always takes precedence; API failures never fall back to fake confirmations. Pulse's Live feed is marked Preview until live sources are connected.
+The existing GitHub Pages workflow, static export configuration and `/productai-la-tech-week/` base path are preserved. Worker code, shared backend booking validation, databases, secrets, migrations and Cloudflare settings are unchanged. Frontend preview validation is isolated in `lib/demo-visit-booking.ts`.
 
 ## Run locally
 
@@ -35,7 +33,8 @@ Open `http://localhost:3000`.
 ## Build
 
 ```bash
-npm run build
+NEXT_PUBLIC_BASE_PATH=/productai-la-tech-week NEXT_PUBLIC_RESERVATIONS_DEMO=true npm run build
+node scripts/verify-pages-demo.mjs
 ```
 
 The static export is written to `.next-build/` and can be hosted on GitHub Pages, Cloudflare Pages, Vercel, Netlify, or any static host. The Pages workflow checks this folder before uploading it.
@@ -44,19 +43,22 @@ The static export is written to `.next-build/` and can be hosted on GitHub Pages
 
 The committed databases are [`data/la-tech-week-events.json`](data/la-tech-week-events.json) and [`data/sf-tech-week-events.json`](data/sf-tech-week-events.json). See [`data/README.md`](data/README.md) and [`data/SOURCE.md`](data/SOURCE.md) for their schema, provenance, and refresh workflow.
 
-Expired RSVP redirect tokens are no longer rendered or exported. [`data/la-event-links.json`](data/la-event-links.json) matches 699 catalog IDs to permanent official event pages and current times/status; 108 unmatched listings have a labeled official-calendar fallback. IDs remain stable for saved lineups. `node scripts/refresh-rsvp-links.mjs` reads the public official API and prints a patch for review. Apply the complete patch without truncating it; verify with `node scripts/verify-frontend.mjs`.
+Expired RSVP redirect tokens are no longer rendered or exported. [`data/la-event-links.json`](data/la-event-links.json) matches 704 catalog IDs to permanent official event pages and current times/status; 103 unmatched listings have a labeled official-calendar fallback. IDs remain stable for saved lineups. `node scripts/refresh-rsvp-links.mjs` reads the public official API and prints a patch for review. Apply the complete patch without truncating it; verify with `node scripts/verify-frontend.mjs`.
 
 ## Verification
 
 ```bash
 npm run lint
-npm run build
+NEXT_PUBLIC_BASE_PATH=/productai-la-tech-week NEXT_PUBLIC_RESERVATIONS_DEMO=true npm run build
+node scripts/verify-pages-demo.mjs
 node scripts/verify-matching.mjs
+node scripts/verify-filters.mjs
 node scripts/verify-frontend.mjs
-npm run test:reservations
+node scripts/verify-visit-demo.mjs
+node scripts/verify-visit-calendar.mjs
 ```
 
-Reservation tests use isolated local storage and mocked email, never production. Frontend review readiness does not mean production bookings or email are launched. The static frontend can use the team's preferred database through an implementation of the existing booking API contract; no database secret belongs in the browser.
+`scripts/verify-pages-browser.mjs` checks onboarding, filters, exports, avatars, reservation previews, disabled organizer access and six screens in both themes at desktop/mobile widths. Supply `TEST_URL` pointing to a static server mounted at the Pages base path, `PLAYWRIGHT_MODULE` pointing to an available Playwright module, and `CHROME_EXECUTABLE` when using an existing Chrome installation. It records screenshots and asserts that no backend requests occur.
 
 ## GitHub Pages
 

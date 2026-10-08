@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useSyncExternalStore } from "react";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "@phosphor-icons/react";
+import { usePathname } from "next/navigation";
 
 const subscribe=(callback:()=>void)=>{window.addEventListener("storage",callback);window.addEventListener("techweek-theme",callback);return()=>{window.removeEventListener("storage",callback);window.removeEventListener("techweek-theme",callback)}};
 const readOverride=()=>{const saved=localStorage.getItem("techWeekThemeOverride");return saved==="dark"||saved==="light"?saved:null};
-export function useTheme(){const override=useSyncExternalStore(subscribe,readOverride,()=>null);return override||"dark"}
+export function useTheme(){const pathname=usePathname();const override=useSyncExternalStore(subscribe,readOverride,()=>null);return override||(pathname==="/"?"dark":"light")}
 
 export function usePageTheme() {
   const theme = useTheme();

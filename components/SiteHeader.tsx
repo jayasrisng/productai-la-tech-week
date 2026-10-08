@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Lightning } from "@phosphor-icons/react";
 
 
 import { ThemeToggle, usePageTheme } from "@/components/ThemeToggle";
@@ -10,6 +11,6 @@ export function SiteHeader() {
   usePageTheme();
   const pathname = usePathname();
 
-  const nav = [["/events", "Matches"], ["/lineup", "Lineup"], ["/office-visit", "Visit"], ["/mission-hq", "Pulse"]];
-  return <header className="site-header"><Link href="/" className="wordmark"><BrandMark/></Link><nav aria-label="Planning journey">{nav.map(([href,label]) => <Link className={pathname.replace(/\/$/,"") === href ? "active" : ""} href={href} key={href}>{label}</Link>)}</nav><div className="header-controls"><ThemeToggle/></div></header>;
+  const nav = [["/events", "Matches"], ["/lineup", "Lineup"], ["/office-visit", "Recharge at HQ"], ["/mission-hq", "Pulse"]];
+  return <header className="site-header" data-theme="dark"><Link href="/" className="wordmark" aria-label="Product.ai Tech Week Lineup home"><BrandMark/></Link><nav aria-label="Planning journey">{nav.map(([href,label]) => <Link className={pathname.replace(/\/$/,"") === href ? "active" : ""} href={href} key={href}>{href==="/office-visit"&&<Lightning className="recharge-icon" size={16} weight="fill" aria-hidden="true"/>}{label}</Link>)}</nav><div className="header-controls"><ThemeToggle/></div></header>;
 }

@@ -1,4 +1,5 @@
-import type { BookingSummary } from "./visit-booking";
+import { HQ_LOCATION, PARKING_MAP_URL } from "./hq";
+import type { BookingSummary } from "./demo-visit-booking";
 
 function utcStamp(value: string | number) {
   return new Date(value).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
@@ -24,8 +25,8 @@ export function visitCalendar(reservation: BookingSummary) {
     lines.push("BEGIN:VEVENT", `UID:${reservation.id}-${slot.id}@product.ai`,
       `DTSTAMP:${utcStamp(reservation.createdAt * 1000)}`,
       `DTSTART:${utcStamp(slot.startsAt)}`, `DTEND:${utcStamp(slot.endsAt)}`,
-      "SUMMARY:Product.ai lounge visit", "STATUS:CONFIRMED",
-      `DESCRIPTION:Reserved for ${reservation.attendeeCount === 2 ? "you and one guest" : "you"}. Times display in your calendar's timezone. Leave when your reserved hour ends.`,
+      reservation.id === "demo-preview" ? "SUMMARY:PREVIEW - Recharge at Product.ai HQ" : "SUMMARY:Recharge at Product.ai HQ", `LOCATION:${HQ_LOCATION.replaceAll(",", "\\,")}`, reservation.id === "demo-preview" ? "STATUS:TENTATIVE" : "STATUS:CONFIRMED",
+      (reservation.id === "demo-preview" ? "DESCRIPTION:Demo preview only. No hours are reserved. Preview for" : "DESCRIPTION:Reserved for") + ` ${reservation.attendeeCount === 2 ? "you and one guest" : "you"}. Your Recharge hour at Product.ai HQ. Parking map: ${PARKING_MAP_URL} (we can’t validate parking). Please head out when your hour ends so the next group has room.`,
       "END:VEVENT");
   }
   lines.push("END:VCALENDAR");

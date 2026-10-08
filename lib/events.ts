@@ -1,6 +1,7 @@
 import { z } from "zod";
 import rawLaCatalog from "@/data/la-tech-week-events.json";
 import currentLinks from "@/data/la-event-links.json";
+import { CLAYDATE_ID, productEditorialEvents } from "./product-experiences";
 
 const eventSchema = z.object({
   id:z.string().regex(/^(latw|sftw)-[a-f0-9]{16}$/), name:z.string().min(3), city:z.enum(["Los Angeles","San Francisco"]),
@@ -39,5 +40,5 @@ catalogs.la.events = catalogs.la.events.map(event => {
   return {...event,rsvpUrl:links[event.id],startTime,startTimeDisplay:`${hour%12||12}:${String(minute).padStart(2,"0")}${hour>=12?"pm":"am"}`,endTime:endTime||undefined,endDate:endDate||undefined,access:{...event.access,status:status as "Open"|"Waitlist"|"Closed"}};
 });
 export const catalog = catalogs.la;
-export const events = catalogs.la.events;
-export const eventsByCity = { la:catalogs.la.events };
+export const events = [...catalogs.la.events.map(event=>event.id===CLAYDATE_ID?{...event,name:"Claydate",summary:"A hands-on clay night at Product.ai HQ in Brentwood. Make something, meet people, and leave the résumé talk behind.",formats:event.formats.filter(format=>format!=="Hackathon"),topics:event.topics.filter(topic=>topic!=="AR / VR"),hostDisplay:"Product.ai",organizers:["Product.ai"],startTime:"17:30",startTimeDisplay:"5:30pm",endTime:"19:30",neighborhood:"Brentwood",venueName:"Product.ai HQ",address:"12100 Wilshire Blvd, Suite 950, Los Angeles, CA 90025"}:event),...productEditorialEvents];
+export const eventsByCity = { la:events };
