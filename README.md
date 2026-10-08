@@ -13,9 +13,9 @@ A mobile-first LA Tech Week planner that ranks 807 official calendar listings ag
 - `.ics` calendar export and downloadable lineup image
 - Pulse map with public event times and device-local avatars
 
-The GitHub Pages demo mirrors the frontend at `jayasrisng/lineup` branch `jayasri/v3`, commit `97f068b8a22091371810adac94e53af8aa171215`. It includes the v3 brand fonts, featured artwork, avatar picker, Matches, Lineup poster tools, Recharge and Pulse screens. Home defaults to dark; the other screens default to light, with a saved theme override.
+The GitHub Pages demo mirrors the frontend at `jayasrisng/lineup` branch `jayasri/v3`, commit `b21aa7a4f2ec9210775cbab31ba32813ace779e0`. It includes the v3 brand fonts, featured artwork, avatar picker, Matches, Lineup poster tools, Recharge and Pulse screens. Home defaults to dark; the other screens default to light, with a saved theme override.
 
-This repository’s demo is frontend-only. Preferences, avatars, saved lineups and RSVP tracking stay on the device. Recharge uses 24 mock lounge hours (Monday 11 a.m.–3 p.m.; Tuesday–Friday 11 a.m.–4 p.m.) and a labeled, in-memory confirmation/cancellation preview. Use fictional details and any sample code without spaces. Refreshing clears the booking preview. Its calendar is labeled PREVIEW and tentative. No reservation, email, public presence, or management link is created. Live booking requests are blocked even if an API URL is supplied. Organizer access is disabled.
+The visible frontend wording matches v3’s production screens, including Recharge and organizer access. Preferences, avatars, saved lineups and RSVP tracking stay on the device. Recharge availability uses 24 mock lounge hours; live booking, management and organizer operations are blocked in the demo client. No reservation, email, public presence or attendee data is created or loaded. Use this Pages URL to review the frontend while the v3 merge is under review. Backend-dependent results and availability do not represent production state.
 
 The existing GitHub Pages workflow, static export configuration and `/productai-la-tech-week/` base path are preserved. Worker code, shared backend booking validation, databases, secrets, migrations and Cloudflare settings are unchanged. Frontend preview validation is isolated in `lib/demo-visit-booking.ts`.
 
@@ -51,6 +51,7 @@ Expired RSVP redirect tokens are no longer rendered or exported. [`data/la-event
 npm run lint
 NEXT_PUBLIC_BASE_PATH=/productai-la-tech-week NEXT_PUBLIC_RESERVATIONS_DEMO=true npm run build
 node scripts/verify-pages-demo.mjs
+node scripts/verify-v3-copy.mjs
 node scripts/verify-matching.mjs
 node scripts/verify-filters.mjs
 node scripts/verify-frontend.mjs
@@ -58,7 +59,7 @@ node scripts/verify-visit-demo.mjs
 node scripts/verify-visit-calendar.mjs
 ```
 
-`scripts/verify-pages-browser.mjs` checks onboarding, filters, exports, avatars, reservation previews, disabled organizer access and six screens in both themes at desktop/mobile widths. Supply `TEST_URL` pointing to a static server mounted at the Pages base path, `PLAYWRIGHT_MODULE` pointing to an available Playwright module, and `CHROME_EXECUTABLE` when using an existing Chrome installation. It records screenshots and asserts that no backend requests occur.
+`scripts/verify-pages-browser.mjs` checks onboarding, filters, exports, avatars, blocked booking and organizer requests and six screens in both themes at desktop/mobile widths. Supply `TEST_URL` pointing to a static server mounted at the Pages base path, `PLAYWRIGHT_MODULE` pointing to an available Playwright module, and `CHROME_EXECUTABLE` when using an existing Chrome installation. It records screenshots and asserts that no backend requests occur.
 
 ## GitHub Pages
 

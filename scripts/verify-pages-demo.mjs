@@ -14,6 +14,7 @@ try {
   assert.deepEqual(await demo.fetchPublicPresence('https://unused.invalid/api'),[]);
   for(const method of ['POST','GET','DELETE'])await assert.rejects(demo.bookingRequest('https://unused.invalid/api','/reservations',{method}),/unavailable/);
   await assert.rejects(demo.submissionKey({},{}),/unavailable/);
+  await assert.rejects(demo.unavailableOrganizerRequest('https://unused.invalid/api/admin/session',{method:'POST'}),/unavailable/);
   const booking = demo.demoReservation(slots,[slots[0].id],2,'DemoCode');
   assert.equal(booking.id,'demo-preview');
   assert.equal(booking.publicPresence,false);

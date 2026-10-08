@@ -24,3 +24,9 @@ export async function fetchPublicPresence(_api?: string, _time?: number, _signal
   void _api; void _time; void _signal;
   return [];
 }
+
+// The organizer screen retains v3 copy but never sends credentials or loads attendees.
+export async function unavailableOrganizerRequest(_url: string, _options: RequestInit): Promise<Response> {
+  void _url; void _options;
+  throw new Error("Organizer service is unavailable.");
+}
