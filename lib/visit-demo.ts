@@ -13,7 +13,7 @@ export function demoVisitSlots(): VisitSlot[] {
 export function demoReservation(slots: VisitSlot[], ids: string[], attendeeCount: number, code: string): BookingSummary {
   // Syntax only, like validateBooking. This simulation never authenticates access.
   // Real access is checked exclusively against the Worker’s secret, not a browser constant.
-  if (!code || code.length > 128 || /\s/.test(code)) throw new Error("Enter a preview code without spaces. No live access is verified.");
+  if (!code || code.length > 128 || /\s/.test(code)) throw new Error("Enter a registration code without spaces.");
   const chosen = slots.filter(slot => ids.includes(slot.id));
   if (!chosen.length || chosen.length !== ids.length || chosen.some(slot => slot.remaining < attendeeCount)) throw new Error("Select available hours.");
   const createdAt = Math.floor(Date.now() / 1000);

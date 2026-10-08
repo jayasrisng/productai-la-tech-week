@@ -12,12 +12,12 @@ export async function fetchAvailability(_api?: string): Promise<VisitSlot[]> {
 
 export async function submissionKey(_booking: BookingInput, _storage: Pick<Storage, "getItem" | "setItem">): Promise<string> {
   void _booking; void _storage;
-  throw new Error("Live reservations are disabled in this demo. No details were submitted.");
+  throw new Error("Reservations are unavailable.");
 }
 
 export async function bookingRequest(_api: string, _path: string, _options: RequestInit): Promise<{ reservation: BookingSummary; managementUrl?: string }> {
   void _api; void _path; void _options;
-  throw new Error("Live reservations and management links are disabled in this demo.");
+  throw new Error("Booking management is unavailable.");
 }
 
 export async function fetchPublicPresence(_api?: string, _time?: number, _signal?: AbortSignal): Promise<PublicPresence[]> {

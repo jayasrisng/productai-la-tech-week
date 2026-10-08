@@ -17,7 +17,7 @@ assert.throws(()=>demoReservation(slots,[],1,'synthetic-preview-only'));
 assert.throws(()=>demoReservation([{...slots[0],remaining:1}],[slots[0].id],2,'synthetic-preview-only'));
 // Demo performs syntax checks, never a secret/access check.
 for (const code of ['', 'with spaces', ' trailing', 'trailing ', 'x'.repeat(129)]) {
-  assert.throws(()=>demoReservation(slots,[slots[0].id],1,code),/preview code without spaces/);
+  assert.throws(()=>demoReservation(slots,[slots[0].id],1,code),/registration code without spaces/);
 }
 for (const code of ['any-valid-synthetic-input','LOCAL-test-only']) {
   assert.equal(demoReservation(slots,[slots[0].id],1,code).id,'demo-preview');

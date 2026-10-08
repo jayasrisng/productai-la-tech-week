@@ -12,8 +12,8 @@ try {
   assert(!slots.some(slot=>slot.id==='la-2026-10-12-15'));
   assert(slots.every(slot=>slot.capacity===20&&slot.remaining===20));
   assert.deepEqual(await demo.fetchPublicPresence('https://unused.invalid/api'),[]);
-  for(const method of ['POST','GET','DELETE'])await assert.rejects(demo.bookingRequest('https://unused.invalid/api','/reservations',{method}),/disabled/);
-  await assert.rejects(demo.submissionKey({},{}),/disabled/);
+  for(const method of ['POST','GET','DELETE'])await assert.rejects(demo.bookingRequest('https://unused.invalid/api','/reservations',{method}),/unavailable/);
+  await assert.rejects(demo.submissionKey({},{}),/unavailable/);
   const booking = demo.demoReservation(slots,[slots[0].id],2,'DemoCode');
   assert.equal(booking.id,'demo-preview');
   assert.equal(booking.publicPresence,false);
